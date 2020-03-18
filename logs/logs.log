@@ -1,0 +1,186 @@
+2020-03-15 10:06:05:65 info: F:\Projects\kahoot\kahoot-api\src\config\developement.env
+2020-03-15 10:06:22:622 info: F:\Projects\kahoot\kahoot-api\src\config\developement.env
+2020-03-15 10:06:22:622 info: Server started at 3/15/2020, 10:06:22 AM on port 5000
+2020-03-15 10:06:22:622 info: Successfully connected to mongodb
+2020-03-15 10:06:31:631 info: Server started at 3/15/2020, 10:06:31 AM on port 5000
+2020-03-15 10:06:31:631 info: Successfully connected to mongodb
+2020-03-15 10:06:58:658 info: Server started on port 5000
+2020-03-15 10:06:58:658 info: Successfully connected to mongodb
+2020-03-15 10:07:15:715 info: Server started on port 5000
+2020-03-15 10:07:15:715 info: Successfully connected to mongodb
+2020-03-15 10:17:26:1726 info: Server started on port 5000
+2020-03-15 10:17:26:1726 info: Successfully connected to mongodb
+2020-03-15 10:17:30:1730 info: Server started on port 5000
+2020-03-15 10:17:30:1730 info: Successfully connected to mongodb
+2020-03-15 10:17:55:1755 info: Server started on port 5000
+2020-03-15 10:17:55:1755 info: Successfully connected to mongodb
+2020-03-15 10:20:33:2033 info: Server started on port 5000
+2020-03-15 10:20:33:2033 info: Successfully connected to mongodb
+2020-03-15 10:21:16:2116 info: Server started on port 5000
+2020-03-15 10:21:16:2116 info: Successfully connected to mongodb
+2020-03-15 10:21:43:2143 info: Server started on port 5000
+2020-03-15 10:21:43:2143 info: Successfully connected to mongodb
+2020-03-15 10:22:17:2217 info: Server started on port 5000
+2020-03-15 10:22:17:2217 info: Successfully connected to mongodb
+2020-03-15 10:22:40:2240 info: Server started on port 5000
+2020-03-15 10:22:40:2240 info: Successfully connected to mongodb
+2020-03-15 10:23:27:2327 info: Server started on port 5000
+2020-03-15 10:23:27:2327 info: Successfully connected to mongodb
+2020-03-15 10:23:46:2346 info: Server started on port 5000
+2020-03-15 10:23:46:2346 info: Successfully connected to mongodb
+2020-03-15 10:23:57:2357 info: Server started on port 5000
+2020-03-15 10:23:57:2357 info: Successfully connected to mongodb
+2020-03-15 10:24:16:2416 info: Server started on port 5000
+2020-03-15 10:24:16:2416 info: Successfully connected to mongodb
+2020-03-15 10:24:47:2447 info: Server started on port 5000
+2020-03-15 10:24:47:2447 info: Successfully connected to mongodb
+2020-03-15 10:24:55:2455 info: Server started on port 5000
+2020-03-15 10:24:55:2455 info: Successfully connected to mongodb
+2020-03-15 10:25:12:2512 info: Server started on port 5000
+2020-03-15 10:25:13:2513 info: Successfully connected to mongodb
+2020-03-15 10:26:16:2616 info: Server started on port 5000
+2020-03-15 10:26:16:2616 info: Successfully connected to mongodb
+2020-03-15 15:47:34:4734 info: Server started on port 5000
+2020-03-15 15:47:34:4734 info: Successfully connected to mongodb
+2020-03-15 15:47:55:4755 info: Server started on port 5000
+2020-03-15 15:47:55:4755 info: Successfully connected to mongodb
+2020-03-15 15:48:03:483 info: Server started on port 5000
+2020-03-15 15:48:03:483 info: Successfully connected to mongodb
+2020-03-15 15:48:13:4813 info: Successfully connected to mongodb
+2020-03-15 15:48:13:4813 info: ::ffff:127.0.0.1 - - [15/Mar/2020:22:48:13 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "node-superagent/3.8.3"
+2020-03-15 15:50:52:5052 info: Successfully connected to mongodb
+2020-03-15 15:50:52:5052 info: ::ffff:127.0.0.1 - - [15/Mar/2020:22:50:52 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "node-superagent/3.8.3"
+2020-03-15 15:51:22:5122 info: Successfully connected to mongodb
+2020-03-15 15:51:50:5150 info: Server started on port 5000
+2020-03-15 15:51:50:5150 info: Successfully connected to mongodb
+2020-03-15 15:52:04:524 info: Server started on port 5000
+2020-03-15 15:52:04:524 info: Successfully connected to mongodb
+2020-03-15 15:52:16:5216 info: Successfully connected to mongodb
+2020-03-15 15:52:16:5216 info: ::ffff:127.0.0.1 - - [15/Mar/2020:22:52:16 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "node-superagent/3.8.3"
+2020-03-15 15:52:58:5258 info: PORT 5000
+2020-03-15 15:52:58:5258 info: Server started on port 5000
+2020-03-15 15:52:58:5258 info: Successfully connected to mongodb
+2020-03-15 15:53:08:538 info: PORT 5000
+2020-03-15 15:53:08:538 info: Successfully connected to mongodb
+2020-03-15 15:53:08:538 info: ::ffff:127.0.0.1 - - [15/Mar/2020:22:53:08 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "node-superagent/3.8.3"
+2020-03-15 15:53:22:5322 info: Server started on port 5000
+2020-03-15 15:53:22:5322 info: Successfully connected to mongodb
+2020-03-15 15:53:51:5351 info: Server started on port 5000
+2020-03-15 15:53:51:5351 info: Successfully connected to mongodb
+2020-03-15 15:54:01:541 info: Successfully connected to mongodb
+2020-03-15 15:54:01:541 info: ::ffff:127.0.0.1 - - [15/Mar/2020:22:54:01 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "node-superagent/3.8.3"
+2020-03-15 15:54:40:5440 info: Server started on port 5000
+2020-03-15 15:54:40:5440 info: Successfully connected to mongodb
+2020-03-15 15:54:52:5452 info: Successfully connected to mongodb
+2020-03-15 15:54:52:5452 info: ::ffff:127.0.0.1 - - [15/Mar/2020:22:54:52 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "node-superagent/3.8.3"
+2020-03-15 15:56:55:5655 info: Server started on port 5000
+2020-03-15 15:56:55:5655 info: Successfully connected to mongodb
+2020-03-15 15:57:03:573 info: Server started on port 5001
+2020-03-15 15:57:03:573 info: Successfully connected to mongodb
+2020-03-15 15:57:03:573 info: ::ffff:127.0.0.1 - - [15/Mar/2020:22:57:03 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "node-superagent/3.8.3"
+2020-03-15 15:59:48:5948 info: Server started on port 5000
+2020-03-15 15:59:48:5948 info: Successfully connected to mongodb
+2020-03-15 16:00:04:04 info: Server started on port 5000
+2020-03-15 16:00:04:04 info: Successfully connected to mongodb
+2020-03-15 16:00:27:027 info: Server started on port 5000
+2020-03-15 16:00:27:027 info: Successfully connected to mongodb
+2020-03-15 16:02:22:222 info: Server started on port 5000
+2020-03-15 16:02:22:222 info: Successfully connected to mongodb
+2020-03-15 16:02:38:238 info: Server started on port 5001
+2020-03-15 16:02:38:238 info: Successfully connected to mongodb
+2020-03-15 16:02:38:238 info: ::ffff:127.0.0.1 - - [15/Mar/2020:23:02:38 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "node-superagent/3.8.3"
+2020-03-15 16:02:38:238 error: 400 - [ServerError] [Username [objectObject]25 is already assigned] [BAD_REQUEST: Username [objectObject]25 is already assigned
+    at Object.signUp (F:\Projects\kahoot\kahoot-api\src\services\auth.js:14:11)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)] -  /api/v1/auth/signup - POST - ::ffff:127.0.0.1
+2020-03-15 16:02:38:238 info: ::ffff:127.0.0.1 - - [15/Mar/2020:23:02:38 +0000] "POST /api/v1/auth/signup HTTP/1.1" 400 322 "-" "node-superagent/3.8.3"
+2020-03-15 16:04:35:435 info: Server started on port 5000
+2020-03-15 16:04:35:435 info: Successfully connected to mongodb
+2020-03-15 16:05:33:533 info: Server started on port 5000
+2020-03-15 16:05:33:533 info: Successfully connected to mongodb
+2020-03-15 16:05:37:537 info: Server started on port 5000
+2020-03-15 16:05:37:537 info: Successfully connected to mongodb
+2020-03-15 16:05:51:551 info: Server started on port 5000
+2020-03-15 16:05:51:551 info: Successfully connected to mongodb
+2020-03-15 16:06:02:62 info: Server started on port 5001
+2020-03-15 16:06:02:62 info: Successfully connected to mongodb
+2020-03-15 16:06:02:62 error: 400 - ServerError - Username [objectObject].Rau is already assigned - BAD_REQUEST: Username [objectObject].Rau is already assigned
+    at Object.signUp (F:\Projects\kahoot\kahoot-api\src\services\auth.js:14:11)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5) -  /api/v1/auth/signup - POST - ::ffff:127.0.0.1
+2020-03-15 16:07:02:72 info: Server started on port 5000
+2020-03-15 16:07:02:72 info: Successfully connected to mongodb
+2020-03-15 16:07:22:722 info: Server started on port 5000
+2020-03-15 16:07:22:722 info: Successfully connected to mongodb
+2020-03-15 16:07:36:736 info: Server started on port 5000
+2020-03-15 16:07:36:736 info: Successfully connected to mongodb
+2020-03-15 16:07:43:743 info: Successfully connected to mongodb
+2020-03-15 16:08:31:831 info: Server started on port 5000
+2020-03-15 16:09:56:956 info: Server started on port 5000
+2020-03-15 16:09:56:956 info: Successfully connect to mongodb
+2020-03-15 16:10:14:1014 info: Server started on port 5000
+2020-03-15 16:10:14:1014 info: Successfully connect to mongodb
+2020-03-15 16:11:54:1154 info: Server started on port 5000
+2020-03-15 16:11:54:1154 info: Successfully connect to mongodb
+2020-03-15 16:15:31:1531 info: Server started on port 5000
+2020-03-15 16:15:31:1531 info: Successfully connect to mongodb
+2020-03-15 16:16:55:1655 info: Server started on port 5000
+2020-03-15 16:16:55:1655 info: Successfully connect to mongodb
+2020-03-15 16:20:51:2051 info: Server started on port 5000
+2020-03-15 16:20:51:2051 info: Successfully connect to mongodb
+2020-03-15 16:20:56:2056 info: Server started on port 5000
+2020-03-15 16:20:56:2056 info: Successfully connect to mongodb
+2020-03-15 16:21:37:2137 info: Server started on port 5000
+2020-03-15 16:21:37:2137 info: Successfully connect to mongodb
+2020-03-15 16:23:04:234 info: Server started on port 5000
+2020-03-15 16:23:04:234 info: Successfully connect to mongodb
+2020-03-15 16:23:13:2313 info: Server started on port 5000
+2020-03-15 16:23:13:2313 info: Successfully connect to mongodb
+2020-03-15 16:26:41:2641 info: Server started on port 5000
+2020-03-15 16:26:41:2641 info: Successfully connect to mongodb
+2020-03-15 16:28:07:287 info: Server started on port 5000
+2020-03-15 16:28:07:287 info: Successfully connect to mongodb
+2020-03-15 16:28:20:2820 info: Server started on port 5000
+2020-03-15 16:28:20:2820 info: Successfully connect to mongodb
+2020-03-15 16:29:15:2915 info: Server started on port 5000
+2020-03-15 16:29:15:2915 info: Successfully connect to mongodb
+2020-03-15 16:30:05:305 info: Server started on port 5000
+2020-03-15 16:30:05:305 info: Successfully connect to mongodb
+2020-03-15 16:30:29:3029 info: Server started on port 5000
+2020-03-15 16:30:29:3029 info: Successfully connect to mongodb
+2020-03-15 16:31:06:316 info: Server started on port 5000
+2020-03-15 16:31:07:317 info: Successfully connect to mongodb
+2020-03-15 16:32:47:3247 info: Server started on port 5000
+2020-03-15 16:32:47:3247 info: Successfully connect to mongodb
+2020-03-16 17:22:41:2241 info: Server started on port 5000
+2020-03-16 17:22:41:2241 info: Successfully connect to mongodb
+2020-03-16 17:23:42:2342 info: Server started on port 5000
+2020-03-16 17:23:42:2342 info: Successfully connect to mongodb
+2020-03-16 17:25:02:252 info: Server started on port 5000
+2020-03-16 17:25:02:252 info: Successfully connect to mongodb
+2020-03-16 17:25:54:2554 info: Server started on port 5000
+2020-03-16 17:25:54:2554 info: Successfully connect to mongodb
+2020-03-17 15:19:03:193 info: Server started on port 5000
+2020-03-17 15:19:03:193 info: Successfully connect to mongodb
+2020-03-17 15:21:45:2145 info: Server started on port 5000
+2020-03-17 15:21:45:2145 info: Successfully connect to mongodb
+2020-03-17 15:22:16:2216 info: Server started on port 5000
+2020-03-17 15:22:16:2216 info: Successfully connect to mongodb
+2020-03-17 15:23:27:2327 info: Server started on port 5000
+2020-03-17 15:23:27:2327 info: Successfully connect to mongodb
+2020-03-17 15:23:44:2344 info: Server started on port 5000
+2020-03-17 15:23:44:2344 info: Successfully connect to mongodb
+2020-03-17 15:40:11:4011 info: Server started on port 5000
+2020-03-17 15:40:11:4011 info: Successfully connect to mongodb
+2020-03-17 15:53:09:539 info: Server started on port 5000
+2020-03-17 15:53:09:539 info: Successfully connect to mongodb
+2020-03-17 15:53:33:5333 info: Server started on port 5000
+2020-03-17 15:53:33:5333 info: Successfully connect to mongodb
+2020-03-17 17:07:37:737 info: Server started on port 5000
+2020-03-17 17:07:37:737 info: Successfully connect to mongodb
+2020-03-17 17:08:29:829 info: Server started on port 5000
+2020-03-17 17:08:29:829 info: Successfully connect to mongodb
+2020-03-17 17:29:05:295 info: Server started on port 5000
+2020-03-17 17:29:05:295 info: Successfully connect to mongodb
+2020-03-17 17:33:16:3316 info: Server started on port 5000
+2020-03-17 17:33:16:3316 info: Successfully connect to mongodb
+2020-03-17 19:32:18:3218 info: Server started on port 5000
+2020-03-17 19:32:18:3218 info: Successfully connect to mongodb
