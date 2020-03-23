@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const uuid = require('uuid');
+const Joi = require('joi');
 
 const faker = require('../helpers/faker');
 
@@ -22,6 +23,10 @@ const answerSchema = new Schema({
     type: Boolean,
     required: true
   },
+  position: {
+    type: Number,
+    required: true
+  },
   question: {
     type: Schema.Types.ObjectId,
     ref: 'Question',
@@ -31,6 +36,23 @@ const answerSchema = new Schema({
 
 const Answer = mongoose.models.Answer || mongoose.model('Answer', answerSchema);
 
+// Validator
+const answerValidator = Joi.object().keys({
+  title: Joi.string()
+    .required()
+    .error(() => ({
+      message: 'Title is required'
+    })),
+  isCorrect: Joi.boolean(),
+  position: Joi.number()
+    .valid([1, 2, 3, 4])
+    .required()
+    .error(() => ({
+      message: 'Position is required'
+    }))
+});
+
+// Factory
 const AnswerFactory = {
   generate({ isCorrect = false }) {
     return {
@@ -68,4 +90,4 @@ const AnswerFactory = {
   }
 };
 
-module.exports = { Answer, AnswerFactory };
+module.exports = { Answer, answerValidator, AnswerFactory };

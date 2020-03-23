@@ -77,7 +77,7 @@ const PlayerFactory = {
 
   async create({ game }) {
     const player = new Player({
-      ...this.generate(),
+      ...this.generate({}),
       game
     });
     await player.save();

@@ -20,10 +20,12 @@ require('./helpers/passport');
 
 // Routes
 const authRouter = require('./routes/auth');
+const gameRouter = require('./routes/games');
 
 // Middlewares
 const loggingHandler = require('./middlewares/logging-handler');
 const errorHandler = require('./middlewares/error-handler');
+const authHandler = require('./middlewares/auth-handler');
 
 // Helpers
 const logger = require('./helpers/logger');
@@ -35,14 +37,14 @@ mongoose
     useUnifiedTopology: true
   })
   .then(() => {
-    if (NODE_ENV !== 'test') logger.info('Successfully connect to mongodb');
+    logger.info('Successfully connect to mongodb');
   })
   .catch(err => logger.error(`Unable to connect to mongoDB : ${err.message}`));
 
 // Initalize app
 const app = express();
 
-if (NODE_ENV !== 'test') app.use(loggingHandler);
+app.use(loggingHandler);
 
 // Setup common middlewares
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -51,6 +53,7 @@ app.use(cors());
 
 // Define routes
 app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/games', authHandler, gameRouter);
 
 // Error handler
 app.use(errorHandler);
@@ -58,7 +61,7 @@ app.use(errorHandler);
 // Start server
 const { PORT } = process.env;
 app.listen(PORT, () => {
-  if (NODE_ENV !== 'test') logger.info(`Server started on port ${PORT}`);
+  logger.info(`Server started on port ${PORT}`);
 });
 
 module.exports = app;

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon src/server.js",
     "start": "node src/server.js",
-    "test": "cross-env NODE_ENV=test mocha 'tests/**/*.test.js' --watch --require tests/init.js --require chai/register-expect"
+    "test": "cross-env NODE_ENV=test mocha 'tests/**/*.test.js' --watch --require tests/init.js --require chai/register-expect",
+    "test:server": "cross-env NODE_ENV=test nodemon src/server.js"
   },
   "author": "thetechshrine",
   "license": "MIT",
@@ -36,12 +37,16 @@
     "app-root-path": "^3.0.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "cloudinary": "^1.20.0",
     "cors": "^2.8.5",
+    "datauri": "^2.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "joi": "^14.3.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.4",
     "morgan": "^1.9.1",
+    "multer": "^1.4.2",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",

@@ -1,22 +1,18 @@
 const bcrypt = require('bcryptjs');
+const Joi = require('joi');
 
-const { User } = require('../models/user');
+const { User, userValidator } = require('../models/user');
 
 const { BadRequestError } = require('../utils/errors');
 
 const signUp = async params => {
+  await Joi.validate(params, userValidator);
+
   const { username, password } = params;
-
-  if (!username) throw new BadRequestError('Username is required');
-
-  if (!username.match(/^[a-zA-Z0-9]{5,}$/))
-    throw new BadRequestError(
-      'Username should be composed of letters or/and numbers and have a length of 5 characters'
-    );
 
   const existingUser = await User.findOne({ username });
   if (existingUser)
-    throw new BadRequestError(`Username ${username} is already assigned`);
+    throw new BadRequestError(`Username ${username} already exists`);
 
   const hash = await bcrypt.hash(password, 10);
   const user = new User({

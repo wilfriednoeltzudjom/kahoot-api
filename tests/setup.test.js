@@ -1,4 +1,15 @@
-const { connect, dropDatabase } = require('./helpers/db-handler');
+const {
+  connect,
+  clearDatabase,
+  dropDatabase
+} = require('./helpers/db-handler');
 
-before(async () => connect());
-after(async () => dropDatabase());
+before(async () => {
+  await connect();
+});
+afterEach(async () => {
+  await clearDatabase();
+});
+after(async () => {
+  await dropDatabase();
+});

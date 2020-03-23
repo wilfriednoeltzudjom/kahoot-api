@@ -6,7 +6,7 @@ const parseError = err => {
   return {
     data: (internalError && err.data) || undefined,
     errors: err.errors || undefined,
-    message: err.message,
+    message: err.isJoi ? err.details[0].message : err.message,
     stack: err.stack,
     status: err.status || 500,
     type:
@@ -19,11 +19,9 @@ const parseError = err => {
 const errorHandler = (err, req, res, _next) => {
   const errorDetails = parseError(err);
 
-  if (process.env.NODE_ENV !== 'test')
-    logger.error(
-      `${errorDetails.status} - ${errorDetails.type} - ${errorDetails.message} - ${errorDetails.stack} -  ${req.originalUrl} - ${req.method} - ${req.ip}`
-    );
-
+  logger.error(
+    `${errorDetails.status} - ${errorDetails.type} - ${errorDetails.message} - ${errorDetails.stack} -  ${req.originalUrl} - ${req.method} - ${req.ip}`
+  );
   res.status(errorDetails.status).json(errorDetails);
 };
 

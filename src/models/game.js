@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const uuid = require('uuid');
+const Joi = require('joi');
 
 const faker = require('../helpers/faker');
 
@@ -24,6 +25,9 @@ const gameSchema = new Schema({
     required: true,
     unique: true
   },
+  cover: {
+    type: String
+  },
   status: {
     type: String,
     enum: ['pending', 'running', 'ended'],
@@ -35,6 +39,12 @@ const gameSchema = new Schema({
       ref: 'Player'
     }
   ],
+  questions: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Question'
+    }
+  ],
   user: {
     type: Schema.Types.ObjectId,
     ref: 'User',
@@ -44,22 +54,33 @@ const gameSchema = new Schema({
 
 const Game = mongoose.models.Game || mongoose.model('Game', gameSchema);
 
+// Validator
+const gameValidator = Joi.object().keys({
+  title: Joi.string()
+    .required()
+    .error(() => ({
+      message: 'Title is required'
+    })),
+  description: Joi.string(),
+  pin: Joi.string()
+});
+
 // Factory
 const GameFactory = {
-  generate({ skipTitle = false, skipPin = false }) {
+  generate({ skipTitle = false }) {
     const game = {
-      description: faker.lorem.words(20)
+      description: faker.lorem.words(20),
+      pin: faker.random.alphaNumeric(8)
     };
 
     if (!skipTitle) game.title = faker.random.words(20);
-    if (!skipPin) game.pin = faker.random.alphaNumeric(8);
 
     return game;
   },
 
   async create({ user }) {
     const game = new Game({
-      ...this.generate(),
+      ...this.generate({}),
       user
     });
     await game.save();
@@ -67,3 +88,5 @@ const GameFactory = {
     return game;
   }
 };
+
+module.exports = { Game, gameValidator, GameFactory };
