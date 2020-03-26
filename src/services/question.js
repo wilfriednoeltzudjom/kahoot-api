@@ -1,19 +1,30 @@
-const Joi = require('joi');
-
-const { Question, questionValidator } = require('../models/question');
+const { Question } = require('../models/question');
 const { Answer } = require('../models/answer');
 const { Game } = require('../models/game');
 
 const { BadRequestError } = require('../utils/errors');
 
-const checkAnswers = (answers = []) => {
-  let correctAnswers = 0;
-  for (let i = 0; i < answers.length; i += 1) {
-    if (answers[i].isCorrect) correctAnswers += 1;
-  }
+const checkDuplicatePositionsInAnswers = (answers = [], index) => {
+  if (index < answers.length - 1) {
+    const currentPosition = answers[index].position;
+    const duplicatePosition = answers.find(
+      (answer, i) => i !== index && answer.position === currentPosition
+    );
+    if (duplicatePosition)
+      throw new BadRequestError(
+        'There is a duplicate postion in your answers array'
+      );
 
-  if (correctAnswers === 0)
+    checkDuplicatePositionsInAnswers(answers, index + 1);
+  }
+};
+
+const checkAnswers = (answers = []) => {
+  const correctAnswer = !!answers.find(answer => answer.isCorrect);
+  if (!correctAnswer)
     throw new BadRequestError('There should be at leat 1 correct answer');
+
+  checkDuplicatePositionsInAnswers(answers, 0);
 };
 
 const getQuestion = async questionId => {
@@ -22,8 +33,6 @@ const getQuestion = async questionId => {
 };
 
 const createQuestion = async (gameId, params, image) => {
-  await Joi.validate(params, questionValidator);
-
   const { answers, ...details } = params;
 
   checkAnswers(answers);
@@ -66,25 +75,6 @@ const getQuestions = gameId => {
 
 const updateQuestion = async (questionId, params, image) => {
   const question = await getQuestion(questionId);
-
-  await Joi.validate(
-    params,
-    Joi.object().keys({
-      title: Joi.string(),
-      image: Joi.string(),
-      points: Joi.number()
-        .min(100)
-        .max(1000)
-        .error(() => ({
-          message: 'Points must be between 100 and 1000'
-        })),
-      time: Joi.number()
-        .min(10)
-        .error(() => ({
-          message: 'Time must be at least 10s'
-        }))
-    })
-  );
 
   Object.assign(question, params);
   if (image) Object.assign(question, image);

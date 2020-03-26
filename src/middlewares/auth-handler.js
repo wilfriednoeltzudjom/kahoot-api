@@ -8,19 +8,24 @@ const throwUnauthorizeError = () => {
 };
 
 const authHandler = async (req, res, next) => {
-  const token = req.headers.authorization.split(' ')[1];
-  if (!token) throwUnauthorizeError();
-  if (!jwtUtils.verify(token)) throwUnauthorizeError();
+  try {
+    const token = req.headers.authorization
+      ? req.headers.authorization.split(' ')[1]
+      : '';
+    if (!token) throwUnauthorizeError();
+    if (!jwtUtils.verify(token)) throwUnauthorizeError();
 
-  const payload = jwtUtils.decode(token);
-  if (!payload || !payload.uuid) throwUnauthorizeError();
+    const { payload } = jwtUtils.decode(token);
+    if (!payload || !payload.uuid) throwUnauthorizeError();
 
-  const user = await User.findOne({ uuid: payload.uuid });
-  if (!user)
-    throw new ResourceNotFoundError(`User ${payload.uuid} was not found`);
+    const user = await User.findOne({ uuid: payload.uuid });
+    if (!user)
+      throw new ResourceNotFoundError(`User ${payload.uuid} was not found`);
 
-  req.user = user;
-
+    req.user = user;
+  } catch (error) {
+    next(error);
+  }
   next();
 };
 

@@ -480,3 +480,918 @@
 2020-03-18 17:13:15:1315 info: Successfully connect to mongodb
 2020-03-18 18:09:00:90 info: Server started on port 5000
 2020-03-18 18:09:00:90 info: Successfully connect to mongodb
+2020-03-22 17:54:31:5431 info: Server started on port 5000
+2020-03-22 17:54:31:5431 info: Successfully connect to mongodb
+2020-03-22 17:55:01:551 info: Server started on port 5000
+2020-03-22 17:55:01:551 info: Successfully connect to mongodb
+2020-03-23 16:47:34:4734 info: Server started on port 4000
+2020-03-23 16:47:35:4735 info: Successfully connect to mongodb
+2020-03-23 16:52:29:5229 info: Server started on port 4000
+2020-03-23 16:52:29:5229 info: Successfully connect to mongodb
+2020-03-23 16:53:39:5339 info: Server started on port 4000
+2020-03-23 16:53:39:5339 info: Successfully connect to mongodb
+2020-03-23 16:55:31:5531 info: Server started on port 4000
+2020-03-23 16:55:31:5531 info: Successfully connect to mongodb
+2020-03-23 16:55:39:5539 info: Server started on port 4000
+2020-03-23 16:55:39:5539 info: Successfully connect to mongodb
+2020-03-23 16:56:34:5634 info: Server started on port 4000
+2020-03-23 16:56:34:5634 info: Successfully connect to mongodb
+2020-03-23 16:58:03:583 info: Server started on port 4000
+2020-03-23 16:58:03:583 info: Successfully connect to mongodb
+2020-03-23 17:16:01:161 info: ::1 - - [24/Mar/2020:00:16:01 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 17:18:32:1832 info: Server started on port 4000
+2020-03-23 17:18:32:1832 info: Successfully connect to mongodb
+2020-03-23 17:18:57:1857 info: Server started on port 4000
+2020-03-23 17:18:57:1857 info: Successfully connect to mongodb
+2020-03-23 17:23:50:2350 info: Server started on port 4000
+2020-03-23 17:23:50:2350 info: Successfully connect to mongodb
+2020-03-23 17:26:28:2628 info: Server started on port 4000
+2020-03-23 17:26:28:2628 info: Successfully connect to mongodb
+2020-03-23 17:26:37:2637 info: Server started on port 4000
+2020-03-23 17:26:37:2637 info: Successfully connect to mongodb
+2020-03-23 17:27:26:2726 info: Server started on port 4000
+2020-03-23 17:27:26:2726 info: Successfully connect to mongodb
+2020-03-23 17:28:26:2826 info: Server started on port 4000
+2020-03-23 17:28:26:2826 info: Successfully connect to mongodb
+2020-03-23 17:33:44:3344 info: ::1 - - [24/Mar/2020:00:33:44 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 17:33:44:3344 info: ::1 - - [24/Mar/2020:00:33:44 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.23.0"
+2020-03-23 17:33:44:3344 info: ::1 - - [24/Mar/2020:00:33:44 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.23.0"
+2020-03-23 17:35:30:3530 info: ::1 - - [24/Mar/2020:00:35:30 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 17:35:30:3530 info: ::1 - - [24/Mar/2020:00:35:30 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.23.0"
+2020-03-23 17:35:30:3530 info: ::1 - - [24/Mar/2020:00:35:30 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:11:19:1119 info: ::1 - - [24/Mar/2020:01:11:19 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:11:19:1119 info: ::1 - - [24/Mar/2020:01:11:19 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:12:28:1228 info: ::1 - - [24/Mar/2020:01:12:28 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:12:28:1228 info: ::1 - - [24/Mar/2020:01:12:28 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:14:11:1411 info: Server started on port 4000
+2020-03-23 18:14:11:1411 info: Successfully connect to mongodb
+2020-03-23 18:14:15:1415 info: ::1 - - [24/Mar/2020:01:14:15 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:14:15:1415 info: ::1 - - [24/Mar/2020:01:14:15 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:15:37:1537 info: Server started on port 4000
+2020-03-23 18:15:37:1537 info: Successfully connect to mongodb
+2020-03-23 18:15:50:1550 info: ::1 - - [24/Mar/2020:01:15:50 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:15:50:1550 info: ::1 - - [24/Mar/2020:01:15:50 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:15:50:1550 error: 401 - ServerError - You are not allowed to access this resource - UNAUTHORIZED: You are not allowed to access this resource
+    at throwUnauthorizeError (F:\Projects\kahoot\kahoot-api\src\middlewares\auth-handler.js:7:9)
+    at authHandler (F:\Projects\kahoot\kahoot-api\src\middlewares\auth-handler.js:17:36)
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\index.js:317:13)
+    at F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\index.js:335:12)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\index.js:275:10)
+    at cors (F:\Projects\kahoot\kahoot-api\node_modules\cors\lib\index.js:188:7)
+    at F:\Projects\kahoot\kahoot-api\node_modules\cors\lib\index.js:224:17
+    at originCallback (F:\Projects\kahoot\kahoot-api\node_modules\cors\lib\index.js:214:15)
+    at F:\Projects\kahoot\kahoot-api\node_modules\cors\lib\index.js:219:13
+    at optionsCallback (F:\Projects\kahoot\kahoot-api\node_modules\cors\lib\index.js:199:9)
+    at corsMiddleware (F:\Projects\kahoot\kahoot-api\node_modules\cors\lib\index.js:204:7)
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\index.js:317:13)
+    at F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\index.js:284:7 -  /api/v1/games - POST - ::1
+2020-03-23 18:15:50:1550 info: ::1 - - [24/Mar/2020:01:15:50 +0000] "POST /api/v1/games HTTP/1.1" 401 1790 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:16:52:1652 info: Server started on port 4000
+2020-03-23 18:16:52:1652 info: Successfully connect to mongodb
+2020-03-23 18:17:05:175 info: ::1 - - [24/Mar/2020:01:17:05 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:17:05:175 info: ::1 - - [24/Mar/2020:01:17:05 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:17:05:175 error: 401 - [object Object] -  /api/v1/games - POST - ::1
+2020-03-23 18:17:05:175 info: ::1 - - [24/Mar/2020:01:17:05 +0000] "POST /api/v1/games HTTP/1.1" 401 1790 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:17:25:1725 info: Server started on port 4000
+2020-03-23 18:17:25:1725 info: Successfully connect to mongodb
+2020-03-23 18:17:41:1741 info: ::1 - - [24/Mar/2020:01:17:41 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:17:41:1741 info: ::1 - - [24/Mar/2020:01:17:41 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:17:41:1741 error: 401 - {"message":"You are not allowed to access this resource","stack":"UNAUTHORIZED: You are not allowed to access this resource\n    at throwUnauthorizeError (F:\\Projects\\kahoot\\kahoot-api\\src\\middlewares\\auth-handler.js:7:9)\n    at authHandler (F:\\Projects\\kahoot\\kahoot-api\\src\\middlewares\\auth-handler.js:17:36)\n    at Layer.handle [as handle_request] (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at F:\\Projects\\kahoot\\kahoot-api\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at cors (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\cors\\lib\\index.js:188:7)\n    at F:\\Projects\\kahoot\\kahoot-api\\node_modules\\cors\\lib\\index.js:224:17\n    at originCallback (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\cors\\lib\\index.js:214:15)\n    at F:\\Projects\\kahoot\\kahoot-api\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handle [as handle_request] (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at F:\\Projects\\kahoot\\kahoot-api\\node_modules\\express\\lib\\router\\index.js:284:7","status":401,"type":"ServerError"} -  /api/v1/games - POST - ::1
+2020-03-23 18:17:41:1741 info: ::1 - - [24/Mar/2020:01:17:41 +0000] "POST /api/v1/games HTTP/1.1" 401 1790 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:20:30:2030 info: Server started on port 4000
+2020-03-23 18:20:30:2030 info: Successfully connect to mongodb
+2020-03-23 18:20:45:2045 info: Server started on port 4000
+2020-03-23 18:20:45:2045 info: Successfully connect to mongodb
+2020-03-23 18:21:28:2128 info: Server started on port 4000
+2020-03-23 18:21:28:2128 info: Successfully connect to mongodb
+2020-03-23 18:21:38:2138 info: ::1 - - [24/Mar/2020:01:21:38 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:21:38:2138 info: ::1 - - [24/Mar/2020:01:21:38 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:21:38:2138 error: 401 - {"message":"You are not allowed to access this resource","status":401,"type":"ServerError"} -  /api/v1/games - POST - ::1
+2020-03-23 18:21:38:2138 info: ::1 - - [24/Mar/2020:01:21:38 +0000] "POST /api/v1/games HTTP/1.1" 401 91 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:23:03:233 info: Server started on port 4000
+2020-03-23 18:23:03:233 info: Successfully connect to mongodb
+2020-03-23 18:23:31:2331 info: ::1 - - [24/Mar/2020:01:23:31 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:23:31:2331 info: ::1 - - [24/Mar/2020:01:23:31 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:23:32:2332 error: 500 - {"message":"\"folder\" is not allowed","status":500,"type":"ServerError"} -  /api/v1/games - POST - ::1
+2020-03-23 18:23:32:2332 info: ::1 - - [24/Mar/2020:01:23:32 +0000] "POST /api/v1/games HTTP/1.1" 500 73 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:24:47:2447 info: Server started on port 4000
+2020-03-23 18:24:47:2447 info: Successfully connect to mongodb
+2020-03-23 18:27:32:2732 info: Server started on port 4000
+2020-03-23 18:27:32:2732 info: Successfully connect to mongodb
+2020-03-23 18:27:46:2746 info: ::1 - - [24/Mar/2020:01:27:46 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:27:46:2746 info: ::1 - - [24/Mar/2020:01:27:46 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:27:47:2747 error: ValidationError: "folder" is not allowed
+    at Object.exports.process (F:\Projects\kahoot\kahoot-api\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (F:\Projects\kahoot\kahoot-api\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (F:\Projects\kahoot\kahoot-api\node_modules\joi\lib\index.js:147:23)
+    at Object.createGame (F:\Projects\kahoot\kahoot-api\src\services\game.js:36:13)
+    at F:\Projects\kahoot\kahoot-api\src\routes\games.js:13:6
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at uploadHandler (F:\Projects\kahoot\kahoot-api\src\middlewares\upload-handler.js:29:3)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+2020-03-23 18:27:47:2747 error: 500 - {"message":"\"folder\" is not allowed","status":500,"type":"ServerError"} -  /api/v1/games - POST - ::1
+2020-03-23 18:27:47:2747 info: ::1 - - [24/Mar/2020:01:27:47 +0000] "POST /api/v1/games HTTP/1.1" 500 73 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:28:47:2847 info: Server started on port 4000
+2020-03-23 18:28:47:2847 info: Successfully connect to mongodb
+2020-03-23 18:29:49:2949 info: Server started on port 4000
+2020-03-23 18:29:49:2949 info: Successfully connect to mongodb
+2020-03-23 18:30:02:302 info: ::1 - - [24/Mar/2020:01:30:02 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:30:02:302 info: ::1 - - [24/Mar/2020:01:30:02 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:30:41:3041 info: Server started on port 4000
+2020-03-23 18:30:41:3041 info: Successfully connect to mongodb
+2020-03-23 18:33:16:3316 info: Server started on port 4000
+2020-03-23 18:33:16:3316 info: Successfully connect to mongodb
+2020-03-23 18:34:24:3424 info: Server started on port 4000
+2020-03-23 18:34:24:3424 info: Successfully connect to mongodb
+2020-03-23 18:34:39:3439 info: Server started on port 4000
+2020-03-23 18:34:39:3439 info: Successfully connect to mongodb
+2020-03-23 18:35:48:3548 info: Server started on port 4000
+2020-03-23 18:35:48:3548 info: Successfully connect to mongodb
+2020-03-23 18:36:06:366 info: Server started on port 4000
+2020-03-23 18:36:06:366 info: Successfully connect to mongodb
+2020-03-23 18:37:35:3735 info: Server started on port 4000
+2020-03-23 18:37:35:3735 info: Successfully connect to mongodb
+2020-03-23 18:37:43:3743 info: Server started on port 4000
+2020-03-23 18:37:43:3743 info: Successfully connect to mongodb
+2020-03-23 18:38:20:3820 info: Server started on port 4000
+2020-03-23 18:38:20:3820 info: Successfully connect to mongodb
+2020-03-23 18:38:48:3848 info: Server started on port 4000
+2020-03-23 18:38:48:3848 info: Successfully connect to mongodb
+2020-03-23 18:39:05:395 info: ::1 - - [24/Mar/2020:01:39:05 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:39:06:396 info: ::1 - - [24/Mar/2020:01:39:06 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.23.0"
+2020-03-23 18:39:06:396 info: ::1 - - [24/Mar/2020:01:39:06 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.23.0"
+2020-03-25 03:44:34:4434 info: Server started on port 4000
+2020-03-25 03:44:34:4434 info: Successfully connect to mongodb
+2020-03-25 03:57:56:5756 info: ::1 - - [25/Mar/2020:10:57:56 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 03:57:56:5756 info: ::1 - - [25/Mar/2020:10:57:56 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 03:57:57:5757 info: ::1 - - [25/Mar/2020:10:57:57 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 03:57:57:5757 error: MissingSchemaError: Schema hasn't been registered for model "Player".
+Use mongoose.model(name, schema)
+    at new MissingSchemaError (F:\Projects\kahoot\kahoot-api\node_modules\mongoose\lib\error\missingSchema.js:22:11)
+    at NativeConnection.Connection.model (F:\Projects\kahoot\kahoot-api\node_modules\mongoose\lib\connection.js:1080:11)
+    at getModelsMapForPopulate (F:\Projects\kahoot\kahoot-api\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:262:59)
+    at populate (F:\Projects\kahoot\kahoot-api\node_modules\mongoose\lib\model.js:4300:21)
+    at _populate (F:\Projects\kahoot\kahoot-api\node_modules\mongoose\lib\model.js:4270:5)
+    at F:\Projects\kahoot\kahoot-api\node_modules\mongoose\lib\model.js:4245:5
+    at promiseOrCallback (F:\Projects\kahoot\kahoot-api\node_modules\mongoose\lib\helpers\promiseOrCallback.js:9:12)
+    at Function.Model.populate (F:\Projects\kahoot\kahoot-api\node_modules\mongoose\lib\model.js:4243:10)
+    at model.Query.Query._completeOne (F:\Projects\kahoot\kahoot-api\node_modules\mongoose\lib\query.js:2097:9)
+    at Immediate.<anonymous> (F:\Projects\kahoot\kahoot-api\node_modules\mongoose\lib\query.js:2136:10)
+    at Immediate.<anonymous> (F:\Projects\kahoot\kahoot-api\node_modules\mquery\lib\utils.js:116:16)
+    at processImmediate (internal/timers.js:439:21)
+2020-03-25 03:57:57:5757 error: 500 - {"message":"Schema hasn't been registered for model \"Player\".\nUse mongoose.model(name, schema)","status":500,"type":"ServerError"} -  /api/v1/games/5e7b393531964125181a2919 - PUT - ::1
+2020-03-25 03:57:57:5757 info: ::1 - - [25/Mar/2020:10:57:57 +0000] "PUT /api/v1/games/5e7b393531964125181a2919 HTTP/1.1" 500 133 "-" "PostmanRuntime/7.24.0"
+2020-03-25 03:57:57:5757 info: ::1 - - [25/Mar/2020:10:57:57 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:08:35:835 info: Server started on port 5000
+2020-03-25 04:08:35:835 info: Successfully connect to mongodb
+2020-03-25 04:09:19:919 info: Server started on port 5000
+2020-03-25 04:09:19:919 info: Successfully connect to mongodb
+2020-03-25 04:11:00:110 info: Server started on port 5000
+2020-03-25 04:11:00:110 info: Successfully connect to mongodb
+2020-03-25 04:11:26:1126 info: Server started on port 5000
+2020-03-25 04:11:26:1126 info: Successfully connect to mongodb
+2020-03-25 04:11:49:1149 info: Server started on port 5000
+2020-03-25 04:11:49:1149 info: Successfully connect to mongodb
+2020-03-25 04:12:03:123 info: Server started on port 5000
+2020-03-25 04:12:03:123 info: Successfully connect to mongodb
+2020-03-25 04:12:23:1223 info: Server started on port 5000
+2020-03-25 04:12:23:1223 info: Successfully connect to mongodb
+2020-03-25 04:12:54:1254 info: Server started on port 5000
+2020-03-25 04:12:54:1254 info: Successfully connect to mongodb
+2020-03-25 04:13:10:1310 info: Server started on port 5000
+2020-03-25 04:13:10:1310 info: Successfully connect to mongodb
+2020-03-25 04:13:17:1317 info: Server started on port 4000
+2020-03-25 04:13:17:1317 info: Successfully connect to mongodb
+2020-03-25 04:14:22:1422 info: Server started on port 4000
+2020-03-25 04:14:22:1422 info: Successfully connect to mongodb
+2020-03-25 04:14:35:1435 info: ::1 - - [25/Mar/2020:11:14:35 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:14:35:1435 info: ::1 - - [25/Mar/2020:11:14:35 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:14:36:1436 info: ::1 - - [25/Mar/2020:11:14:36 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:14:36:1436 info: ::1 - - [25/Mar/2020:11:14:36 +0000] "PUT /api/v1/games/5e7b3d1cb46ff03b243b2d0d HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:14:36:1436 info: ::1 - - [25/Mar/2020:11:14:36 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:17:42:1742 info: Server started on port 4000
+2020-03-25 04:17:42:1742 info: Successfully connect to mongodb
+2020-03-25 04:18:03:183 info: Server started on port 4000
+2020-03-25 04:18:03:183 info: Successfully connect to mongodb
+2020-03-25 04:18:08:188 info: Server started on port 4000
+2020-03-25 04:18:08:188 info: Successfully connect to mongodb
+2020-03-25 04:18:24:1824 info: Server started on port 4000
+2020-03-25 04:18:24:1824 info: Successfully connect to mongodb
+2020-03-25 04:19:20:1920 info: Server started on port 4000
+2020-03-25 04:19:20:1920 info: Successfully connect to mongodb
+2020-03-25 04:19:24:1924 info: Server started on port 4000
+2020-03-25 04:19:24:1924 info: Successfully connect to mongodb
+2020-03-25 04:19:28:1928 info: Server started on port 4000
+2020-03-25 04:19:28:1928 info: Successfully connect to mongodb
+2020-03-25 04:19:33:1933 info: Server started on port 4000
+2020-03-25 04:19:33:1933 info: Successfully connect to mongodb
+2020-03-25 04:19:46:1946 info: Server started on port 4000
+2020-03-25 04:19:46:1946 info: Successfully connect to mongodb
+2020-03-25 04:19:58:1958 info: ::1 - - [25/Mar/2020:11:19:58 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:19:58:1958 info: ::1 - - [25/Mar/2020:11:19:58 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:19:59:1959 info: ::1 - - [25/Mar/2020:11:19:59 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:19:59:1959 info: ::1 - - [25/Mar/2020:11:19:59 +0000] "PUT /api/v1/games/5e7b3e5fc00a581f647d3455 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:19:59:1959 info: ::1 - - [25/Mar/2020:11:19:59 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:20:24:2024 info: Server started on port 4000
+2020-03-25 04:20:24:2024 info: Successfully connect to mongodb
+2020-03-25 04:20:29:2029 info: ::1 - - [25/Mar/2020:11:20:29 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:20:29:2029 info: ::1 - - [25/Mar/2020:11:20:29 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:20:30:2030 info: ::1 - - [25/Mar/2020:11:20:30 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:20:30:2030 info: ::1 - - [25/Mar/2020:11:20:30 +0000] "PUT /api/v1/games/5e7b3e7ed6c4f129a4534b10 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:20:31:2031 info: ::1 - - [25/Mar/2020:11:20:31 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:20:43:2043 info: Server started on port 4000
+2020-03-25 04:20:43:2043 info: Successfully connect to mongodb
+2020-03-25 04:25:36:2536 info: Server started on port 4000
+2020-03-25 04:25:36:2536 info: Successfully connect to mongodb
+2020-03-25 04:28:48:2848 info: Server started on port 4000
+2020-03-25 04:28:48:2848 info: Successfully connect to mongodb
+2020-03-25 04:28:59:2859 info: ::1 - - [25/Mar/2020:11:28:59 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:28:59:2859 info: ::1 - - [25/Mar/2020:11:28:59 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:29:00:290 info: ::1 - - [25/Mar/2020:11:29:00 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:29:00:290 info: ::1 - - [25/Mar/2020:11:29:00 +0000] "PUT /api/v1/games/5e7b407c329a243290bfc51e HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:29:00:290 info: ::1 - - [25/Mar/2020:11:29:00 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:30:16:3016 info: Server started on port 4000
+2020-03-25 04:30:16:3016 info: Successfully connect to mongodb
+2020-03-25 04:31:47:3147 info: Server started on port 4000
+2020-03-25 04:31:47:3147 info: Successfully connect to mongodb
+2020-03-25 04:31:49:3149 info: ::1 - - [25/Mar/2020:11:31:49 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:31:50:3150 info: ::1 - - [25/Mar/2020:11:31:50 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:31:50:3150 info: ::1 - - [25/Mar/2020:11:31:50 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:31:51:3151 error: ValidationError: child "title" fails because ["title" is required], child "description" fails because ["description" is required]
+    at Object.exports.process (F:\Projects\kahoot\kahoot-api\node_modules\joi\lib\errors.js:203:19)
+    at internals.Alternatives._validateWithOptions (F:\Projects\kahoot\kahoot-api\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (F:\Projects\kahoot\kahoot-api\node_modules\joi\lib\index.js:147:23)
+    at Object.updateGame (F:\Projects\kahoot\kahoot-api\src\services\game.js:67:13)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+2020-03-25 04:31:51:3151 error: 400 - {"message":"\"title\" is required","status":400,"type":"ServerError"} -  /api/v1/games/5e7b412657f1282a9882a2c3 - PUT - ::1
+2020-03-25 04:31:51:3151 info: ::1 - - [25/Mar/2020:11:31:51 +0000] "PUT /api/v1/games/5e7b412657f1282a9882a2c3 HTTP/1.1" 400 69 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:31:51:3151 info: ::1 - - [25/Mar/2020:11:31:51 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:32:20:3220 info: Server started on port 4000
+2020-03-25 04:32:20:3220 info: Successfully connect to mongodb
+2020-03-25 04:32:26:3226 info: ::1 - - [25/Mar/2020:11:32:26 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:32:26:3226 info: ::1 - - [25/Mar/2020:11:32:26 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:32:27:3227 info: ::1 - - [25/Mar/2020:11:32:27 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:32:27:3227 info: ::1 - - [25/Mar/2020:11:32:27 +0000] "PUT /api/v1/games/5e7b414b2b9189314496f728 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:32:27:3227 info: ::1 - - [25/Mar/2020:11:32:27 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:32:44:3244 info: Server started on port 4000
+2020-03-25 04:32:44:3244 info: Successfully connect to mongodb
+2020-03-25 04:32:52:3252 info: ::1 - - [25/Mar/2020:11:32:52 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:32:52:3252 info: ::1 - - [25/Mar/2020:11:32:52 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:32:53:3253 info: ::1 - - [25/Mar/2020:11:32:53 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:32:53:3253 info: ::1 - - [25/Mar/2020:11:32:53 +0000] "PUT /api/v1/games/5e7b4165f407e91b5044f523 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:32:53:3253 info: ::1 - - [25/Mar/2020:11:32:53 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 04:33:03:333 info: Server started on port 4000
+2020-03-25 04:33:03:333 info: Successfully connect to mongodb
+2020-03-25 05:52:11:5211 info: Server started on port 4000
+2020-03-25 05:52:11:5211 info: Successfully connect to mongodb
+2020-03-25 05:52:14:5214 info: ::1 - - [25/Mar/2020:12:52:14 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 05:52:15:5215 info: ::1 - - [25/Mar/2020:12:52:15 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 05:52:15:5215 info: ::1 - - [25/Mar/2020:12:52:15 +0000] "POST /api/v1/games HTTP/1.1" 422 132 "-" "PostmanRuntime/7.24.0"
+2020-03-25 05:52:16:5216 info: ::1 - - [25/Mar/2020:12:52:16 +0000] "POST /api/v1/games HTTP/1.1" 422 13 "-" "PostmanRuntime/7.24.0"
+2020-03-25 05:52:16:5216 error: ValidationError: child "title" fails because ["title" is required], child "description" fails because ["description" is required]
+    at Object.exports.process (F:\Projects\kahoot\kahoot-api\node_modules\joi\lib\errors.js:203:19)
+    at internals.Alternatives._validateWithOptions (F:\Projects\kahoot\kahoot-api\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (F:\Projects\kahoot\kahoot-api\node_modules\joi\lib\index.js:147:23)
+    at Object.updateGame (F:\Projects\kahoot\kahoot-api\src\services\game.js:62:13)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+2020-03-25 05:52:16:5216 error: 400 - {"message":"\"title\" is required","status":400,"type":"ServerError"} -  /api/v1/games/5e7b4165f407e91b5044f523 - PUT - ::1
+2020-03-25 05:52:16:5216 info: ::1 - - [25/Mar/2020:12:52:16 +0000] "PUT /api/v1/games/5e7b4165f407e91b5044f523 HTTP/1.1" 400 69 "-" "PostmanRuntime/7.24.0"
+2020-03-25 05:52:16:5216 info: ::1 - - [25/Mar/2020:12:52:16 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 05:54:50:5450 info: Server started on port 4000
+2020-03-25 05:54:50:5450 info: Successfully connect to mongodb
+2020-03-25 05:55:02:552 info: ::1 - - [25/Mar/2020:12:55:02 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 05:55:02:552 info: ::1 - - [25/Mar/2020:12:55:02 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 05:55:02:552 info: ::1 - - [25/Mar/2020:12:55:02 +0000] "POST /api/v1/games HTTP/1.1" 422 132 "-" "PostmanRuntime/7.24.0"
+2020-03-25 05:55:03:553 info: ::1 - - [25/Mar/2020:12:55:03 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 05:55:03:553 error: ValidationError: child "title" fails because ["title" is required], child "description" fails because ["description" is required]
+    at Object.exports.process (F:\Projects\kahoot\kahoot-api\node_modules\joi\lib\errors.js:203:19)
+    at internals.Alternatives._validateWithOptions (F:\Projects\kahoot\kahoot-api\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (F:\Projects\kahoot\kahoot-api\node_modules\joi\lib\index.js:147:23)
+    at Object.updateGame (F:\Projects\kahoot\kahoot-api\src\services\game.js:62:13)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+2020-03-25 05:55:03:553 error: 400 - {"message":"\"title\" is required","status":400,"type":"ServerError"} -  /api/v1/games/5e7b54a7d6256a1274ff9f24 - PUT - ::1
+2020-03-25 05:55:03:553 info: ::1 - - [25/Mar/2020:12:55:03 +0000] "PUT /api/v1/games/5e7b54a7d6256a1274ff9f24 HTTP/1.1" 400 69 "-" "PostmanRuntime/7.24.0"
+2020-03-25 05:55:03:553 info: ::1 - - [25/Mar/2020:12:55:03 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:21:33:2133 info: Server started on port 4000
+2020-03-25 06:21:33:2133 info: Successfully connect to mongodb
+2020-03-25 06:22:45:2245 info: Server started on port 4000
+2020-03-25 06:22:45:2245 info: Successfully connect to mongodb
+2020-03-25 06:23:29:2329 info: Server started on port 4000
+2020-03-25 06:23:29:2329 info: Successfully connect to mongodb
+2020-03-25 06:23:40:2340 info: ::1 - - [25/Mar/2020:13:23:40 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:23:41:2341 info: ::1 - - [25/Mar/2020:13:23:41 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:23:41:2341 info: ::1 - - [25/Mar/2020:13:23:41 +0000] "POST /api/v1/games HTTP/1.1" 422 132 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:23:42:2342 info: ::1 - - [25/Mar/2020:13:23:42 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:23:42:2342 info: ::1 - - [25/Mar/2020:13:23:42 +0000] "PUT /api/v1/games/5e7b5b5e1405790facc77513 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:23:42:2342 info: ::1 - - [25/Mar/2020:13:23:42 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:23:42:2342 info: ::1 - - [25/Mar/2020:13:23:42 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:26:29:2629 info: Server started on port 4000
+2020-03-25 06:26:29:2629 info: Successfully connect to mongodb
+2020-03-25 06:26:38:2638 info: ::1 - - [25/Mar/2020:13:26:38 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:26:38:2638 info: ::1 - - [25/Mar/2020:13:26:38 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:26:38:2638 info: ::1 - - [25/Mar/2020:13:26:38 +0000] "POST /api/v1/games HTTP/1.1" 422 132 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:26:39:2639 info: ::1 - - [25/Mar/2020:13:26:39 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:26:39:2639 info: ::1 - - [25/Mar/2020:13:26:39 +0000] "PUT /api/v1/games/5e7b5c0fe623b53c08fbf43c HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:26:39:2639 info: ::1 - - [25/Mar/2020:13:26:39 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:26:39:2639 info: ::1 - - [25/Mar/2020:13:26:39 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:36:09:369 info: Server started on port 4000
+2020-03-25 06:36:09:369 info: Successfully connect to mongodb
+2020-03-25 06:36:11:3611 info: Server started on port 4000
+2020-03-25 06:36:11:3611 info: Successfully connect to mongodb
+2020-03-25 06:37:17:3717 info: Server started on port 4000
+2020-03-25 06:37:17:3717 info: Successfully connect to mongodb
+2020-03-25 06:38:35:3835 info: Server started on port 4000
+2020-03-25 06:38:35:3835 info: Successfully connect to mongodb
+2020-03-25 06:38:50:3850 info: Server started on port 4000
+2020-03-25 06:38:50:3850 info: Successfully connect to mongodb
+2020-03-25 06:38:58:3858 info: Server started on port 4000
+2020-03-25 06:38:58:3858 info: Successfully connect to mongodb
+2020-03-25 06:39:45:3945 info: ::1 - - [25/Mar/2020:13:39:45 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:39:45:3945 info: ::1 - - [25/Mar/2020:13:39:45 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:39:45:3945 info: ::1 - - [25/Mar/2020:13:39:45 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:39:46:3946 info: ::1 - - [25/Mar/2020:13:39:46 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:39:46:3946 error: BAD_REQUEST: There is no updates
+    at F:\Projects\kahoot\kahoot-api\src\routes\games.js:58:12
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at validate (F:\Projects\kahoot\kahoot-api\src\middlewares\validation-handler.js:5:32)
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at middleware (F:\Projects\kahoot\kahoot-api\node_modules\express-validator\src\middlewares\check.js:15:13)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+2020-03-25 06:39:46:3946 error: 400 - {"message":"There is no updates","status":400,"type":"ServerError"} -  /api/v1/games/5e7b5f22c245bb35fcddb8da - PUT - ::1
+2020-03-25 06:39:46:3946 info: ::1 - - [25/Mar/2020:13:39:46 +0000] "PUT /api/v1/games/5e7b5f22c245bb35fcddb8da HTTP/1.1" 400 67 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:39:46:3946 info: ::1 - - [25/Mar/2020:13:39:46 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:39:46:3946 info: ::1 - - [25/Mar/2020:13:39:46 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:49:38:4938 info: ::1 - - [25/Mar/2020:13:49:38 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:49:38:4938 info: ::1 - - [25/Mar/2020:13:49:38 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:49:38:4938 info: ::1 - - [25/Mar/2020:13:49:38 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:49:38:4938 info: ::1 - - [25/Mar/2020:13:49:38 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:49:39:4939 info: ::1 - - [25/Mar/2020:13:49:39 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:49:39:4939 error: BAD_REQUEST: There is no updates
+    at F:\Projects\kahoot\kahoot-api\src\routes\games.js:58:12
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at validate (F:\Projects\kahoot\kahoot-api\src\middlewares\validation-handler.js:5:32)
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at middleware (F:\Projects\kahoot\kahoot-api\node_modules\express-validator\src\middlewares\check.js:15:13)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+2020-03-25 06:49:39:4939 error: 400 - {"message":"There is no updates","status":400,"type":"ServerError"} -  /api/v1/games/5e7b6173c245bb35fcddb8dc - PUT - ::1
+2020-03-25 06:49:39:4939 info: ::1 - - [25/Mar/2020:13:49:39 +0000] "PUT /api/v1/games/5e7b6173c245bb35fcddb8dc HTTP/1.1" 400 67 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:49:39:4939 info: ::1 - - [25/Mar/2020:13:49:39 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:49:39:4939 info: ::1 - - [25/Mar/2020:13:49:39 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:50:12:5012 info: ::1 - - [25/Mar/2020:13:50:12 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:50:12:5012 info: ::1 - - [25/Mar/2020:13:50:12 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:50:12:5012 info: ::1 - - [25/Mar/2020:13:50:12 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:50:12:5012 info: ::1 - - [25/Mar/2020:13:50:12 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:50:13:5013 info: ::1 - - [25/Mar/2020:13:50:13 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:50:13:5013 error: BAD_REQUEST: There is no updates
+    at F:\Projects\kahoot\kahoot-api\src\routes\games.js:58:12
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at validate (F:\Projects\kahoot\kahoot-api\src\middlewares\validation-handler.js:5:32)
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at middleware (F:\Projects\kahoot\kahoot-api\node_modules\express-validator\src\middlewares\check.js:15:13)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+2020-03-25 06:50:13:5013 error: 400 - {"message":"There is no updates","status":400,"type":"ServerError"} -  /api/v1/games/5e7b6195c245bb35fcddb8de - PUT - ::1
+2020-03-25 06:50:13:5013 info: ::1 - - [25/Mar/2020:13:50:13 +0000] "PUT /api/v1/games/5e7b6195c245bb35fcddb8de HTTP/1.1" 400 67 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:50:13:5013 info: ::1 - - [25/Mar/2020:13:50:13 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:50:13:5013 info: ::1 - - [25/Mar/2020:13:50:13 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:54:08:548 info: ::1 - - [25/Mar/2020:13:54:08 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:54:08:548 info: ::1 - - [25/Mar/2020:13:54:08 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:54:08:548 info: ::1 - - [25/Mar/2020:13:54:08 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:54:08:548 info: ::1 - - [25/Mar/2020:13:54:08 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:54:09:549 info: ::1 - - [25/Mar/2020:13:54:09 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:54:09:549 error: BAD_REQUEST: There is no updates
+    at F:\Projects\kahoot\kahoot-api\src\routes\games.js:58:12
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at validate (F:\Projects\kahoot\kahoot-api\src\middlewares\validation-handler.js:5:32)
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at middleware (F:\Projects\kahoot\kahoot-api\node_modules\express-validator\src\middlewares\check.js:15:13)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+2020-03-25 06:54:09:549 error: 400 - {"message":"There is no updates","status":400,"type":"ServerError"} -  /api/v1/games/5e7b6281c245bb35fcddb8e0 - PUT - ::1
+2020-03-25 06:54:09:549 info: ::1 - - [25/Mar/2020:13:54:09 +0000] "PUT /api/v1/games/5e7b6281c245bb35fcddb8e0 HTTP/1.1" 400 67 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:54:09:549 info: ::1 - - [25/Mar/2020:13:54:09 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 06:54:09:549 info: ::1 - - [25/Mar/2020:13:54:09 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:15:03:153 info: Server started on port 4000
+2020-03-25 07:15:03:153 info: Successfully connect to mongodb
+2020-03-25 07:15:22:1522 info: Server started on port 4000
+2020-03-25 07:15:22:1522 info: Successfully connect to mongodb
+2020-03-25 07:15:37:1537 info: Server started on port 4000
+2020-03-25 07:15:37:1537 info: Successfully connect to mongodb
+2020-03-25 07:23:47:2347 info: Server started on port 4000
+2020-03-25 07:23:47:2347 info: Successfully connect to mongodb
+2020-03-25 07:24:16:2416 info: Server started on port 4000
+2020-03-25 07:24:16:2416 info: Successfully connect to mongodb
+2020-03-25 07:24:48:2448 info: ::1 - - [25/Mar/2020:14:24:48 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:24:48:2448 info: ::1 - - [25/Mar/2020:14:24:48 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:24:48:2448 info: ::1 - - [25/Mar/2020:14:24:48 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:24:48:2448 info: ::1 - - [25/Mar/2020:14:24:48 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:24:50:2450 info: ::1 - - [25/Mar/2020:14:24:50 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:24:51:2451 error: BAD_REQUEST: There is no updates
+    at F:\Projects\kahoot\kahoot-api\src\routes\games.js:58:12
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at validate (F:\Projects\kahoot\kahoot-api\src\middlewares\validation-handler.js:5:32)
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at middleware (F:\Projects\kahoot\kahoot-api\node_modules\express-validator\src\middlewares\check.js:15:13)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+2020-03-25 07:24:51:2451 error: 400 - {"message":"There is no updates","status":400,"type":"ServerError"} -  /api/v1/games/5e7b69b23e155f2f58b6c40f - PUT - ::1
+2020-03-25 07:24:51:2451 info: ::1 - - [25/Mar/2020:14:24:51 +0000] "PUT /api/v1/games/5e7b69b23e155f2f58b6c40f HTTP/1.1" 400 67 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:24:51:2451 info: ::1 - - [25/Mar/2020:14:24:51 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:24:51:2451 info: ::1 - - [25/Mar/2020:14:24:51 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:28:01:281 info: ::1 - - [25/Mar/2020:14:28:01 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:28:01:281 info: ::1 - - [25/Mar/2020:14:28:01 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:28:02:282 info: ::1 - - [25/Mar/2020:14:28:02 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:28:02:282 info: ::1 - - [25/Mar/2020:14:28:02 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:28:03:283 info: ::1 - - [25/Mar/2020:14:28:03 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:28:03:283 error: BAD_REQUEST: There is no updates
+    at F:\Projects\kahoot\kahoot-api\src\routes\games.js:58:12
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at validate (F:\Projects\kahoot\kahoot-api\src\middlewares\validation-handler.js:5:32)
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at middleware (F:\Projects\kahoot\kahoot-api\node_modules\express-validator\src\middlewares\check.js:15:13)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+2020-03-25 07:28:03:283 error: 400 - {"message":"There is no updates","status":400,"type":"ServerError"} -  /api/v1/games/5e7b6a733e155f2f58b6c411 - PUT - ::1
+2020-03-25 07:28:03:283 info: ::1 - - [25/Mar/2020:14:28:03 +0000] "PUT /api/v1/games/5e7b6a733e155f2f58b6c411 HTTP/1.1" 400 67 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:28:03:283 info: ::1 - - [25/Mar/2020:14:28:03 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:28:04:284 info: ::1 - - [25/Mar/2020:14:28:04 +0000] "PUT /api/v1/games/5e7b6a733e155f2f58b6c411 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:28:04:284 info: ::1 - - [25/Mar/2020:14:28:04 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:30:14:3014 info: Server started on port 4000
+2020-03-25 07:30:14:3014 info: Successfully connect to mongodb
+2020-03-25 07:30:36:3036 info: ::1 - - [25/Mar/2020:14:30:36 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:30:36:3036 info: ::1 - - [25/Mar/2020:14:30:36 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:30:36:3036 info: ::1 - - [25/Mar/2020:14:30:36 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:30:36:3036 info: ::1 - - [25/Mar/2020:14:30:36 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:30:37:3037 info: ::1 - - [25/Mar/2020:14:30:37 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:30:37:3037 error: BAD_REQUEST: There is no updates
+    at F:\Projects\kahoot\kahoot-api\src\routes\games.js:58:12
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at validate (F:\Projects\kahoot\kahoot-api\src\middlewares\validation-handler.js:5:32)
+    at Layer.handle [as handle_request] (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Projects\kahoot\kahoot-api\node_modules\express\lib\router\route.js:137:13)
+    at middleware (F:\Projects\kahoot\kahoot-api\node_modules\express-validator\src\middlewares\check.js:15:13)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+2020-03-25 07:30:37:3037 error: 400 - {"message":"There is no updates","status":400,"type":"ServerError"} -  /api/v1/games/5e7b6b0d6ec32c33ec4a5aab - PUT - ::1
+2020-03-25 07:30:37:3037 info: ::1 - - [25/Mar/2020:14:30:37 +0000] "PUT /api/v1/games/5e7b6b0d6ec32c33ec4a5aab HTTP/1.1" 400 67 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:30:37:3037 info: ::1 - - [25/Mar/2020:14:30:37 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:30:39:3039 info: ::1 - - [25/Mar/2020:14:30:39 +0000] "PUT /api/v1/games/5e7b6b0d6ec32c33ec4a5aab HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:30:39:3039 info: ::1 - - [25/Mar/2020:14:30:39 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:35:47:3547 info: Server started on port 4000
+2020-03-25 07:35:47:3547 info: Successfully connect to mongodb
+2020-03-25 07:36:43:3643 info: Server started on port 4000
+2020-03-25 07:36:43:3643 info: Successfully connect to mongodb
+2020-03-25 07:37:36:3736 info: Server started on port 4000
+2020-03-25 07:37:36:3736 info: Successfully connect to mongodb
+2020-03-25 07:37:58:3758 info: Server started on port 4000
+2020-03-25 07:37:58:3758 info: Successfully connect to mongodb
+2020-03-25 07:38:44:3844 info: ::1 - - [25/Mar/2020:14:38:44 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:38:44:3844 info: ::1 - - [25/Mar/2020:14:38:44 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:38:44:3844 info: ::1 - - [25/Mar/2020:14:38:44 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:38:44:3844 info: ::1 - - [25/Mar/2020:14:38:44 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:38:45:3845 info: ::1 - - [25/Mar/2020:14:38:45 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:38:45:3845 error: 400 - There is no updates - [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] - /api/v1/games/5e7b6cf58e80b03fa857df59 - PUT - ::1
+2020-03-25 07:38:45:3845 info: ::1 - - [25/Mar/2020:14:38:45 +0000] "PUT /api/v1/games/5e7b6cf58e80b03fa857df59 HTTP/1.1" 400 3592 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:38:45:3845 info: ::1 - - [25/Mar/2020:14:38:45 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:38:46:3846 info: ::1 - - [25/Mar/2020:14:38:46 +0000] "PUT /api/v1/games/5e7b6cf58e80b03fa857df59 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:38:46:3846 info: ::1 - - [25/Mar/2020:14:38:46 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:39:36:3936 info: Server started on port 4000
+2020-03-25 07:39:36:3936 info: Successfully connect to mongodb
+2020-03-25 07:40:04:404 info: ::1 - - [25/Mar/2020:14:40:04 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:40:04:404 info: ::1 - - [25/Mar/2020:14:40:04 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:40:04:404 info: ::1 - - [25/Mar/2020:14:40:04 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:40:04:404 info: ::1 - - [25/Mar/2020:14:40:04 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:40:05:405 info: ::1 - - [25/Mar/2020:14:40:05 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:40:05:405 error: 400 - {"message":"There is no updates","stack":[{"beforeParse":"at F:\\Projects\\kahoot\\kahoot-api\\src\\routes\\games.js:58:12","callee":"","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/routes/games.js","line":58,"column":12,"calleeShort":"","fileRelative":"src/routes/games.js","fileShort":"src/routes/games.js","fileName":"games.js","thirdParty":false},{"beforeParse":"at Layer.handle [as handle_request] (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\express\\lib\\router\\layer.js:95:5)","callee":"Layer.handle [as handle_request]","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/node_modules/express/lib/router/layer.js","line":95,"column":5,"calleeShort":"handle [as handle_request]","fileRelative":"node_modules/express/lib/router/layer.js","fileShort":"express/lib/router/layer.js","fileName":"layer.js","thirdParty":true},{"beforeParse":"at next (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\express\\lib\\router\\route.js:137:13)","callee":"next","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/node_modules/express/lib/router/route.js","line":137,"column":13,"calleeShort":"next","fileRelative":"node_modules/express/lib/router/route.js","fileShort":"express/lib/router/route.js","fileName":"route.js","thirdParty":true},{"beforeParse":"at validate (F:\\Projects\\kahoot\\kahoot-api\\src\\middlewares\\validation-handler.js:5:32)","callee":"validate","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/middlewares/validation-handler.js","line":5,"column":32,"calleeShort":"validate","fileRelative":"src/middlewares/validation-handler.js","fileShort":"src/middlewares/validation-handler.js","fileName":"validation-handler.js","thirdParty":false},{"beforeParse":"at Layer.handle [as handle_request] (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\express\\lib\\router\\layer.js:95:5)","callee":"Layer.handle [as handle_request]","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/node_modules/express/lib/router/layer.js","line":95,"column":5,"calleeShort":"handle [as handle_request]","fileRelative":"node_modules/express/lib/router/layer.js","fileShort":"express/lib/router/layer.js","fileName":"layer.js","thirdParty":true},{"beforeParse":"at next (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\express\\lib\\router\\route.js:137:13)","callee":"next","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/node_modules/express/lib/router/route.js","line":137,"column":13,"calleeShort":"next","fileRelative":"node_modules/express/lib/router/route.js","fileShort":"express/lib/router/route.js","fileName":"route.js","thirdParty":true},{"beforeParse":"at middleware (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\express-validator\\src\\middlewares\\check.js:15:13)","callee":"middleware","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/node_modules/express-validator/src/middlewares/check.js","line":15,"column":13,"calleeShort":"middleware","fileRelative":"node_modules/express-validator/src/middlewares/check.js","fileShort":"express-validator/src/middlewares/check.js","fileName":"check.js","thirdParty":true},{"beforeParse":"at processTicksAndRejections (internal/process/task_queues.js:94:5)","callee":"processTicksAndRejections","index":false,"native":false,"file":"internal/process/task_queues.js","line":94,"column":5,"calleeShort":"processTicksAndRejections","fileRelative":"internal/process/task_queues.js","fileShort":"internal/process/task_queues.js","fileName":"task_queues.js","thirdParty":false}],"status":400,"type":"ServerError"} - /api/v1/games/5e7b6d451646201700f63b3d - PUT - ::1
+2020-03-25 07:40:05:405 info: ::1 - - [25/Mar/2020:14:40:05 +0000] "PUT /api/v1/games/5e7b6d451646201700f63b3d HTTP/1.1" 400 3592 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:40:05:405 info: ::1 - - [25/Mar/2020:14:40:05 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:40:06:406 info: ::1 - - [25/Mar/2020:14:40:06 +0000] "PUT /api/v1/games/5e7b6d451646201700f63b3d HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:40:06:406 info: ::1 - - [25/Mar/2020:14:40:06 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 07:41:33:4133 info: Server started on port 4000
+2020-03-25 07:41:33:4133 info: Successfully connect to mongodb
+2020-03-25 07:41:44:4144 info: Server started on port 4000
+2020-03-25 07:41:44:4144 info: Successfully connect to mongodb
+2020-03-25 08:03:15:315 info: Server started on port 4000
+2020-03-25 08:03:15:315 info: Successfully connect to mongodb
+2020-03-25 08:03:30:330 info: Server started on port 4000
+2020-03-25 08:03:30:330 info: Successfully connect to mongodb
+2020-03-25 08:06:13:613 info: Server started on port 4000
+2020-03-25 08:06:13:613 info: Successfully connect to mongodb
+2020-03-25 08:06:26:626 info: Server started on port 4000
+2020-03-25 08:06:26:626 info: Successfully connect to mongodb
+2020-03-25 08:07:51:751 info: ::1 - - [25/Mar/2020:15:07:51 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 08:07:51:751 info: ::1 - - [25/Mar/2020:15:07:51 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 08:07:51:751 info: ::1 - - [25/Mar/2020:15:07:51 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 08:07:51:751 info: ::1 - - [25/Mar/2020:15:07:51 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 08:07:52:752 info: ::1 - - [25/Mar/2020:15:07:52 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 08:07:52:752 error: 400 - {"message":"There is no updates","stack":{"beforeParse":"at F:\\Projects\\kahoot\\kahoot-api\\src\\routes\\games.js:58:12","callee":"","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/routes/games.js","line":58,"column":12,"calleeShort":"","fileRelative":"src/routes/games.js","fileShort":"src/routes/games.js","fileName":"games.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e7b73c89635d23510f97c84 - PUT - ::1
+2020-03-25 08:07:52:752 info: ::1 - - [25/Mar/2020:15:07:52 +0000] "PUT /api/v1/games/5e7b73c89635d23510f97c84 HTTP/1.1" 400 409 "-" "PostmanRuntime/7.24.0"
+2020-03-25 08:07:52:752 info: ::1 - - [25/Mar/2020:15:07:52 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 08:07:53:753 info: ::1 - - [25/Mar/2020:15:07:53 +0000] "PUT /api/v1/games/5e7b73c89635d23510f97c84 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 08:07:53:753 error: 404 - {"message":"Game 5e7b6d451646201700f63b3a not found","stack":{"beforeParse":"at getGame (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\game.js:55:20)","callee":"getGame","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/game.js","line":55,"column":20,"calleeShort":"getGame","fileRelative":"src/services/game.js","fileShort":"src/services/game.js","fileName":"game.js","thirdParty":false},"status":404,"type":"ServerError"} - /api/v1/games/5e7b6d451646201700f63b3a - DELETE - ::1
+2020-03-25 08:07:53:753 info: ::1 - - [25/Mar/2020:15:07:53 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 456 "-" "PostmanRuntime/7.24.0"
+2020-03-25 08:07:54:754 info: ::1 - - [25/Mar/2020:15:07:54 +0000] "DELETE /api/v1/games/5e7b73c89635d23510f97c84 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 08:07:54:754 info: ::1 - - [25/Mar/2020:15:07:54 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 08:09:03:93 info: Server started on port 4000
+2020-03-25 08:09:03:93 info: Successfully connect to mongodb
+2020-03-25 08:09:51:951 info: Server started on port 4000
+2020-03-25 08:09:51:951 info: Successfully connect to mongodb
+2020-03-25 08:10:21:1021 info: Server started on port 4000
+2020-03-25 08:10:21:1021 info: Successfully connect to mongodb
+2020-03-25 08:11:51:1151 info: Server started on port 4000
+2020-03-25 08:11:51:1151 info: Successfully connect to mongodb
+2020-03-25 08:12:09:129 info: Server started on port 4000
+2020-03-25 08:12:09:129 info: Successfully connect to mongodb
+2020-03-25 08:14:30:1430 info: Server started on port 4000
+2020-03-25 08:14:30:1430 info: Successfully connect to mongodb
+2020-03-25 08:14:51:1451 info: Server started on port 4000
+2020-03-25 08:14:51:1451 info: Successfully connect to mongodb
+2020-03-25 08:20:28:2028 info: Server started on port 4000
+2020-03-25 08:20:28:2028 info: Successfully connect to mongodb
+2020-03-25 08:21:24:2124 info: Server started on port 4000
+2020-03-25 08:21:24:2124 info: Successfully connect to mongodb
+2020-03-25 08:21:31:2131 info: Server started on port 4000
+2020-03-25 08:21:31:2131 info: Successfully connect to mongodb
+2020-03-25 08:21:52:2152 info: Server started on port 4000
+2020-03-25 08:21:52:2152 info: Successfully connect to mongodb
+2020-03-25 08:22:05:225 info: Server started on port 4000
+2020-03-25 08:22:05:225 info: Successfully connect to mongodb
+2020-03-25 08:23:16:2316 info: Server started on port 4000
+2020-03-25 08:23:16:2316 info: Successfully connect to mongodb
+2020-03-25 10:11:38:1138 info: Server started on port 4000
+2020-03-25 10:11:38:1138 info: Successfully connect to mongodb
+2020-03-25 10:11:48:1148 info: Server started on port 4000
+2020-03-25 10:11:48:1148 info: Successfully connect to mongodb
+2020-03-25 10:11:52:1152 info: Server started on port 4000
+2020-03-25 10:11:52:1152 info: Successfully connect to mongodb
+2020-03-25 10:12:23:1223 info: Server started on port 4000
+2020-03-25 10:12:23:1223 info: Successfully connect to mongodb
+2020-03-25 10:13:00:130 info: Server started on port 4000
+2020-03-25 10:13:00:130 info: Successfully connect to mongodb
+2020-03-25 10:40:28:4028 info: Server started on port 4000
+2020-03-25 10:40:28:4028 info: Successfully connect to mongodb
+2020-03-25 10:43:00:430 info: Server started on port 4000
+2020-03-25 10:43:00:430 info: Successfully connect to mongodb
+2020-03-25 10:45:27:4527 info: Server started on port 4000
+2020-03-25 10:45:27:4527 info: Successfully connect to mongodb
+2020-03-25 10:45:34:4534 info: Server started on port 4000
+2020-03-25 10:45:34:4534 info: Successfully connect to mongodb
+2020-03-25 10:47:50:4750 info: Server started on port 4000
+2020-03-25 10:47:50:4750 info: Successfully connect to mongodb
+2020-03-25 10:51:57:5157 info: Server started on port 4000
+2020-03-25 10:51:57:5157 info: Successfully connect to mongodb
+2020-03-25 10:52:48:5248 info: Server started on port 4000
+2020-03-25 10:52:48:5248 info: Successfully connect to mongodb
+2020-03-25 10:52:54:5254 info: ::1 - - [25/Mar/2020:17:52:54 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:52:54:5254 info: ::1 - - [25/Mar/2020:17:52:54 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:52:54:5254 info: ::1 - - [25/Mar/2020:17:52:54 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:52:54:5254 info: ::1 - - [25/Mar/2020:17:52:54 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:52:55:5255 info: ::1 - - [25/Mar/2020:17:52:55 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:52:55:5255 error: 400 - {"message":"There is no updates","stack":{"beforeParse":"at F:\\Projects\\kahoot\\kahoot-api\\src\\routes\\games.js:58:12","callee":"","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/routes/games.js","line":58,"column":12,"calleeShort":"","fileRelative":"src/routes/games.js","fileShort":"src/routes/games.js","fileName":"games.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e7b9a7711d0b43d388f33e0 - PUT - ::1
+2020-03-25 10:52:55:5255 info: ::1 - - [25/Mar/2020:17:52:55 +0000] "PUT /api/v1/games/5e7b9a7711d0b43d388f33e0 HTTP/1.1" 400 409 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:52:55:5255 info: ::1 - - [25/Mar/2020:17:52:55 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:52:56:5256 info: ::1 - - [25/Mar/2020:17:52:56 +0000] "PUT /api/v1/games/5e7b9a7711d0b43d388f33e0 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:52:56:5256 error: 500 - {"message":"Cannot read property 'coverId' of null","stack":{"beforeParse":"at Object.deleteGame (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\game.js:98:12)","callee":"Object.deleteGame","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/game.js","line":98,"column":12,"calleeShort":"deleteGame","fileRelative":"src/services/game.js","fileShort":"src/services/game.js","fileName":"game.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e7b6d451646201700f63b3a - DELETE - ::1
+2020-03-25 10:52:56:5256 info: ::1 - - [25/Mar/2020:17:52:56 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 500 478 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:52:57:5257 info: ::1 - - [25/Mar/2020:17:52:57 +0000] "DELETE /api/v1/games/5e7b9a7711d0b43d388f33e0 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:52:57:5257 info: ::1 - - [25/Mar/2020:17:52:57 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:54:56:5456 info: Server started on port 4000
+2020-03-25 10:54:56:5456 info: Successfully connect to mongodb
+2020-03-25 10:55:21:5521 info: Server started on port 4000
+2020-03-25 10:55:21:5521 info: Successfully connect to mongodb
+2020-03-25 10:55:26:5526 info: ::1 - - [25/Mar/2020:17:55:26 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:55:27:5527 info: ::1 - - [25/Mar/2020:17:55:27 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:55:27:5527 info: ::1 - - [25/Mar/2020:17:55:27 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:55:27:5527 info: ::1 - - [25/Mar/2020:17:55:27 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:55:28:5528 info: ::1 - - [25/Mar/2020:17:55:28 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:55:28:5528 error: 400 - {"message":"There is no updates","stack":{"beforeParse":"at F:\\Projects\\kahoot\\kahoot-api\\src\\routes\\games.js:58:12","callee":"","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/routes/games.js","line":58,"column":12,"calleeShort":"","fileRelative":"src/routes/games.js","fileShort":"src/routes/games.js","fileName":"games.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e7b9b104e8db92b449e1894 - PUT - ::1
+2020-03-25 10:55:28:5528 info: ::1 - - [25/Mar/2020:17:55:28 +0000] "PUT /api/v1/games/5e7b9b104e8db92b449e1894 HTTP/1.1" 400 409 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:55:28:5528 info: ::1 - - [25/Mar/2020:17:55:28 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:55:29:5529 info: ::1 - - [25/Mar/2020:17:55:29 +0000] "PUT /api/v1/games/5e7b9b104e8db92b449e1894 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:55:29:5529 error: 500 - {"message":"Cannot read property 'coverId' of null","stack":{"beforeParse":"at Object.deleteGame (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\game.js:98:12)","callee":"Object.deleteGame","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/game.js","line":98,"column":12,"calleeShort":"deleteGame","fileRelative":"src/services/game.js","fileShort":"src/services/game.js","fileName":"game.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e7b6d451646201700f63b3a - DELETE - ::1
+2020-03-25 10:55:29:5529 info: ::1 - - [25/Mar/2020:17:55:29 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 500 478 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:55:30:5530 info: ::1 - - [25/Mar/2020:17:55:30 +0000] "DELETE /api/v1/games/5e7b9b104e8db92b449e1894 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:55:30:5530 info: ::1 - - [25/Mar/2020:17:55:30 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:56:15:5615 info: Server started on port 4000
+2020-03-25 10:56:15:5615 info: Successfully connect to mongodb
+2020-03-25 10:56:21:5621 info: Server started on port 4000
+2020-03-25 10:56:21:5621 info: Successfully connect to mongodb
+2020-03-25 10:56:32:5632 info: ::1 - - [25/Mar/2020:17:56:32 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:56:32:5632 info: ::1 - - [25/Mar/2020:17:56:32 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:56:32:5632 info: ::1 - - [25/Mar/2020:17:56:32 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:56:32:5632 info: ::1 - - [25/Mar/2020:17:56:32 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:56:33:5633 info: ::1 - - [25/Mar/2020:17:56:33 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:56:33:5633 error: 400 - {"message":"There is no updates","stack":{"beforeParse":"at F:\\Projects\\kahoot\\kahoot-api\\src\\routes\\games.js:58:12","callee":"","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/routes/games.js","line":58,"column":12,"calleeShort":"","fileRelative":"src/routes/games.js","fileShort":"src/routes/games.js","fileName":"games.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e7b9b515aefbb15fccfa4cb - PUT - ::1
+2020-03-25 10:56:33:5633 info: ::1 - - [25/Mar/2020:17:56:33 +0000] "PUT /api/v1/games/5e7b9b515aefbb15fccfa4cb HTTP/1.1" 400 409 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:56:33:5633 info: ::1 - - [25/Mar/2020:17:56:33 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:56:34:5634 info: ::1 - - [25/Mar/2020:17:56:34 +0000] "PUT /api/v1/games/5e7b9b515aefbb15fccfa4cb HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:56:34:5634 error: 500 - {"message":"Cannot read property 'coverId' of null","stack":{"beforeParse":"at Object.deleteGame (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\game.js:98:12)","callee":"Object.deleteGame","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/game.js","line":98,"column":12,"calleeShort":"deleteGame","fileRelative":"src/services/game.js","fileShort":"src/services/game.js","fileName":"game.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e7b6d451646201700f63b3a - DELETE - ::1
+2020-03-25 10:56:34:5634 info: ::1 - - [25/Mar/2020:17:56:34 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 500 478 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:56:35:5635 info: ::1 - - [25/Mar/2020:17:56:35 +0000] "DELETE /api/v1/games/5e7b9b515aefbb15fccfa4cb HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:56:35:5635 info: ::1 - - [25/Mar/2020:17:56:35 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:57:36:5736 info: Server started on port 4000
+2020-03-25 10:57:36:5736 info: Successfully connect to mongodb
+2020-03-25 10:58:46:5846 info: Server started on port 4000
+2020-03-25 10:58:47:5847 info: Successfully connect to mongodb
+2020-03-25 10:59:13:5913 info: Server started on port 4000
+2020-03-25 10:59:13:5913 info: Successfully connect to mongodb
+2020-03-25 10:59:17:5917 info: Server started on port 4000
+2020-03-25 10:59:17:5917 info: Successfully connect to mongodb
+2020-03-25 10:59:27:5927 info: ::1 - - [25/Mar/2020:17:59:27 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:59:27:5927 info: ::1 - - [25/Mar/2020:17:59:27 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:59:27:5927 info: ::1 - - [25/Mar/2020:17:59:27 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:59:28:5928 info: ::1 - - [25/Mar/2020:17:59:28 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:59:29:5929 info: ::1 - - [25/Mar/2020:17:59:29 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:59:29:5929 error: 400 - {"message":"There is no updates","stack":{"beforeParse":"at F:\\Projects\\kahoot\\kahoot-api\\src\\routes\\games.js:58:12","callee":"","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/routes/games.js","line":58,"column":12,"calleeShort":"","fileRelative":"src/routes/games.js","fileShort":"src/routes/games.js","fileName":"games.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e7b9c01e0e5282284c30aaf - PUT - ::1
+2020-03-25 10:59:29:5929 info: ::1 - - [25/Mar/2020:17:59:29 +0000] "PUT /api/v1/games/5e7b9c01e0e5282284c30aaf HTTP/1.1" 400 409 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:59:29:5929 info: ::1 - - [25/Mar/2020:17:59:29 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:59:30:5930 info: ::1 - - [25/Mar/2020:17:59:30 +0000] "PUT /api/v1/games/5e7b9c01e0e5282284c30aaf HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:59:30:5930 error: 500 - {"message":"Cannot read property 'coverId' of null","stack":{"beforeParse":"at Object.deleteGame (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\game.js:98:12)","callee":"Object.deleteGame","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/game.js","line":98,"column":12,"calleeShort":"deleteGame","fileRelative":"src/services/game.js","fileShort":"src/services/game.js","fileName":"game.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e7b6d451646201700f63b3a - DELETE - ::1
+2020-03-25 10:59:30:5930 info: ::1 - - [25/Mar/2020:17:59:30 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 500 478 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:59:30:5930 info: ::1 - - [25/Mar/2020:17:59:30 +0000] "DELETE /api/v1/games/5e7b9c01e0e5282284c30aaf HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 10:59:30:5930 info: ::1 - - [25/Mar/2020:17:59:30 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:00:00:00 info: Server started on port 4000
+2020-03-25 11:00:00:00 info: Successfully connect to mongodb
+2020-03-25 11:00:13:013 info: Server started on port 4000
+2020-03-25 11:00:13:013 info: Successfully connect to mongodb
+2020-03-25 11:00:30:030 info: Server started on port 4000
+2020-03-25 11:00:30:030 info: Successfully connect to mongodb
+2020-03-25 11:00:39:039 info: ::1 - - [25/Mar/2020:18:00:39 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:00:39:039 info: ::1 - - [25/Mar/2020:18:00:39 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:00:39:039 info: ::1 - - [25/Mar/2020:18:00:39 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:00:39:039 info: ::1 - - [25/Mar/2020:18:00:39 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:00:40:040 info: ::1 - - [25/Mar/2020:18:00:40 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:00:40:040 error: 400 - {"message":"There is no updates","stack":{"beforeParse":"at F:\\Projects\\kahoot\\kahoot-api\\src\\routes\\games.js:58:12","callee":"","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/routes/games.js","line":58,"column":12,"calleeShort":"","fileRelative":"src/routes/games.js","fileShort":"src/routes/games.js","fileName":"games.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e7b9c48bd38c82d9c664ab3 - PUT - ::1
+2020-03-25 11:00:40:040 info: ::1 - - [25/Mar/2020:18:00:40 +0000] "PUT /api/v1/games/5e7b9c48bd38c82d9c664ab3 HTTP/1.1" 400 409 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:00:40:040 info: ::1 - - [25/Mar/2020:18:00:40 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:00:41:041 info: ::1 - - [25/Mar/2020:18:00:41 +0000] "PUT /api/v1/games/5e7b9c48bd38c82d9c664ab3 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:00:41:041 error: 500 - {"message":"Cannot read property 'coverId' of null","stack":{"beforeParse":"at Object.deleteGame (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\game.js:95:12)","callee":"Object.deleteGame","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/game.js","line":95,"column":12,"calleeShort":"deleteGame","fileRelative":"src/services/game.js","fileShort":"src/services/game.js","fileName":"game.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e7b6d451646201700f63b3a - DELETE - ::1
+2020-03-25 11:00:41:041 info: ::1 - - [25/Mar/2020:18:00:41 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 500 478 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:00:42:042 info: ::1 - - [25/Mar/2020:18:00:42 +0000] "DELETE /api/v1/games/5e7b9c48bd38c82d9c664ab3 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:00:42:042 info: ::1 - - [25/Mar/2020:18:00:42 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:01:17:117 info: Server started on port 4000
+2020-03-25 11:01:17:117 info: Successfully connect to mongodb
+2020-03-25 11:01:24:124 info: Server started on port 4000
+2020-03-25 11:01:24:124 info: Successfully connect to mongodb
+2020-03-25 11:01:49:149 info: Server started on port 4000
+2020-03-25 11:01:49:149 info: Successfully connect to mongodb
+2020-03-25 11:01:55:155 info: Server started on port 4000
+2020-03-25 11:01:55:155 info: Successfully connect to mongodb
+2020-03-25 11:02:19:219 info: Server started on port 4000
+2020-03-25 11:02:19:219 info: Successfully connect to mongodb
+2020-03-25 11:03:10:310 info: Server started on port 4000
+2020-03-25 11:03:10:310 info: Successfully connect to mongodb
+2020-03-25 11:04:03:43 info: Server started on port 4000
+2020-03-25 11:04:03:43 info: Successfully connect to mongodb
+2020-03-25 11:04:17:417 info: ::1 - - [25/Mar/2020:18:04:17 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:04:17:417 info: ::1 - - [25/Mar/2020:18:04:17 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:04:17:417 info: ::1 - - [25/Mar/2020:18:04:17 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:04:17:417 info: ::1 - - [25/Mar/2020:18:04:17 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:04:18:418 info: ::1 - - [25/Mar/2020:18:04:18 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:04:19:419 error: 400 - {"message":"There is no updates","stack":{"beforeParse":"at F:\\Projects\\kahoot\\kahoot-api\\src\\routes\\games.js:66:12","callee":"","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/routes/games.js","line":66,"column":12,"calleeShort":"","fileRelative":"src/routes/games.js","fileShort":"src/routes/games.js","fileName":"games.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e7b9d2259375235e82bb275 - PUT - ::1
+2020-03-25 11:04:19:419 info: ::1 - - [25/Mar/2020:18:04:19 +0000] "PUT /api/v1/games/5e7b9d2259375235e82bb275 HTTP/1.1" 400 409 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:04:19:419 info: ::1 - - [25/Mar/2020:18:04:19 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 404 45 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:04:20:420 info: ::1 - - [25/Mar/2020:18:04:20 +0000] "PUT /api/v1/games/5e7b9d2259375235e82bb275 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:04:20:420 info: ::1 - - [25/Mar/2020:18:04:20 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:04:20:420 info: ::1 - - [25/Mar/2020:18:04:20 +0000] "DELETE /api/v1/games/5e7b9d2259375235e82bb275 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:04:20:420 info: ::1 - - [25/Mar/2020:18:04:20 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:10:45:1045 info: Server started on port 4000
+2020-03-25 11:10:45:1045 info: Successfully connect to mongodb
+2020-03-25 11:12:02:122 info: ::1 - - [25/Mar/2020:18:12:02 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:12:02:122 info: ::1 - - [25/Mar/2020:18:12:02 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:12:02:122 info: ::1 - - [25/Mar/2020:18:12:02 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:12:02:122 info: ::1 - - [25/Mar/2020:18:12:02 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:12:03:123 info: ::1 - - [25/Mar/2020:18:12:03 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:12:03:123 error: 400 - {"message":"There is no updates","stack":{"beforeParse":"at F:\\Projects\\kahoot\\kahoot-api\\src\\routes\\games.js:66:12","callee":"","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/routes/games.js","line":66,"column":12,"calleeShort":"","fileRelative":"src/routes/games.js","fileShort":"src/routes/games.js","fileName":"games.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e7b9ef3ee7c2a3a3449c70d - PUT - ::1
+2020-03-25 11:12:03:123 info: ::1 - - [25/Mar/2020:18:12:03 +0000] "PUT /api/v1/games/5e7b9ef3ee7c2a3a3449c70d HTTP/1.1" 400 409 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:12:04:124 info: ::1 - - [25/Mar/2020:18:12:04 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 404 45 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:12:05:125 info: ::1 - - [25/Mar/2020:18:12:05 +0000] "PUT /api/v1/games/5e7b9ef3ee7c2a3a3449c70d HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:12:05:125 info: ::1 - - [25/Mar/2020:18:12:05 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:12:05:125 info: ::1 - - [25/Mar/2020:18:12:05 +0000] "DELETE /api/v1/games/5e7b9ef3ee7c2a3a3449c70d HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 11:12:05:125 info: ::1 - - [25/Mar/2020:18:12:05 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:02:47:247 info: Server started on port 4000
+2020-03-25 12:02:47:247 info: Successfully connect to mongodb
+2020-03-25 12:03:11:311 info: Server started on port 4000
+2020-03-25 12:03:11:311 info: Successfully connect to mongodb
+2020-03-25 12:03:20:320 info: Server started on port 4000
+2020-03-25 12:03:20:320 info: Successfully connect to mongodb
+2020-03-25 12:05:13:513 info: Server started on port 4000
+2020-03-25 12:05:13:513 info: Successfully connect to mongodb
+2020-03-25 12:05:29:529 info: ::1 - - [25/Mar/2020:19:05:29 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:05:29:529 info: ::1 - - [25/Mar/2020:19:05:29 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:05:29:529 info: ::1 - - [25/Mar/2020:19:05:29 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:05:29:529 info: ::1 - - [25/Mar/2020:19:05:29 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:05:30:530 info: ::1 - - [25/Mar/2020:19:05:30 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:05:30:530 error: 400 - {"message":"There is no updates","stack":{"beforeParse":"at F:\\Projects\\kahoot\\kahoot-api\\src\\routes\\games.js:66:12","callee":"","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/routes/games.js","line":66,"column":12,"calleeShort":"","fileRelative":"src/routes/games.js","fileShort":"src/routes/games.js","fileName":"games.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e7bab7a06576d40e8a4eb86 - PUT - ::1
+2020-03-25 12:05:30:530 info: ::1 - - [25/Mar/2020:19:05:30 +0000] "PUT /api/v1/games/5e7bab7a06576d40e8a4eb86 HTTP/1.1" 400 409 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:05:30:530 info: ::1 - - [25/Mar/2020:19:05:30 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 404 45 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:05:32:532 info: ::1 - - [25/Mar/2020:19:05:32 +0000] "PUT /api/v1/games/5e7bab7a06576d40e8a4eb86 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:05:32:532 info: ::1 - - [25/Mar/2020:19:05:32 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:05:32:532 info: ::1 - - [25/Mar/2020:19:05:32 +0000] "DELETE /api/v1/games/5e7bab7a06576d40e8a4eb86 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:05:32:532 info: ::1 - - [25/Mar/2020:19:05:32 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:07:28:728 info: Server started on port 4000
+2020-03-25 12:07:29:729 info: Successfully connect to mongodb
+2020-03-25 12:08:43:843 info: Server started on port 4000
+2020-03-25 12:08:43:843 info: Successfully connect to mongodb
+2020-03-25 12:08:57:857 info: ::1 - - [25/Mar/2020:19:08:57 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:08:57:857 info: ::1 - - [25/Mar/2020:19:08:57 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:08:57:857 info: ::1 - - [25/Mar/2020:19:08:57 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:08:57:857 info: ::1 - - [25/Mar/2020:19:08:57 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:08:57:857 info: ::1 - - [25/Mar/2020:19:08:57 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:08:57:857 info: ::1 - - [25/Mar/2020:19:08:57 +0000] "PUT /api/v1/games/5e7bab7a06576d40e8a4eb86 HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:08:57:857 info: ::1 - - [25/Mar/2020:19:08:57 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:08:57:857 info: ::1 - - [25/Mar/2020:19:08:57 +0000] "PUT /api/v1/games/5e7bab7a06576d40e8a4eb86 HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:08:57:857 info: ::1 - - [25/Mar/2020:19:08:57 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:08:57:857 info: ::1 - - [25/Mar/2020:19:08:57 +0000] "DELETE /api/v1/games/5e7bab7a06576d40e8a4eb86 HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 12:08:57:857 info: ::1 - - [25/Mar/2020:19:08:57 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:06:51:651 info: Server started on port 4000
+2020-03-25 16:06:51:651 info: Successfully connect to mongodb
+2020-03-25 16:07:13:713 info: Server started on port 4000
+2020-03-25 16:07:13:713 info: Successfully connect to mongodb
+2020-03-25 16:07:30:730 info: ::1 - - [25/Mar/2020:23:07:30 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:07:30:730 info: ::1 - - [25/Mar/2020:23:07:30 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:07:30:730 info: ::1 - - [25/Mar/2020:23:07:30 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:07:30:730 info: ::1 - - [25/Mar/2020:23:07:30 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:07:30:730 info: ::1 - - [25/Mar/2020:23:07:30 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:07:30:730 info: ::1 - - [25/Mar/2020:23:07:30 +0000] "PUT /api/v1/games/5e7bab7a06576d40e8a4eb86 HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:07:30:730 info: ::1 - - [25/Mar/2020:23:07:30 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:07:30:730 info: ::1 - - [25/Mar/2020:23:07:30 +0000] "PUT /api/v1/games/5e7bab7a06576d40e8a4eb86 HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:07:30:730 info: ::1 - - [25/Mar/2020:23:07:30 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:07:31:731 info: ::1 - - [25/Mar/2020:23:07:31 +0000] "DELETE /api/v1/games/5e7bab7a06576d40e8a4eb86 HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:07:31:731 info: ::1 - - [25/Mar/2020:23:07:31 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:08:48:848 info: Server started on port 4000
+2020-03-25 16:08:48:848 info: Successfully connect to mongodb
+2020-03-25 16:20:42:2042 info: Server started on port 4000
+2020-03-25 16:20:42:2042 info: Successfully connect to mongodb
+2020-03-25 16:26:19:2619 info: Server started on port 4000
+2020-03-25 16:26:19:2619 info: Successfully connect to mongodb
+2020-03-25 16:26:29:2629 info: Server started on port 4000
+2020-03-25 16:26:29:2629 info: Successfully connect to mongodb
+2020-03-25 16:27:19:2719 info: Server started on port 4000
+2020-03-25 16:27:19:2719 info: Successfully connect to mongodb
+2020-03-25 16:27:45:2745 info: ::1 - - [25/Mar/2020:23:27:45 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:27:45:2745 info: ::1 - - [25/Mar/2020:23:27:45 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:27:45:2745 info: ::1 - - [25/Mar/2020:23:27:45 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:27:46:2746 info: ::1 - - [25/Mar/2020:23:27:46 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:27:46:2746 info: ::1 - - [25/Mar/2020:23:27:46 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:27:47:2747 info: ::1 - - [25/Mar/2020:23:27:47 +0000] "PUT /api/v1/games/5e7be8f28ffcb347d05fdb97 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:27:47:2747 info: ::1 - - [25/Mar/2020:23:27:47 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:27:48:2748 info: ::1 - - [25/Mar/2020:23:27:48 +0000] "PUT /api/v1/games/5e7be8f28ffcb347d05fdb97 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:27:48:2748 info: ::1 - - [25/Mar/2020:23:27:48 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:27:48:2748 info: ::1 - - [25/Mar/2020:23:27:48 +0000] "DELETE /api/v1/games/5e7be8f28ffcb347d05fdb97 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:27:48:2748 info: ::1 - - [25/Mar/2020:23:27:48 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 16:30:13:3013 info: Server started on port 4000
+2020-03-25 16:30:13:3013 info: Successfully connect to mongodb
+2020-03-25 16:31:13:3113 info: Server started on port 4000
+2020-03-25 16:31:13:3113 info: Successfully connect to mongodb
+2020-03-25 17:52:10:5210 info: Server started on port 4000
+2020-03-25 17:52:10:5210 info: Successfully connect to mongodb
+2020-03-25 17:52:25:5225 info: Server started on port 4000
+2020-03-25 17:52:25:5225 info: Successfully connect to mongodb
+2020-03-25 17:52:42:5242 info: Server started on port 4000
+2020-03-25 17:52:42:5242 info: Successfully connect to mongodb
+2020-03-25 17:53:55:5355 info: Server started on port 4000
+2020-03-25 17:53:56:5356 info: Successfully connect to mongodb
+2020-03-25 17:57:50:5750 info: Server started on port 4000
+2020-03-25 17:57:50:5750 info: Successfully connect to mongodb
+2020-03-25 17:58:03:583 info: Server started on port 4000
+2020-03-25 17:58:03:583 info: Successfully connect to mongodb
+2020-03-25 18:02:47:247 info: ::1 - - [26/Mar/2020:01:02:47 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:02:48:248 info: ::1 - - [26/Mar/2020:01:02:48 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:02:48:248 info: ::1 - - [26/Mar/2020:01:02:48 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:02:48:248 info: ::1 - - [26/Mar/2020:01:02:48 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:02:49:249 info: ::1 - - [26/Mar/2020:01:02:49 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:02:49:249 info: ::1 - - [26/Mar/2020:01:02:49 +0000] "PUT /api/v1/games/5e7bff39c7290126b4a8bec0 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:02:49:249 info: ::1 - - [26/Mar/2020:01:02:49 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:02:50:250 info: ::1 - - [26/Mar/2020:01:02:50 +0000] "PUT /api/v1/games/5e7bff39c7290126b4a8bec0 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:02:50:250 info: ::1 - - [26/Mar/2020:01:02:50 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:02:51:251 info: ::1 - - [26/Mar/2020:01:02:51 +0000] "DELETE /api/v1/games/5e7bff39c7290126b4a8bec0 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:02:51:251 info: ::1 - - [26/Mar/2020:01:02:51 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:02:51:251 info: ::1 - - [26/Mar/2020:01:02:51 +0000] "POST /api/v1/games/5e7bff3bc7290126b4a8bec1/questions HTTP/1.1" 422 207 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:02:51:251 info: ::1 - - [26/Mar/2020:01:02:51 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:11:38:1138 info: Server started on port 4000
+2020-03-25 18:11:38:1138 info: Successfully connect to mongodb
+2020-03-25 18:12:45:1245 info: Server started on port 4000
+2020-03-25 18:12:45:1245 info: Successfully connect to mongodb
+2020-03-25 18:12:48:1248 info: Server started on port 4000
+2020-03-25 18:12:48:1248 info: Successfully connect to mongodb
+2020-03-25 18:24:31:2431 info: Server started on port 4000
+2020-03-25 18:24:31:2431 info: Successfully connect to mongodb
+2020-03-25 18:27:11:2711 info: ::1 - - [26/Mar/2020:01:27:11 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:27:11:2711 info: ::1 - - [26/Mar/2020:01:27:11 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:27:11:2711 info: ::1 - - [26/Mar/2020:01:27:11 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:27:11:2711 info: ::1 - - [26/Mar/2020:01:27:11 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:27:12:2712 info: ::1 - - [26/Mar/2020:01:27:12 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:27:12:2712 info: ::1 - - [26/Mar/2020:01:27:12 +0000] "PUT /api/v1/games/5e7c04f009f6f720184fd7a6 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:27:12:2712 info: ::1 - - [26/Mar/2020:01:27:12 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:27:13:2713 info: ::1 - - [26/Mar/2020:01:27:13 +0000] "PUT /api/v1/games/5e7c04f009f6f720184fd7a6 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:27:13:2713 info: ::1 - - [26/Mar/2020:01:27:13 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:27:14:2714 info: ::1 - - [26/Mar/2020:01:27:14 +0000] "DELETE /api/v1/games/5e7c04f009f6f720184fd7a6 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:27:14:2714 info: ::1 - - [26/Mar/2020:01:27:14 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:27:14:2714 info: ::1 - - [26/Mar/2020:01:27:14 +0000] "POST /api/v1/games/5e7c04f209f6f720184fd7a7/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:27:14:2714 error: 500 - {"message":"Cannot read property 'split' of undefined","stack":{"beforeParse":"at authHandler (F:\\Projects\\kahoot\\kahoot-api\\src\\middlewares\\auth-handler.js:12:45)","callee":"authHandler","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/middlewares/auth-handler.js","line":12,"column":45,"calleeShort":"authHandler","fileRelative":"src/middlewares/auth-handler.js","fileShort":"src/middlewares/auth-handler.js","fileName":"auth-handler.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e7c04f209f6f720184fd7a7/questions - POST - ::1
+2020-03-25 18:27:14:2714 info: ::1 - - [26/Mar/2020:01:27:14 +0000] "POST /api/v1/games/5e7c04f209f6f720184fd7a7/questions HTTP/1.1" 500 522 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:27:14:2714 info: ::1 - - [26/Mar/2020:01:27:14 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:25:2825 info: Server started on port 4000
+2020-03-25 18:28:25:2825 info: Successfully connect to mongodb
+2020-03-25 18:28:54:2854 info: ::1 - - [26/Mar/2020:01:28:54 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:54:2854 info: ::1 - - [26/Mar/2020:01:28:54 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:54:2854 info: ::1 - - [26/Mar/2020:01:28:54 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:54:2854 info: ::1 - - [26/Mar/2020:01:28:54 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:55:2855 info: ::1 - - [26/Mar/2020:01:28:55 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:55:2855 info: ::1 - - [26/Mar/2020:01:28:55 +0000] "PUT /api/v1/games/5e7c0557119d043114684aab HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:55:2855 info: ::1 - - [26/Mar/2020:01:28:55 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:56:2856 info: ::1 - - [26/Mar/2020:01:28:56 +0000] "PUT /api/v1/games/5e7c0557119d043114684aab HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:56:2856 info: ::1 - - [26/Mar/2020:01:28:56 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:56:2856 info: ::1 - - [26/Mar/2020:01:28:56 +0000] "DELETE /api/v1/games/5e7c0557119d043114684aab HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:57:2857 info: ::1 - - [26/Mar/2020:01:28:57 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:57:2857 info: ::1 - - [26/Mar/2020:01:28:57 +0000] "POST /api/v1/games/5e7c0559119d043114684aac/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:57:2857 error: 401 - {"message":"You are not allowed to access this resource","stack":{"beforeParse":"at throwUnauthorizeError (F:\\Projects\\kahoot\\kahoot-api\\src\\middlewares\\auth-handler.js:7:9)","callee":"throwUnauthorizeError","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/middlewares/auth-handler.js","line":7,"column":9,"calleeShort":"throwUnauthorizeError","fileRelative":"src/middlewares/auth-handler.js","fileShort":"src/middlewares/auth-handler.js","fileName":"auth-handler.js","thirdParty":false},"status":401,"type":"ServerError"} - /api/v1/games/5e7c0559119d043114684aac/questions - POST - ::1
+2020-03-25 18:28:57:2857 info: ::1 - - [26/Mar/2020:01:28:57 +0000] "POST /api/v1/games/5e7c0559119d043114684aac/questions HTTP/1.1" 401 550 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:28:57:2857 info: ::1 - - [26/Mar/2020:01:28:57 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:13:2913 info: ::1 - - [26/Mar/2020:01:29:13 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:13:2913 info: ::1 - - [26/Mar/2020:01:29:13 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:13:2913 info: ::1 - - [26/Mar/2020:01:29:13 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:13:2913 info: ::1 - - [26/Mar/2020:01:29:13 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:14:2914 info: ::1 - - [26/Mar/2020:01:29:14 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:14:2914 info: ::1 - - [26/Mar/2020:01:29:14 +0000] "PUT /api/v1/games/5e7c056a119d043114684aae HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:14:2914 info: ::1 - - [26/Mar/2020:01:29:14 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:15:2915 info: ::1 - - [26/Mar/2020:01:29:15 +0000] "PUT /api/v1/games/5e7c056a119d043114684aae HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:15:2915 info: ::1 - - [26/Mar/2020:01:29:15 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:16:2916 info: ::1 - - [26/Mar/2020:01:29:16 +0000] "DELETE /api/v1/games/5e7c056a119d043114684aae HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:17:2917 info: ::1 - - [26/Mar/2020:01:29:17 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:17:2917 info: ::1 - - [26/Mar/2020:01:29:17 +0000] "POST /api/v1/games/5e7c056d119d043114684aaf/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:17:2917 error: 500 - {"errors":{"position":{"message":"Path `position` is required.","name":"ValidatorError","properties":{"message":"Path `position` is required.","type":"required","path":"position"},"kind":"required","path":"position"}},"message":"Answer validation failed: position: Path `position` is required.","stack":{"beforeParse":"at new ValidationError (F:\\Projects\\kahoot\\kahoot-api\\node_modules\\mongoose\\lib\\error\\validation.js:31:11)","callee":"new ValidationError","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/node_modules/mongoose/lib/error/validation.js","line":31,"column":11,"calleeShort":"new ValidationError","fileRelative":"node_modules/mongoose/lib/error/validation.js","fileShort":"mongoose/lib/error/validation.js","fileName":"validation.js","thirdParty":true},"status":500,"type":"ServerError"} - /api/v1/games/5e7c056d119d043114684aaf/questions - POST - ::1
+2020-03-25 18:29:17:2917 info: ::1 - - [26/Mar/2020:01:29:17 +0000] "POST /api/v1/games/5e7c056d119d043114684aaf/questions HTTP/1.1" 500 828 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:29:17:2917 info: ::1 - - [26/Mar/2020:01:29:17 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:31:53:3153 info: Server started on port 4000
+2020-03-25 18:31:53:3153 info: Successfully connect to mongodb
+2020-03-25 18:43:29:4329 info: Server started on port 4000
+2020-03-25 18:43:29:4329 info: Successfully connect to mongodb
+2020-03-25 18:44:45:4445 info: Server started on port 4000
+2020-03-25 18:44:45:4445 info: Successfully connect to mongodb
+2020-03-25 18:45:53:4553 info: Server started on port 4000
+2020-03-25 18:45:53:4553 info: Successfully connect to mongodb
+2020-03-25 18:46:31:4631 info: Server started on port 4000
+2020-03-25 18:46:31:4631 info: Successfully connect to mongodb
+2020-03-25 18:49:58:4958 info: ::1 - - [26/Mar/2020:01:49:58 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:49:59:4959 info: ::1 - - [26/Mar/2020:01:49:59 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:49:59:4959 info: ::1 - - [26/Mar/2020:01:49:59 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:49:59:4959 info: ::1 - - [26/Mar/2020:01:49:59 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:50:00:500 info: ::1 - - [26/Mar/2020:01:50:00 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:50:00:500 info: ::1 - - [26/Mar/2020:01:50:00 +0000] "PUT /api/v1/games/5e7c0a48bb9f2b2ca019199e HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:50:00:500 info: ::1 - - [26/Mar/2020:01:50:00 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:50:01:501 info: ::1 - - [26/Mar/2020:01:50:01 +0000] "PUT /api/v1/games/5e7c0a48bb9f2b2ca019199e HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:50:01:501 info: ::1 - - [26/Mar/2020:01:50:01 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:50:01:501 info: ::1 - - [26/Mar/2020:01:50:01 +0000] "DELETE /api/v1/games/5e7c0a48bb9f2b2ca019199e HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:50:02:502 info: ::1 - - [26/Mar/2020:01:50:02 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:50:02:502 info: ::1 - - [26/Mar/2020:01:50:02 +0000] "POST /api/v1/games/5e7c0a4abb9f2b2ca019199f/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:50:02:502 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:25:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":25,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e7c0a4abb9f2b2ca019199f/questions - POST - ::1
+2020-03-25 18:50:02:502 info: ::1 - - [26/Mar/2020:01:50:02 +0000] "POST /api/v1/games/5e7c0a4abb9f2b2ca019199f/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:50:02:502 info: ::1 - - [26/Mar/2020:01:50:02 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:01:511 info: Server started on port 4000
+2020-03-25 18:51:01:511 info: Successfully connect to mongodb
+2020-03-25 18:51:09:519 info: ::1 - - [26/Mar/2020:01:51:09 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:09:519 info: ::1 - - [26/Mar/2020:01:51:09 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:09:519 info: ::1 - - [26/Mar/2020:01:51:09 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:09:519 info: ::1 - - [26/Mar/2020:01:51:09 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:10:5110 info: ::1 - - [26/Mar/2020:01:51:10 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:10:5110 info: ::1 - - [26/Mar/2020:01:51:10 +0000] "PUT /api/v1/games/5e7c0a8e33d24347140937db HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:10:5110 info: ::1 - - [26/Mar/2020:01:51:10 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:12:5112 info: ::1 - - [26/Mar/2020:01:51:12 +0000] "PUT /api/v1/games/5e7c0a8e33d24347140937db HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:12:5112 info: ::1 - - [26/Mar/2020:01:51:12 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:12:5112 info: ::1 - - [26/Mar/2020:01:51:12 +0000] "DELETE /api/v1/games/5e7c0a8e33d24347140937db HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:13:5113 info: ::1 - - [26/Mar/2020:01:51:13 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:13:5113 info: ::1 - - [26/Mar/2020:01:51:13 +0000] "POST /api/v1/games/5e7c0a9133d24347140937dc/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:13:5113 info: ::1 - - [26/Mar/2020:01:51:13 +0000] "POST /api/v1/games/5e7c0a9133d24347140937dc/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:51:13:5113 info: ::1 - - [26/Mar/2020:01:51:13 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:41:5341 info: ::1 - - [26/Mar/2020:01:53:41 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:41:5341 info: ::1 - - [26/Mar/2020:01:53:41 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:41:5341 info: ::1 - - [26/Mar/2020:01:53:41 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:41:5341 info: ::1 - - [26/Mar/2020:01:53:41 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:42:5342 info: ::1 - - [26/Mar/2020:01:53:42 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:42:5342 info: ::1 - - [26/Mar/2020:01:53:42 +0000] "PUT /api/v1/games/5e7c0b2633d24347140937e2 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:42:5342 info: ::1 - - [26/Mar/2020:01:53:42 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:43:5343 info: ::1 - - [26/Mar/2020:01:53:43 +0000] "PUT /api/v1/games/5e7c0b2633d24347140937e2 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:43:5343 info: ::1 - - [26/Mar/2020:01:53:43 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:44:5344 info: ::1 - - [26/Mar/2020:01:53:44 +0000] "DELETE /api/v1/games/5e7c0b2633d24347140937e2 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:45:5345 info: ::1 - - [26/Mar/2020:01:53:45 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:45:5345 info: ::1 - - [26/Mar/2020:01:53:45 +0000] "POST /api/v1/games/5e7c0b2933d24347140937e3/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:45:5345 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:25:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":25,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e7c0b2933d24347140937e3/questions - POST - ::1
+2020-03-25 18:53:45:5345 info: ::1 - - [26/Mar/2020:01:53:45 +0000] "POST /api/v1/games/5e7c0b2933d24347140937e3/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:45:5345 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:14:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":14,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e7c0b2933d24347140937e3/questions - POST - ::1
+2020-03-25 18:53:45:5345 info: ::1 - - [26/Mar/2020:01:53:45 +0000] "POST /api/v1/games/5e7c0b2933d24347140937e3/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:45:5345 info: ::1 - - [26/Mar/2020:01:53:45 +0000] "POST /api/v1/games/5e7c0b2933d24347140937e3/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-03-25 18:53:45:5345 info: ::1 - - [26/Mar/2020:01:53:45 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"

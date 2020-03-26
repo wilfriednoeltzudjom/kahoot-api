@@ -1,12 +1,12 @@
 const bcrypt = require('bcryptjs');
-const Joi = require('joi');
+const joi = require('joi');
 
 const { User, userValidator } = require('../models/user');
 
 const { BadRequestError } = require('../utils/errors');
 
 const signUp = async params => {
-  await Joi.validate(params, userValidator);
+  await joi.validate(params, userValidator);
 
   const { username, password } = params;
 

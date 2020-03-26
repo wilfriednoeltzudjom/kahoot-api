@@ -1,10 +1,8 @@
-const Joi = require('joi');
-
-const { Game, gameValidator } = require('../models/game');
+const { Game } = require('../models/game');
 
 const questionService = require('./question');
 
-const { BadRequestError } = require('../utils/errors');
+const cloudinary = require('../helpers/cloudinary');
 
 const populateParams = [
   {
@@ -32,15 +30,13 @@ const generateGamePin = user => {
   return pin.join('');
 };
 
-const createGame = async (user, params, cover) => {
-  await Joi.validate(params, gameValidator);
-
+const createGame = async (user, params, { cover, coverId }) => {
   const game = new Game({
     ...params,
     user: user._id,
     pin: generateGamePin(user)
   });
-  if (cover) Object.assign(game, cover);
+  if (cover) Object.assign(game, { cover, coverId });
   await game.save();
 
   return game;
@@ -57,21 +53,14 @@ const getGame = async gameId => {
   return game;
 };
 
-const updateGame = async (gameId, params, cover) => {
+const updateGame = async (gameId, params, { cover, coverId }) => {
   const game = await getGame(gameId);
 
-  if (!params) throw new BadRequestError('There is no updates required');
-
-  await Joi.validate(
-    params,
-    Joi.object().keys({
-      title: Joi.string(),
-      description: Joi.string()
-    })
-  );
-
   Object.assign(game, params);
-  if (cover) Object.assign(game, cover);
+  if (cover) {
+    if (game.coverId) await cloudinary.uploader.destroy(game.coverId);
+    Object.assign(game, { cover, coverId });
+  }
   await game.save();
 
   return game;
@@ -87,6 +76,8 @@ const addQuestionToGame = async (gameId, questionId) => {
 };
 
 const deleteGame = async gameId => {
+  const game = await getGame(gameId);
+
   // Delete questions and answers
   const questions = await questionService.getQuestions(gameId);
   if (questions.length > 0) {
@@ -101,6 +92,7 @@ const deleteGame = async gameId => {
   }
 
   // Delete game
+  if (game.coverId) await cloudinary.uploader.destroy(game.coverId);
   await Game.deleteOne({ _id: gameId });
 };
 

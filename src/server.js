@@ -21,6 +21,8 @@ require('./helpers/passport');
 // Routes
 const authRouter = require('./routes/auth');
 const gameRouter = require('./routes/games');
+const playerRouter = require('./routes/players');
+const dbRouter = require('./routes/db');
 
 // Middlewares
 const loggingHandler = require('./middlewares/logging-handler');
@@ -33,6 +35,7 @@ const logger = require('./helpers/logger');
 // Connect to mongodb
 mongoose
   .connect(process.env.MONGODB_URI, {
+    useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
@@ -54,6 +57,10 @@ app.use(cors());
 // Define routes
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/games', authHandler, gameRouter);
+app.use('/api/v1/players', authHandler, playerRouter);
+
+// Test routes only
+if (NODE_ENV === 'test') app.use('/api/v1/db', dbRouter);
 
 // Error handler
 app.use(errorHandler);
@@ -61,6 +68,7 @@ app.use(errorHandler);
 // Start server
 const { PORT } = process.env;
 app.listen(PORT, () => {
+  if (NODE_ENV !== 'production') console.clear();
   logger.info(`Server started on port ${PORT}`);
 });
 

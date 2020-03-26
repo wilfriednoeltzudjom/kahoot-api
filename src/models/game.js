@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const uuid = require('uuid');
-const Joi = require('joi');
 
 const faker = require('../helpers/faker');
 
@@ -26,6 +25,9 @@ const gameSchema = new Schema({
     unique: true
   },
   cover: {
+    type: String
+  },
+  coverId: {
     type: String
   },
   status: {
@@ -54,17 +56,6 @@ const gameSchema = new Schema({
 
 const Game = mongoose.models.Game || mongoose.model('Game', gameSchema);
 
-// Validator
-const gameValidator = Joi.object().keys({
-  title: Joi.string()
-    .required()
-    .error(() => ({
-      message: 'Title is required'
-    })),
-  description: Joi.string(),
-  pin: Joi.string()
-});
-
 // Factory
 const GameFactory = {
   generate({ skipTitle = false }) {
@@ -89,4 +80,4 @@ const GameFactory = {
   }
 };
 
-module.exports = { Game, gameValidator, GameFactory };
+module.exports = { Game, GameFactory };
