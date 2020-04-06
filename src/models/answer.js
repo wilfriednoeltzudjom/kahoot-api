@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const uuid = require('uuid');
-const Joi = require('joi');
 
 const faker = require('../helpers/faker');
 
@@ -13,7 +12,7 @@ const answerSchema = new Schema({
   },
   uuid: {
     type: String,
-    default: uuid.v1()
+    default: () => uuid.v1()
   },
   title: {
     type: String,
@@ -35,22 +34,6 @@ const answerSchema = new Schema({
 });
 
 const Answer = mongoose.models.Answer || mongoose.model('Answer', answerSchema);
-
-// Validator
-const answerValidator = Joi.object().keys({
-  title: Joi.string()
-    .required()
-    .error(() => ({
-      message: 'Title is required'
-    })),
-  isCorrect: Joi.boolean(),
-  position: Joi.number()
-    .valid([1, 2, 3, 4])
-    .required()
-    .error(() => ({
-      message: 'Position is required'
-    }))
-});
 
 // Factory
 const AnswerFactory = {
@@ -90,4 +73,4 @@ const AnswerFactory = {
   }
 };
 
-module.exports = { Answer, answerValidator, AnswerFactory };
+module.exports = { Answer, AnswerFactory };

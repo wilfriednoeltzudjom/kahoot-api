@@ -2,6 +2,8 @@ const { Question } = require('../models/question');
 const { Answer } = require('../models/answer');
 const { Game } = require('../models/game');
 
+const { deleteImage } = require('../helpers/cloudinary');
+
 const { BadRequestError } = require('../utils/errors');
 
 const checkDuplicatePositionsInAnswers = (answers = [], index) => {
@@ -32,7 +34,7 @@ const getQuestion = async questionId => {
   return question;
 };
 
-const createQuestion = async (gameId, params, image) => {
+const createQuestion = async (gameId, params, { image, imageId } = {}) => {
   const { answers, ...details } = params;
 
   checkAnswers(answers);
@@ -53,7 +55,7 @@ const createQuestion = async (gameId, params, image) => {
   Object.assign(question, {
     answers: answersArray.map(answer => answer._id)
   });
-  if (image) Object.assign(question, image);
+  if (image) Object.assign(question, { image, imageId });
 
   await question.save();
   await Answer.insertMany(answersArray);
@@ -67,23 +69,24 @@ const createQuestion = async (gameId, params, image) => {
   return getQuestion(question._id);
 };
 
-const getQuestions = gameId => {
-  return Question.find({
-    game: gameId
-  });
-};
+const getQuestions = gameId => Question.find({ game: gameId });
 
-const updateQuestion = async (questionId, params, image) => {
+const updateQuestion = async (questionId, params, { image, imageId } = {}) => {
   const question = await getQuestion(questionId);
 
   Object.assign(question, params);
-  if (image) Object.assign(question, image);
+  if (image) {
+    if (question.imageId) await deleteImage(question.imageId);
+    Object.assign(question, { image, imageId });
+  }
   await question.save();
 
   return question;
 };
 
 const deleteQuestion = async ({ gameId, questionId }) => {
+  const question = await getQuestion(questionId);
+
   await Game.updateOne(
     {
       _id: gameId
@@ -93,6 +96,9 @@ const deleteQuestion = async ({ gameId, questionId }) => {
   await Answer.deleteMany({
     question: questionId
   });
+
+  // Delete question
+  if (question.imageId) await deleteImage(question.imageId);
   await Question.deleteOne({ _id: questionId });
 };
 

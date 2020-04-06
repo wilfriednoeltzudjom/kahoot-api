@@ -20,7 +20,7 @@ const createQuestion = () => [
     .withMessage('Title is required'),
   body('points')
     .isInt({
-      min: 100,
+      min: 0,
       max: 2000
     })
     .withMessage('Points must be between 100 and 1000'),

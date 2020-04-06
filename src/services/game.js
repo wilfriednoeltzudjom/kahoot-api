@@ -2,7 +2,7 @@ const { Game } = require('../models/game');
 
 const questionService = require('./question');
 
-const cloudinary = require('../helpers/cloudinary');
+const { deleteImage } = require('../helpers/cloudinary');
 
 const populateParams = [
   {
@@ -30,7 +30,7 @@ const generateGamePin = user => {
   return pin.join('');
 };
 
-const createGame = async (user, params, { cover, coverId }) => {
+const createGame = async (user, params, { cover, coverId } = {}) => {
   const game = new Game({
     ...params,
     user: user._id,
@@ -42,23 +42,17 @@ const createGame = async (user, params, { cover, coverId }) => {
   return game;
 };
 
-const getGames = async userId => {
-  return Game.find({
-    user: userId
-  }).populate(populateParams);
-};
+const getGames = async userId =>
+  Game.find({ user: userId }).populate(populateParams);
 
-const getGame = async gameId => {
-  const game = await Game.findById(gameId).populate(populateParams);
-  return game;
-};
+const getGame = async gameId => Game.findById(gameId).populate(populateParams);
 
-const updateGame = async (gameId, params, { cover, coverId }) => {
+const updateGame = async (gameId, params, { cover, coverId } = {}) => {
   const game = await getGame(gameId);
 
   Object.assign(game, params);
   if (cover) {
-    if (game.coverId) await cloudinary.uploader.destroy(game.coverId);
+    if (game.coverId) await deleteImage(game.coverId);
     Object.assign(game, { cover, coverId });
   }
   await game.save();
@@ -92,7 +86,7 @@ const deleteGame = async gameId => {
   }
 
   // Delete game
-  if (game.coverId) await cloudinary.uploader.destroy(game.coverId);
+  if (game.coverId) await deleteImage(game.coverId);
   await Game.deleteOne({ _id: gameId });
 };
 

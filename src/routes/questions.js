@@ -24,7 +24,10 @@ router.post(
   resourceHandler,
   (req, res, next) => {
     questionService
-      .createQuestion(req.params.gameId, req.body, req.downloadUrl)
+      .createQuestion(req.params.gameId, req.body, {
+        image: req.downloadUrl,
+        imageId: req.downloadId
+      })
       .then(question => res.json(question))
       .catch(error => next(error));
   }
@@ -45,7 +48,10 @@ router.put(
     }
 
     questionService
-      .updateQuestion(req.params.questionId, req.body, req.downloadUrl)
+      .updateQuestion(req.params.questionId, req.body, {
+        image: req.downloadUrl,
+        imageId: req.downloadId
+      })
       .then(question => res.json(question))
       .catch(error => next(error));
   }

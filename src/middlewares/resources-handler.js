@@ -4,7 +4,6 @@ const { Answer } = require('../models/answer');
 
 const resourcesHandler = async (req, res, next) => {
   const { gameId, questionId, answerId } = req.params;
-
   if (gameId) {
     const game = await Game.findById(gameId);
     if (!game)

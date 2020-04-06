@@ -12,7 +12,7 @@ const questionSchema = new Schema({
   },
   uuid: {
     type: String,
-    default: uuid.v1()
+    default: () => uuid.v1()
   },
   title: {
     type: String,
@@ -22,11 +22,14 @@ const questionSchema = new Schema({
   imageId: String,
   points: {
     type: Number,
-    required: true
+    required: true,
+    min: 0,
+    max: 2000
   },
   time: {
     type: Number,
-    required: true
+    required: true,
+    min: 5
   },
   answers: [
     {

@@ -1395,3 +1395,731 @@ Use mongoose.model(name, schema)
 2020-03-25 18:53:45:5345 info: ::1 - - [26/Mar/2020:01:53:45 +0000] "POST /api/v1/games/5e7c0b2933d24347140937e3/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
 2020-03-25 18:53:45:5345 info: ::1 - - [26/Mar/2020:01:53:45 +0000] "POST /api/v1/games/5e7c0b2933d24347140937e3/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
 2020-03-25 18:53:45:5345 info: ::1 - - [26/Mar/2020:01:53:45 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:02:92 info: Server started on port 4000
+2020-04-01 05:09:02:92 info: Successfully connect to mongodb
+2020-04-01 05:09:09:99 info: ::1 - - [01/Apr/2020:12:09:09 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:09:99 info: ::1 - - [01/Apr/2020:12:09:09 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:09:99 info: ::1 - - [01/Apr/2020:12:09:09 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:09:99 info: ::1 - - [01/Apr/2020:12:09:09 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:11:911 info: ::1 - - [01/Apr/2020:12:09:11 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:11:911 info: ::1 - - [01/Apr/2020:12:09:11 +0000] "PUT /api/v1/games/5e848467eefa742594a4dd34 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:11:911 info: ::1 - - [01/Apr/2020:12:09:11 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:12:912 info: ::1 - - [01/Apr/2020:12:09:12 +0000] "PUT /api/v1/games/5e848467eefa742594a4dd34 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:12:912 info: ::1 - - [01/Apr/2020:12:09:12 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:13:913 info: ::1 - - [01/Apr/2020:12:09:13 +0000] "DELETE /api/v1/games/5e848467eefa742594a4dd34 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:14:914 info: ::1 - - [01/Apr/2020:12:09:14 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:14:914 info: ::1 - - [01/Apr/2020:12:09:14 +0000] "POST /api/v1/games/5e84846aeefa742594a4dd35/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:14:914 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:25:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":25,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e84846aeefa742594a4dd35/questions - POST - ::1
+2020-04-01 05:09:14:914 info: ::1 - - [01/Apr/2020:12:09:14 +0000] "POST /api/v1/games/5e84846aeefa742594a4dd35/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:14:914 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:14:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":14,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e84846aeefa742594a4dd35/questions - POST - ::1
+2020-04-01 05:09:14:914 info: ::1 - - [01/Apr/2020:12:09:14 +0000] "POST /api/v1/games/5e84846aeefa742594a4dd35/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:14:914 info: ::1 - - [01/Apr/2020:12:09:14 +0000] "POST /api/v1/games/5e84846aeefa742594a4dd35/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:09:14:914 info: ::1 - - [01/Apr/2020:12:09:14 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-01 05:18:19:1819 info: Server started on port 4000
+2020-04-01 05:18:19:1819 info: Successfully connect to mongodb
+2020-04-01 05:19:12:1912 info: Server started on port 4000
+2020-04-01 05:19:12:1912 info: Successfully connect to mongodb
+2020-04-01 05:28:39:2839 info: Server started on port 4000
+2020-04-01 05:28:40:2840 info: Successfully connect to mongodb
+2020-04-03 15:44:15:4415 info: Server started on port 4000
+2020-04-03 15:44:15:4415 info: Successfully connect to mongodb
+2020-04-03 15:44:21:4421 info: ::1 - - [03/Apr/2020:22:44:21 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:22:4422 info: ::1 - - [03/Apr/2020:22:44:22 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:22:4422 info: ::1 - - [03/Apr/2020:22:44:22 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:22:4422 info: ::1 - - [03/Apr/2020:22:44:22 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:23:4423 info: ::1 - - [03/Apr/2020:22:44:23 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:23:4423 info: ::1 - - [03/Apr/2020:22:44:23 +0000] "PUT /api/v1/games/5e87bc47d4f48a2ff88e3b9d HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:23:4423 info: ::1 - - [03/Apr/2020:22:44:23 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:24:4424 info: ::1 - - [03/Apr/2020:22:44:24 +0000] "PUT /api/v1/games/5e87bc47d4f48a2ff88e3b9d HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:24:4424 info: ::1 - - [03/Apr/2020:22:44:24 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:25:4425 info: ::1 - - [03/Apr/2020:22:44:25 +0000] "DELETE /api/v1/games/5e87bc47d4f48a2ff88e3b9d HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:26:4426 info: ::1 - - [03/Apr/2020:22:44:26 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:26:4426 info: ::1 - - [03/Apr/2020:22:44:26 +0000] "POST /api/v1/games/5e87bc4ad4f48a2ff88e3b9e/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:26:4426 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:25:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":25,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e87bc4ad4f48a2ff88e3b9e/questions - POST - ::1
+2020-04-03 15:44:26:4426 info: ::1 - - [03/Apr/2020:22:44:26 +0000] "POST /api/v1/games/5e87bc4ad4f48a2ff88e3b9e/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:26:4426 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:14:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":14,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e87bc4ad4f48a2ff88e3b9e/questions - POST - ::1
+2020-04-03 15:44:26:4426 info: ::1 - - [03/Apr/2020:22:44:26 +0000] "POST /api/v1/games/5e87bc4ad4f48a2ff88e3b9e/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:26:4426 info: ::1 - - [03/Apr/2020:22:44:26 +0000] "POST /api/v1/games/5e87bc4ad4f48a2ff88e3b9e/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:26:4426 info: ::1 - - [03/Apr/2020:22:44:26 +0000] "POST /api/v1/games/5e87bc4ad4f48a2ff88e3b9e/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:44:26:4426 info: ::1 - - [03/Apr/2020:22:44:26 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:45:11:4511 info: Server started on port 4000
+2020-04-03 15:45:11:4511 info: Successfully connect to mongodb
+2020-04-03 15:45:20:4520 info: Server started on port 4000
+2020-04-03 15:45:20:4520 info: Successfully connect to mongodb
+2020-04-03 15:45:23:4523 info: Server started on port 4000
+2020-04-03 15:45:23:4523 info: Successfully connect to mongodb
+2020-04-03 15:46:10:4610 info: Server started on port 4000
+2020-04-03 15:46:10:4610 info: Successfully connect to mongodb
+2020-04-03 15:46:15:4615 info: ::1 - - [03/Apr/2020:22:46:15 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:16:4616 info: ::1 - - [03/Apr/2020:22:46:16 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:16:4616 info: ::1 - - [03/Apr/2020:22:46:16 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:16:4616 info: ::1 - - [03/Apr/2020:22:46:16 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:17:4617 info: ::1 - - [03/Apr/2020:22:46:17 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:17:4617 info: ::1 - - [03/Apr/2020:22:46:17 +0000] "PUT /api/v1/games/5e87bcb95473b22350f281ec HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:17:4617 info: ::1 - - [03/Apr/2020:22:46:17 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:18:4618 info: ::1 - - [03/Apr/2020:22:46:18 +0000] "PUT /api/v1/games/5e87bcb95473b22350f281ec HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:18:4618 info: ::1 - - [03/Apr/2020:22:46:18 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:18:4618 info: ::1 - - [03/Apr/2020:22:46:18 +0000] "DELETE /api/v1/games/5e87bcb95473b22350f281ec HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:19:4619 info: ::1 - - [03/Apr/2020:22:46:19 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:19:4619 info: ::1 - - [03/Apr/2020:22:46:19 +0000] "POST /api/v1/games/5e87bcbb5473b22350f281ed/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:19:4619 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:25:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":25,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e87bcbb5473b22350f281ed/questions - POST - ::1
+2020-04-03 15:46:19:4619 info: ::1 - - [03/Apr/2020:22:46:19 +0000] "POST /api/v1/games/5e87bcbb5473b22350f281ed/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:19:4619 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:14:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":14,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e87bcbb5473b22350f281ed/questions - POST - ::1
+2020-04-03 15:46:19:4619 info: ::1 - - [03/Apr/2020:22:46:19 +0000] "POST /api/v1/games/5e87bcbb5473b22350f281ed/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:19:4619 info: ::1 - - [03/Apr/2020:22:46:19 +0000] "POST /api/v1/games/5e87bcbb5473b22350f281ed/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:19:4619 info: ::1 - - [03/Apr/2020:22:46:19 +0000] "POST /api/v1/games/5e87bcbb5473b22350f281ed/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:46:19:4619 info: ::1 - - [03/Apr/2020:22:46:19 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-03 15:58:29:5829 info: Server started on port 4000
+2020-04-03 15:58:29:5829 info: Successfully connect to mongodb
+2020-04-03 15:59:29:5929 info: Server started on port 4000
+2020-04-03 15:59:29:5929 info: Successfully connect to mongodb
+2020-04-03 15:59:44:5944 info: Server started on port 4000
+2020-04-03 15:59:44:5944 info: Successfully connect to mongodb
+2020-04-03 16:02:30:230 info: Server started on port 4000
+2020-04-03 16:02:30:230 info: Successfully connect to mongodb
+2020-04-03 16:03:31:331 info: ::1 - - [03/Apr/2020:23:03:31 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:32:332 info: ::1 - - [03/Apr/2020:23:03:32 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:32:332 info: ::1 - - [03/Apr/2020:23:03:32 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:32:332 info: ::1 - - [03/Apr/2020:23:03:32 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:33:333 info: ::1 - - [03/Apr/2020:23:03:33 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:33:333 info: ::1 - - [03/Apr/2020:23:03:33 +0000] "PUT /api/v1/games/5e87c0c5ff3d98144c69668f HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:33:333 info: ::1 - - [03/Apr/2020:23:03:33 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:34:334 info: ::1 - - [03/Apr/2020:23:03:34 +0000] "PUT /api/v1/games/5e87c0c5ff3d98144c69668f HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:34:334 error: 500 - {"message":"Cannot read property 'coverId' of null","stack":{"beforeParse":"at Object.deleteGame (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\game.js:95:12)","callee":"Object.deleteGame","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/game.js","line":95,"column":12,"calleeShort":"deleteGame","fileRelative":"src/services/game.js","fileShort":"src/services/game.js","fileName":"game.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e7b6d451646201700f63b3a - DELETE - ::1
+2020-04-03 16:03:34:334 info: ::1 - - [03/Apr/2020:23:03:34 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 500 478 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:35:335 info: ::1 - - [03/Apr/2020:23:03:35 +0000] "DELETE /api/v1/games/5e87c0c5ff3d98144c69668f HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:36:336 info: ::1 - - [03/Apr/2020:23:03:36 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:36:336 info: ::1 - - [03/Apr/2020:23:03:36 +0000] "POST /api/v1/games/5e87c0c8ff3d98144c696690/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:36:336 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:25:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":25,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e87c0c8ff3d98144c696690/questions - POST - ::1
+2020-04-03 16:03:36:336 info: ::1 - - [03/Apr/2020:23:03:36 +0000] "POST /api/v1/games/5e87c0c8ff3d98144c696690/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:36:336 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:14:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":14,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e87c0c8ff3d98144c696690/questions - POST - ::1
+2020-04-03 16:03:36:336 info: ::1 - - [03/Apr/2020:23:03:36 +0000] "POST /api/v1/games/5e87c0c8ff3d98144c696690/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:36:336 info: ::1 - - [03/Apr/2020:23:03:36 +0000] "POST /api/v1/games/5e87c0c8ff3d98144c696690/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:36:336 info: ::1 - - [03/Apr/2020:23:03:36 +0000] "POST /api/v1/games/5e87c0c8ff3d98144c696690/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:03:36:336 info: ::1 - - [03/Apr/2020:23:03:36 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:46:546 info: Server started on port 4000
+2020-04-03 16:05:46:546 info: Successfully connect to mongodb
+2020-04-03 16:05:53:553 info: ::1 - - [03/Apr/2020:23:05:53 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:53:553 info: ::1 - - [03/Apr/2020:23:05:53 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:53:553 info: ::1 - - [03/Apr/2020:23:05:53 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:53:553 info: ::1 - - [03/Apr/2020:23:05:53 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:54:554 info: ::1 - - [03/Apr/2020:23:05:54 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:54:554 info: ::1 - - [03/Apr/2020:23:05:54 +0000] "PUT /api/v1/games/5e87c152d9f2193a9c72693c HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:54:554 info: ::1 - - [03/Apr/2020:23:05:54 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:55:555 info: ::1 - - [03/Apr/2020:23:05:55 +0000] "PUT /api/v1/games/5e87c152d9f2193a9c72693c HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:55:555 error: 500 - {"message":"Cannot read property 'coverId' of null","stack":{"beforeParse":"at Object.deleteGame (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\game.js:95:12)","callee":"Object.deleteGame","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/game.js","line":95,"column":12,"calleeShort":"deleteGame","fileRelative":"src/services/game.js","fileShort":"src/services/game.js","fileName":"game.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e7b6d451646201700f63b3a - DELETE - ::1
+2020-04-03 16:05:55:555 info: ::1 - - [03/Apr/2020:23:05:55 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 500 478 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:56:556 info: ::1 - - [03/Apr/2020:23:05:56 +0000] "DELETE /api/v1/games/5e87c152d9f2193a9c72693c HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:57:557 info: ::1 - - [03/Apr/2020:23:05:57 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:57:557 info: ::1 - - [03/Apr/2020:23:05:57 +0000] "POST /api/v1/games/5e87c155d9f2193a9c72693d/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:57:557 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:25:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":25,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e87c155d9f2193a9c72693d/questions - POST - ::1
+2020-04-03 16:05:57:557 info: ::1 - - [03/Apr/2020:23:05:57 +0000] "POST /api/v1/games/5e87c155d9f2193a9c72693d/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:57:557 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:14:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":14,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e87c155d9f2193a9c72693d/questions - POST - ::1
+2020-04-03 16:05:57:557 info: ::1 - - [03/Apr/2020:23:05:57 +0000] "POST /api/v1/games/5e87c155d9f2193a9c72693d/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:57:557 info: ::1 - - [03/Apr/2020:23:05:57 +0000] "POST /api/v1/games/5e87c155d9f2193a9c72693d/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:57:557 info: ::1 - - [03/Apr/2020:23:05:57 +0000] "POST /api/v1/games/5e87c155d9f2193a9c72693d/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:05:57:557 info: ::1 - - [03/Apr/2020:23:05:57 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:06:46:646 info: Server started on port 4000
+2020-04-03 16:06:46:646 info: Successfully connect to mongodb
+2020-04-03 16:07:03:73 info: Server started on port 4000
+2020-04-03 16:07:03:73 info: Successfully connect to mongodb
+2020-04-03 16:07:15:715 info: ::1 - - [03/Apr/2020:23:07:15 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:15:715 info: ::1 - - [03/Apr/2020:23:07:15 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:15:715 info: ::1 - - [03/Apr/2020:23:07:15 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:15:715 info: ::1 - - [03/Apr/2020:23:07:15 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:16:716 info: ::1 - - [03/Apr/2020:23:07:16 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:16:716 info: ::1 - - [03/Apr/2020:23:07:16 +0000] "PUT /api/v1/games/5e87c1a49d517f3b602cf4f2 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:16:716 info: ::1 - - [03/Apr/2020:23:07:16 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:18:718 info: ::1 - - [03/Apr/2020:23:07:18 +0000] "PUT /api/v1/games/5e87c1a49d517f3b602cf4f2 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:18:718 error: 500 - {"message":"Cannot read property 'coverId' of null","stack":{"beforeParse":"at Object.deleteGame (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\game.js:95:12)","callee":"Object.deleteGame","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/game.js","line":95,"column":12,"calleeShort":"deleteGame","fileRelative":"src/services/game.js","fileShort":"src/services/game.js","fileName":"game.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e7b6d451646201700f63b3a - DELETE - ::1
+2020-04-03 16:07:18:718 info: ::1 - - [03/Apr/2020:23:07:18 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 500 478 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:18:718 info: ::1 - - [03/Apr/2020:23:07:18 +0000] "DELETE /api/v1/games/5e87c1a49d517f3b602cf4f2 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:19:719 info: ::1 - - [03/Apr/2020:23:07:19 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:19:719 info: ::1 - - [03/Apr/2020:23:07:19 +0000] "POST /api/v1/games/5e87c1a79d517f3b602cf4f3/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:19:719 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:25:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":25,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e87c1a79d517f3b602cf4f3/questions - POST - ::1
+2020-04-03 16:07:19:719 info: ::1 - - [03/Apr/2020:23:07:19 +0000] "POST /api/v1/games/5e87c1a79d517f3b602cf4f3/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:19:719 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:14:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":14,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e87c1a79d517f3b602cf4f3/questions - POST - ::1
+2020-04-03 16:07:19:719 info: ::1 - - [03/Apr/2020:23:07:19 +0000] "POST /api/v1/games/5e87c1a79d517f3b602cf4f3/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:19:719 info: ::1 - - [03/Apr/2020:23:07:19 +0000] "POST /api/v1/games/5e87c1a79d517f3b602cf4f3/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:19:719 info: ::1 - - [03/Apr/2020:23:07:19 +0000] "POST /api/v1/games/5e87c1a79d517f3b602cf4f3/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:07:19:719 info: ::1 - - [03/Apr/2020:23:07:19 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:08:55:855 info: Server started on port 4000
+2020-04-03 16:08:55:855 info: Successfully connect to mongodb
+2020-04-03 16:09:07:97 info: Server started on port 4000
+2020-04-03 16:09:07:97 info: Successfully connect to mongodb
+2020-04-03 16:09:10:910 info: Server started on port 4000
+2020-04-03 16:09:10:910 info: Successfully connect to mongodb
+2020-04-03 16:11:44:1144 info: Server started on port 4000
+2020-04-03 16:11:44:1144 info: Successfully connect to mongodb
+2020-04-03 16:11:46:1146 info: ::1 - - [03/Apr/2020:23:11:46 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:47:1147 info: ::1 - - [03/Apr/2020:23:11:47 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:47:1147 info: ::1 - - [03/Apr/2020:23:11:47 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:47:1147 info: ::1 - - [03/Apr/2020:23:11:47 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:47:1147 info: ::1 - - [03/Apr/2020:23:11:47 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:48:1148 info: ::1 - - [03/Apr/2020:23:11:48 +0000] "PUT /api/v1/games/5e87c2b388a57d05bcbfef11 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:48:1148 info: ::1 - - [03/Apr/2020:23:11:48 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:49:1149 info: ::1 - - [03/Apr/2020:23:11:49 +0000] "PUT /api/v1/games/5e87c2b388a57d05bcbfef11 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:49:1149 info: ::1 - - [03/Apr/2020:23:11:49 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:49:1149 info: ::1 - - [03/Apr/2020:23:11:49 +0000] "DELETE /api/v1/games/5e87c2b388a57d05bcbfef11 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:50:1150 info: ::1 - - [03/Apr/2020:23:11:50 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:50:1150 info: ::1 - - [03/Apr/2020:23:11:50 +0000] "POST /api/v1/games/5e87c2b688a57d05bcbfef12/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:50:1150 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:25:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":25,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e87c2b688a57d05bcbfef12/questions - POST - ::1
+2020-04-03 16:11:50:1150 info: ::1 - - [03/Apr/2020:23:11:50 +0000] "POST /api/v1/games/5e87c2b688a57d05bcbfef12/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:50:1150 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:14:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":14,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e87c2b688a57d05bcbfef12/questions - POST - ::1
+2020-04-03 16:11:50:1150 info: ::1 - - [03/Apr/2020:23:11:50 +0000] "POST /api/v1/games/5e87c2b688a57d05bcbfef12/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:50:1150 info: ::1 - - [03/Apr/2020:23:11:50 +0000] "POST /api/v1/games/5e87c2b688a57d05bcbfef12/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:50:1150 info: ::1 - - [03/Apr/2020:23:11:50 +0000] "POST /api/v1/games/5e87c2b688a57d05bcbfef12/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:11:50:1150 info: ::1 - - [03/Apr/2020:23:11:50 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-03 16:18:07:187 info: Server started on port 4000
+2020-04-03 16:18:07:187 info: Successfully connect to mongodb
+2020-04-03 16:19:57:1957 info: Server started on port 4000
+2020-04-03 16:19:57:1957 info: Successfully connect to mongodb
+2020-04-03 16:24:38:2438 info: Server started on port 4000
+2020-04-03 16:24:38:2438 info: Successfully connect to mongodb
+2020-04-03 16:25:54:2554 info: Server started on port 4000
+2020-04-03 16:25:54:2554 info: Successfully connect to mongodb
+2020-04-03 16:26:00:260 info: Server started on port 4000
+2020-04-03 16:26:00:260 info: Successfully connect to mongodb
+2020-04-03 16:26:05:265 info: Server started on port 4000
+2020-04-03 16:26:05:265 info: Successfully connect to mongodb
+2020-04-03 16:26:16:2616 info: Server started on port 4000
+2020-04-03 16:26:16:2616 info: Successfully connect to mongodb
+2020-04-03 16:26:23:2623 info: Server started on port 4000
+2020-04-03 16:26:23:2623 info: Successfully connect to mongodb
+2020-04-03 16:30:19:3019 info: Server started on port 4000
+2020-04-03 16:30:19:3019 info: Successfully connect to mongodb
+2020-04-03 16:34:37:3437 info: Server started on port 4000
+2020-04-03 16:34:37:3437 info: Successfully connect to mongodb
+2020-04-03 16:35:06:356 info: Server started on port 4000
+2020-04-03 16:35:06:356 info: Successfully connect to mongodb
+2020-04-03 16:35:58:3558 info: Server started on port 4000
+2020-04-03 16:35:59:3559 info: Successfully connect to mongodb
+2020-04-03 16:37:44:3744 info: Server started on port 4000
+2020-04-03 16:37:44:3744 info: Successfully connect to mongodb
+2020-04-03 16:38:11:3811 info: Server started on port 4000
+2020-04-03 16:38:11:3811 info: Successfully connect to mongodb
+2020-04-03 16:38:49:3849 info: Server started on port 4000
+2020-04-03 16:38:49:3849 info: Successfully connect to mongodb
+2020-04-03 16:39:57:3957 info: Server started on port 4000
+2020-04-03 16:39:57:3957 info: Successfully connect to mongodb
+2020-04-03 16:42:10:4210 info: Server started on port 4000
+2020-04-03 16:42:10:4210 info: Successfully connect to mongodb
+2020-04-03 16:44:09:449 info: Server started on port 4000
+2020-04-03 16:44:09:449 info: Successfully connect to mongodb
+2020-04-03 16:45:09:459 info: Server started on port 4000
+2020-04-03 16:45:09:459 info: Successfully connect to mongodb
+2020-04-03 16:45:14:4514 info: Server started on port 4000
+2020-04-03 16:45:14:4514 info: Successfully connect to mongodb
+2020-04-04 15:43:40:4340 info: Server started on port 4000
+2020-04-04 15:43:40:4340 info: Successfully connect to mongodb
+2020-04-04 15:44:44:4444 info: ::1 - - [04/Apr/2020:22:44:44 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:44:4444 info: ::1 - - [04/Apr/2020:22:44:44 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:44:4444 info: ::1 - - [04/Apr/2020:22:44:44 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:44:4444 info: ::1 - - [04/Apr/2020:22:44:44 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:45:4445 info: ::1 - - [04/Apr/2020:22:44:45 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:46:4446 info: ::1 - - [04/Apr/2020:22:44:46 +0000] "PUT /api/v1/games/5e890ddda061683b8802438f HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:46:4446 info: ::1 - - [04/Apr/2020:22:44:46 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:47:4447 info: ::1 - - [04/Apr/2020:22:44:47 +0000] "PUT /api/v1/games/5e890ddda061683b8802438f HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:47:4447 info: ::1 - - [04/Apr/2020:22:44:47 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:47:4447 info: ::1 - - [04/Apr/2020:22:44:47 +0000] "DELETE /api/v1/games/5e890ddda061683b8802438f HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:47:4447 info: ::1 - - [04/Apr/2020:22:44:47 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:48:4448 info: ::1 - - [04/Apr/2020:22:44:48 +0000] "POST /api/v1/games/5e890ddda061683b8802438f/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:48:4448 info: ::1 - - [04/Apr/2020:22:44:48 +0000] "POST /api/v1/games/5e890ddda061683b8802438f/questions HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:48:4448 info: ::1 - - [04/Apr/2020:22:44:48 +0000] "POST /api/v1/games/5e890ddda061683b8802438f/questions HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:48:4448 info: ::1 - - [04/Apr/2020:22:44:48 +0000] "POST /api/v1/games/5e890ddda061683b8802438f/questions HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:48:4448 info: ::1 - - [04/Apr/2020:22:44:48 +0000] "POST /api/v1/games/5e890ddda061683b8802438f/questions HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:48:4448 info: ::1 - - [04/Apr/2020:22:44:48 +0000] "POST /api/v1/games/5e890ddda061683b8802438f/questions HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:44:48:4448 info: ::1 - - [04/Apr/2020:22:44:48 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:46:4746 info: ::1 - - [04/Apr/2020:22:47:46 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:46:4746 info: ::1 - - [04/Apr/2020:22:47:46 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:46:4746 info: ::1 - - [04/Apr/2020:22:47:46 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:46:4746 info: ::1 - - [04/Apr/2020:22:47:46 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:47:4747 info: ::1 - - [04/Apr/2020:22:47:47 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:47:4747 info: ::1 - - [04/Apr/2020:22:47:47 +0000] "PUT /api/v1/games/5e890e93a061683b88024392 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:47:4747 info: ::1 - - [04/Apr/2020:22:47:47 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:48:4748 info: ::1 - - [04/Apr/2020:22:47:48 +0000] "PUT /api/v1/games/5e890e93a061683b88024392 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:48:4748 info: ::1 - - [04/Apr/2020:22:47:48 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:49:4749 info: ::1 - - [04/Apr/2020:22:47:49 +0000] "DELETE /api/v1/games/5e890e93a061683b88024392 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:49:4749 info: ::1 - - [04/Apr/2020:22:47:49 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:49:4749 info: ::1 - - [04/Apr/2020:22:47:49 +0000] "POST /api/v1/games/5e890e93a061683b88024392/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:49:4749 info: ::1 - - [04/Apr/2020:22:47:49 +0000] "POST /api/v1/games/5e890e93a061683b88024392/questions HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:49:4749 info: ::1 - - [04/Apr/2020:22:47:49 +0000] "POST /api/v1/games/5e890e93a061683b88024392/questions HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:49:4749 info: ::1 - - [04/Apr/2020:22:47:49 +0000] "POST /api/v1/games/5e890e93a061683b88024392/questions HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:49:4749 info: ::1 - - [04/Apr/2020:22:47:49 +0000] "POST /api/v1/games/5e890e93a061683b88024392/questions HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:49:4749 info: ::1 - - [04/Apr/2020:22:47:49 +0000] "POST /api/v1/games/5e890e93a061683b88024392/questions HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:47:49:4749 info: ::1 - - [04/Apr/2020:22:47:49 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:37:4837 info: ::1 - - [04/Apr/2020:22:48:37 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:37:4837 info: ::1 - - [04/Apr/2020:22:48:37 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:37:4837 info: ::1 - - [04/Apr/2020:22:48:37 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:37:4837 info: ::1 - - [04/Apr/2020:22:48:37 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:38:4838 info: ::1 - - [04/Apr/2020:22:48:38 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:38:4838 info: ::1 - - [04/Apr/2020:22:48:38 +0000] "PUT /api/v1/games/5e890ec6a061683b88024395 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:38:4838 info: ::1 - - [04/Apr/2020:22:48:38 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:39:4839 info: ::1 - - [04/Apr/2020:22:48:39 +0000] "PUT /api/v1/games/5e890ec6a061683b88024395 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:40:4840 info: ::1 - - [04/Apr/2020:22:48:40 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:40:4840 info: ::1 - - [04/Apr/2020:22:48:40 +0000] "DELETE /api/v1/games/5e890ec6a061683b88024395 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:40:4840 info: ::1 - - [04/Apr/2020:22:48:40 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:40:4840 info: ::1 - - [04/Apr/2020:22:48:40 +0000] "POST /api/v1/games/5e890ec8a061683b88024396/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:40:4840 error: 500 - {"message":"Cannot destructure property `image` of 'undefined' or 'null'.","stack":{"beforeParse":"at Object.createQuestion (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:37:47)","callee":"Object.createQuestion","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":37,"column":47,"calleeShort":"createQuestion","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e890ec8a061683b88024396/questions - POST - ::1
+2020-04-04 15:48:40:4840 info: ::1 - - [04/Apr/2020:22:48:40 +0000] "POST /api/v1/games/5e890ec8a061683b88024396/questions HTTP/1.1" 500 533 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:40:4840 error: 500 - {"message":"Cannot destructure property `image` of 'undefined' or 'null'.","stack":{"beforeParse":"at Object.createQuestion (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:37:47)","callee":"Object.createQuestion","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":37,"column":47,"calleeShort":"createQuestion","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e890ec8a061683b88024396/questions - POST - ::1
+2020-04-04 15:48:40:4840 info: ::1 - - [04/Apr/2020:22:48:40 +0000] "POST /api/v1/games/5e890ec8a061683b88024396/questions HTTP/1.1" 500 533 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:40:4840 error: 500 - {"message":"Cannot destructure property `image` of 'undefined' or 'null'.","stack":{"beforeParse":"at Object.createQuestion (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:37:47)","callee":"Object.createQuestion","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":37,"column":47,"calleeShort":"createQuestion","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e890ec8a061683b88024396/questions - POST - ::1
+2020-04-04 15:48:40:4840 info: ::1 - - [04/Apr/2020:22:48:40 +0000] "POST /api/v1/games/5e890ec8a061683b88024396/questions HTTP/1.1" 500 533 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:40:4840 error: 500 - {"message":"Cannot destructure property `image` of 'undefined' or 'null'.","stack":{"beforeParse":"at Object.createQuestion (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:37:47)","callee":"Object.createQuestion","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":37,"column":47,"calleeShort":"createQuestion","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e890ec8a061683b88024396/questions - POST - ::1
+2020-04-04 15:48:40:4840 info: ::1 - - [04/Apr/2020:22:48:40 +0000] "POST /api/v1/games/5e890ec8a061683b88024396/questions HTTP/1.1" 500 533 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:40:4840 error: 500 - {"message":"Cannot destructure property `image` of 'undefined' or 'null'.","stack":{"beforeParse":"at Object.createQuestion (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:37:47)","callee":"Object.createQuestion","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":37,"column":47,"calleeShort":"createQuestion","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":500,"type":"ServerError"} - /api/v1/games/5e890ec8a061683b88024396/questions - POST - ::1
+2020-04-04 15:48:40:4840 info: ::1 - - [04/Apr/2020:22:48:40 +0000] "POST /api/v1/games/5e890ec8a061683b88024396/questions HTTP/1.1" 500 533 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:48:41:4841 info: ::1 - - [04/Apr/2020:22:48:41 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:01:501 info: Server started on port 4000
+2020-04-04 15:50:01:501 info: Successfully connect to mongodb
+2020-04-04 15:50:09:509 info: ::1 - - [04/Apr/2020:22:50:09 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:10:5010 info: ::1 - - [04/Apr/2020:22:50:10 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:10:5010 info: ::1 - - [04/Apr/2020:22:50:10 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:10:5010 info: ::1 - - [04/Apr/2020:22:50:10 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:11:5011 info: ::1 - - [04/Apr/2020:22:50:11 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:11:5011 info: ::1 - - [04/Apr/2020:22:50:11 +0000] "PUT /api/v1/games/5e890f23a78e693eb8661cc3 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:11:5011 info: ::1 - - [04/Apr/2020:22:50:11 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:12:5012 info: ::1 - - [04/Apr/2020:22:50:12 +0000] "PUT /api/v1/games/5e890f23a78e693eb8661cc3 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:12:5012 info: ::1 - - [04/Apr/2020:22:50:12 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:13:5013 info: ::1 - - [04/Apr/2020:22:50:13 +0000] "DELETE /api/v1/games/5e890f23a78e693eb8661cc3 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:13:5013 info: ::1 - - [04/Apr/2020:22:50:13 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:13:5013 info: ::1 - - [04/Apr/2020:22:50:13 +0000] "POST /api/v1/games/5e890f25a78e693eb8661cc4/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:13:5013 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e890f25a78e693eb8661cc4/questions - POST - ::1
+2020-04-04 15:50:13:5013 info: ::1 - - [04/Apr/2020:22:50:13 +0000] "POST /api/v1/games/5e890f25a78e693eb8661cc4/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:13:5013 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e890f25a78e693eb8661cc4/questions - POST - ::1
+2020-04-04 15:50:13:5013 info: ::1 - - [04/Apr/2020:22:50:13 +0000] "POST /api/v1/games/5e890f25a78e693eb8661cc4/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:13:5013 info: ::1 - - [04/Apr/2020:22:50:13 +0000] "POST /api/v1/games/5e890f25a78e693eb8661cc4/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:13:5013 info: ::1 - - [04/Apr/2020:22:50:13 +0000] "POST /api/v1/games/5e890f25a78e693eb8661cc4/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:13:5013 info: ::1 - - [04/Apr/2020:22:50:13 +0000] "POST /api/v1/games/5e890f25a78e693eb8661cc4/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:50:13:5013 info: ::1 - - [04/Apr/2020:22:50:13 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:20:5220 info: Server started on port 4000
+2020-04-04 15:52:20:5220 info: Successfully connect to mongodb
+2020-04-04 15:52:36:5236 info: ::1 - - [04/Apr/2020:22:52:36 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:36:5236 info: ::1 - - [04/Apr/2020:22:52:36 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:36:5236 info: ::1 - - [04/Apr/2020:22:52:36 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:36:5236 info: ::1 - - [04/Apr/2020:22:52:36 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:37:5237 info: ::1 - - [04/Apr/2020:22:52:37 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:37:5237 info: ::1 - - [04/Apr/2020:22:52:37 +0000] "PUT /api/v1/games/5e890fb50af4f0368460a912 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:37:5237 info: ::1 - - [04/Apr/2020:22:52:37 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:39:5239 info: ::1 - - [04/Apr/2020:22:52:39 +0000] "PUT /api/v1/games/5e890fb50af4f0368460a912 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:39:5239 info: ::1 - - [04/Apr/2020:22:52:39 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:39:5239 info: ::1 - - [04/Apr/2020:22:52:39 +0000] "DELETE /api/v1/games/5e890fb50af4f0368460a912 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:39:5239 info: ::1 - - [04/Apr/2020:22:52:39 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:40:5240 info: ::1 - - [04/Apr/2020:22:52:40 +0000] "POST /api/v1/games/5e890fb70af4f0368460a913/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:40:5240 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e890fb70af4f0368460a913/questions - POST - ::1
+2020-04-04 15:52:40:5240 info: ::1 - - [04/Apr/2020:22:52:40 +0000] "POST /api/v1/games/5e890fb70af4f0368460a913/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:40:5240 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e890fb70af4f0368460a913/questions - POST - ::1
+2020-04-04 15:52:40:5240 info: ::1 - - [04/Apr/2020:22:52:40 +0000] "POST /api/v1/games/5e890fb70af4f0368460a913/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:40:5240 info: ::1 - - [04/Apr/2020:22:52:40 +0000] "POST /api/v1/games/5e890fb70af4f0368460a913/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:40:5240 info: ::1 - - [04/Apr/2020:22:52:40 +0000] "POST /api/v1/games/5e890fb70af4f0368460a913/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:41:5241 info: ::1 - - [04/Apr/2020:22:52:41 +0000] "POST /api/v1/games/5e890fb70af4f0368460a913/questions HTTP/1.1" 422 65 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:41:5241 info: ::1 - - [04/Apr/2020:22:52:41 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:52:41:5241 info: Successfully delete image kahoot/questions/snswlhe980aodecxk7j8
+2020-04-04 15:54:37:5437 info: Server started on port 4000
+2020-04-04 15:54:37:5437 info: Successfully connect to mongodb
+2020-04-04 15:54:58:5458 info: ::1 - - [04/Apr/2020:22:54:58 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:54:59:5459 info: ::1 - - [04/Apr/2020:22:54:59 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:54:59:5459 info: ::1 - - [04/Apr/2020:22:54:59 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:54:59:5459 info: ::1 - - [04/Apr/2020:22:54:59 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:00:550 info: ::1 - - [04/Apr/2020:22:55:00 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:00:550 info: ::1 - - [04/Apr/2020:22:55:00 +0000] "PUT /api/v1/games/5e891044eb58753f50371943 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:00:550 info: ::1 - - [04/Apr/2020:22:55:00 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:01:551 info: ::1 - - [04/Apr/2020:22:55:01 +0000] "PUT /api/v1/games/5e891044eb58753f50371943 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:01:551 info: ::1 - - [04/Apr/2020:22:55:01 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:02:552 info: ::1 - - [04/Apr/2020:22:55:02 +0000] "DELETE /api/v1/games/5e891044eb58753f50371943 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:02:552 info: ::1 - - [04/Apr/2020:22:55:02 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:02:552 info: ::1 - - [04/Apr/2020:22:55:02 +0000] "POST /api/v1/games/5e891046eb58753f50371944/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:02:552 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e891046eb58753f50371944/questions - POST - ::1
+2020-04-04 15:55:02:552 info: ::1 - - [04/Apr/2020:22:55:02 +0000] "POST /api/v1/games/5e891046eb58753f50371944/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:02:552 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e891046eb58753f50371944/questions - POST - ::1
+2020-04-04 15:55:02:552 info: ::1 - - [04/Apr/2020:22:55:02 +0000] "POST /api/v1/games/5e891046eb58753f50371944/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:02:552 info: ::1 - - [04/Apr/2020:22:55:02 +0000] "POST /api/v1/games/5e891046eb58753f50371944/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:02:552 info: ::1 - - [04/Apr/2020:22:55:02 +0000] "POST /api/v1/games/5e891046eb58753f50371944/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:03:553 info: ::1 - - [04/Apr/2020:22:55:03 +0000] "POST /api/v1/games/5e891046eb58753f50371944/questions HTTP/1.1" 422 65 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:03:553 info: ::1 - - [04/Apr/2020:22:55:03 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:55:03:553 info: Successfully delete image kahoot/questions/dkofaa3g2rlrcbxbcaxc
+2020-04-04 15:57:08:578 info: Server started on port 4000
+2020-04-04 15:57:08:578 info: Successfully connect to mongodb
+2020-04-04 15:57:15:5715 info: ::1 - - [04/Apr/2020:22:57:15 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:15:5715 info: ::1 - - [04/Apr/2020:22:57:15 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:15:5715 info: ::1 - - [04/Apr/2020:22:57:15 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:15:5715 info: ::1 - - [04/Apr/2020:22:57:15 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:16:5716 info: ::1 - - [04/Apr/2020:22:57:16 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:16:5716 info: ::1 - - [04/Apr/2020:22:57:16 +0000] "PUT /api/v1/games/5e8910cc3c00532dac689942 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:16:5716 info: ::1 - - [04/Apr/2020:22:57:16 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:17:5717 info: ::1 - - [04/Apr/2020:22:57:17 +0000] "PUT /api/v1/games/5e8910cc3c00532dac689942 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:17:5717 info: ::1 - - [04/Apr/2020:22:57:17 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:18:5718 info: ::1 - - [04/Apr/2020:22:57:18 +0000] "DELETE /api/v1/games/5e8910cc3c00532dac689942 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:18:5718 info: ::1 - - [04/Apr/2020:22:57:18 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:18:5718 info: ::1 - - [04/Apr/2020:22:57:18 +0000] "POST /api/v1/games/5e8910ce3c00532dac689943/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:18:5718 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8910ce3c00532dac689943/questions - POST - ::1
+2020-04-04 15:57:18:5718 info: ::1 - - [04/Apr/2020:22:57:18 +0000] "POST /api/v1/games/5e8910ce3c00532dac689943/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:18:5718 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8910ce3c00532dac689943/questions - POST - ::1
+2020-04-04 15:57:18:5718 info: ::1 - - [04/Apr/2020:22:57:18 +0000] "POST /api/v1/games/5e8910ce3c00532dac689943/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:18:5718 info: ::1 - - [04/Apr/2020:22:57:18 +0000] "POST /api/v1/games/5e8910ce3c00532dac689943/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:18:5718 info: ::1 - - [04/Apr/2020:22:57:18 +0000] "POST /api/v1/games/5e8910ce3c00532dac689943/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:19:5719 info: ::1 - - [04/Apr/2020:22:57:19 +0000] "POST /api/v1/games/5e8910ce3c00532dac689943/questions HTTP/1.1" 422 65 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:19:5719 info: ::1 - - [04/Apr/2020:22:57:19 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 15:57:20:5720 info: Successfully delete image kahoot/questions/ksopg5s0szsimqnhrbwu
+2020-04-04 16:02:21:221 info: Server started on port 4000
+2020-04-04 16:02:21:221 info: Successfully connect to mongodb
+2020-04-04 16:03:58:358 info: Server started on port 4000
+2020-04-04 16:03:58:358 info: Successfully connect to mongodb
+2020-04-04 16:04:25:425 info: Server started on port 4000
+2020-04-04 16:04:25:425 info: Successfully connect to mongodb
+2020-04-04 16:04:34:434 info: Server started on port 4000
+2020-04-04 16:04:34:434 info: Successfully connect to mongodb
+2020-04-04 16:05:31:531 info: Server started on port 4000
+2020-04-04 16:05:31:531 info: Successfully connect to mongodb
+2020-04-04 16:06:10:610 info: Server started on port 4000
+2020-04-04 16:06:10:610 info: Successfully connect to mongodb
+2020-04-04 16:06:23:623 info: Server started on port 4000
+2020-04-04 16:06:23:623 info: Successfully connect to mongodb
+2020-04-04 16:06:33:633 info: ::1 - - [04/Apr/2020:23:06:33 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:34:634 info: ::1 - - [04/Apr/2020:23:06:34 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:34:634 info: ::1 - - [04/Apr/2020:23:06:34 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:34:634 info: ::1 - - [04/Apr/2020:23:06:34 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:34:634 info: ::1 - - [04/Apr/2020:23:06:34 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:35:635 info: ::1 - - [04/Apr/2020:23:06:35 +0000] "PUT /api/v1/games/5e8912fa2d07e23a8ca0c971 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:35:635 info: ::1 - - [04/Apr/2020:23:06:35 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:35:635 info: ::1 - - [04/Apr/2020:23:06:35 +0000] "PUT /api/v1/games/5e8912fa2d07e23a8ca0c971 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:35:635 info: ::1 - - [04/Apr/2020:23:06:35 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:36:636 info: ::1 - - [04/Apr/2020:23:06:36 +0000] "DELETE /api/v1/games/5e8912fa2d07e23a8ca0c971 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:36:636 info: ::1 - - [04/Apr/2020:23:06:36 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:36:636 info: ::1 - - [04/Apr/2020:23:06:36 +0000] "POST /api/v1/games/5e8912fc2d07e23a8ca0c972/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:36:636 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8912fc2d07e23a8ca0c972/questions - POST - ::1
+2020-04-04 16:06:36:636 info: ::1 - - [04/Apr/2020:23:06:36 +0000] "POST /api/v1/games/5e8912fc2d07e23a8ca0c972/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:36:636 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8912fc2d07e23a8ca0c972/questions - POST - ::1
+2020-04-04 16:06:36:636 info: ::1 - - [04/Apr/2020:23:06:36 +0000] "POST /api/v1/games/5e8912fc2d07e23a8ca0c972/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:36:636 info: Successfully delete image kahoot/games/jwb5ggjlztcnxumoj2tc
+2020-04-04 16:06:36:636 info: ::1 - - [04/Apr/2020:23:06:36 +0000] "POST /api/v1/games/5e8912fc2d07e23a8ca0c972/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:36:636 info: ::1 - - [04/Apr/2020:23:06:36 +0000] "POST /api/v1/games/5e8912fc2d07e23a8ca0c972/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:36:636 info: Successfully delete image kahoot/games/ny0ngxz5pputix1tsovv
+2020-04-04 16:06:37:637 info: ::1 - - [04/Apr/2020:23:06:37 +0000] "POST /api/v1/games/5e8912fc2d07e23a8ca0c972/questions HTTP/1.1" 422 65 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:37:637 info: ::1 - - [04/Apr/2020:23:06:37 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:06:37:637 info: Successfully delete image kahoot/questions/q0aa36lbthy5nejqxuwq
+2020-04-04 16:11:55:1155 info: ::1 - - [04/Apr/2020:23:11:55 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:55:1155 info: ::1 - - [04/Apr/2020:23:11:55 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:55:1155 info: ::1 - - [04/Apr/2020:23:11:55 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:55:1155 info: ::1 - - [04/Apr/2020:23:11:55 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:56:1156 info: ::1 - - [04/Apr/2020:23:11:56 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:56:1156 info: ::1 - - [04/Apr/2020:23:11:56 +0000] "PUT /api/v1/games/5e89143c2d07e23a8ca0c97c HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:56:1156 info: ::1 - - [04/Apr/2020:23:11:56 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:57:1157 info: ::1 - - [04/Apr/2020:23:11:57 +0000] "PUT /api/v1/games/5e89143c2d07e23a8ca0c97c HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:57:1157 info: ::1 - - [04/Apr/2020:23:11:57 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:57:1157 info: ::1 - - [04/Apr/2020:23:11:57 +0000] "DELETE /api/v1/games/5e89143c2d07e23a8ca0c97c HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:57:1157 info: ::1 - - [04/Apr/2020:23:11:57 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:57:1157 info: ::1 - - [04/Apr/2020:23:11:57 +0000] "POST /api/v1/games/5e89143d2d07e23a8ca0c97d/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:57:1157 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e89143d2d07e23a8ca0c97d/questions - POST - ::1
+2020-04-04 16:11:57:1157 info: ::1 - - [04/Apr/2020:23:11:57 +0000] "POST /api/v1/games/5e89143d2d07e23a8ca0c97d/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:57:1157 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e89143d2d07e23a8ca0c97d/questions - POST - ::1
+2020-04-04 16:11:57:1157 info: ::1 - - [04/Apr/2020:23:11:57 +0000] "POST /api/v1/games/5e89143d2d07e23a8ca0c97d/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:57:1157 info: Successfully delete image kahoot/games/uehshkx7ywyhylm57t1u
+2020-04-04 16:11:57:1157 info: ::1 - - [04/Apr/2020:23:11:57 +0000] "POST /api/v1/games/5e89143d2d07e23a8ca0c97d/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:57:1157 info: ::1 - - [04/Apr/2020:23:11:57 +0000] "POST /api/v1/games/5e89143d2d07e23a8ca0c97d/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:57:1157 info: Successfully delete image kahoot/games/zynknz7rakp0ghyowoy6
+2020-04-04 16:11:58:1158 info: ::1 - - [04/Apr/2020:23:11:58 +0000] "POST /api/v1/games/5e89143d2d07e23a8ca0c97d/questions HTTP/1.1" 422 65 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:58:1158 info: ::1 - - [04/Apr/2020:23:11:58 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:11:58:1158 info: Successfully delete image kahoot/questions/oaa2dxbrvoqkyoffumlp
+2020-04-04 16:25:40:2540 info: ::1 - - [04/Apr/2020:23:25:40 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:40:2540 info: ::1 - - [04/Apr/2020:23:25:40 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:41:2541 info: ::1 - - [04/Apr/2020:23:25:41 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:41:2541 info: ::1 - - [04/Apr/2020:23:25:41 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:41:2541 info: ::1 - - [04/Apr/2020:23:25:41 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:42:2542 info: ::1 - - [04/Apr/2020:23:25:42 +0000] "PUT /api/v1/games/5e8917752d07e23a8ca0c987 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:42:2542 info: ::1 - - [04/Apr/2020:23:25:42 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:42:2542 info: ::1 - - [04/Apr/2020:23:25:42 +0000] "PUT /api/v1/games/5e8917752d07e23a8ca0c987 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:42:2542 info: ::1 - - [04/Apr/2020:23:25:42 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:42:2542 info: ::1 - - [04/Apr/2020:23:25:42 +0000] "DELETE /api/v1/games/5e8917752d07e23a8ca0c987 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:43:2543 info: ::1 - - [04/Apr/2020:23:25:43 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:43:2543 info: ::1 - - [04/Apr/2020:23:25:43 +0000] "POST /api/v1/games/5e8917772d07e23a8ca0c988/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:43:2543 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8917772d07e23a8ca0c988/questions - POST - ::1
+2020-04-04 16:25:43:2543 info: ::1 - - [04/Apr/2020:23:25:43 +0000] "POST /api/v1/games/5e8917772d07e23a8ca0c988/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:43:2543 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8917772d07e23a8ca0c988/questions - POST - ::1
+2020-04-04 16:25:43:2543 info: ::1 - - [04/Apr/2020:23:25:43 +0000] "POST /api/v1/games/5e8917772d07e23a8ca0c988/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:43:2543 info: ::1 - - [04/Apr/2020:23:25:43 +0000] "POST /api/v1/games/5e8917772d07e23a8ca0c988/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:43:2543 info: ::1 - - [04/Apr/2020:23:25:43 +0000] "POST /api/v1/games/5e8917772d07e23a8ca0c988/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:43:2543 info: Successfully delete image kahoot/games/zmnunwuzehjen4jzmrkq
+2020-04-04 16:25:43:2543 info: Successfully delete image kahoot/games/zzniygfyglerc0c4bvy8
+2020-04-04 16:25:44:2544 info: ::1 - - [04/Apr/2020:23:25:44 +0000] "POST /api/v1/games/5e8917772d07e23a8ca0c988/questions HTTP/1.1" 422 65 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:44:2544 info: ::1 - - [04/Apr/2020:23:25:44 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:25:44:2544 info: Successfully delete image kahoot/questions/gz49cm2zgegzxh0yl9ki
+2020-04-04 16:26:55:2655 info: ::1 - - [04/Apr/2020:23:26:55 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:56:2656 info: ::1 - - [04/Apr/2020:23:26:56 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:56:2656 info: ::1 - - [04/Apr/2020:23:26:56 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:56:2656 info: ::1 - - [04/Apr/2020:23:26:56 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:57:2657 info: ::1 - - [04/Apr/2020:23:26:57 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:57:2657 info: ::1 - - [04/Apr/2020:23:26:57 +0000] "PUT /api/v1/games/5e8917c12d07e23a8ca0c992 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:57:2657 info: ::1 - - [04/Apr/2020:23:26:57 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:58:2658 info: ::1 - - [04/Apr/2020:23:26:58 +0000] "PUT /api/v1/games/5e8917c12d07e23a8ca0c992 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:58:2658 info: ::1 - - [04/Apr/2020:23:26:58 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:58:2658 info: ::1 - - [04/Apr/2020:23:26:58 +0000] "DELETE /api/v1/games/5e8917c12d07e23a8ca0c992 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:58:2658 info: ::1 - - [04/Apr/2020:23:26:58 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:58:2658 info: ::1 - - [04/Apr/2020:23:26:58 +0000] "POST /api/v1/games/5e8917c22d07e23a8ca0c993/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:58:2658 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8917c22d07e23a8ca0c993/questions - POST - ::1
+2020-04-04 16:26:58:2658 info: ::1 - - [04/Apr/2020:23:26:58 +0000] "POST /api/v1/games/5e8917c22d07e23a8ca0c993/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:58:2658 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8917c22d07e23a8ca0c993/questions - POST - ::1
+2020-04-04 16:26:58:2658 info: ::1 - - [04/Apr/2020:23:26:58 +0000] "POST /api/v1/games/5e8917c22d07e23a8ca0c993/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:58:2658 info: ::1 - - [04/Apr/2020:23:26:58 +0000] "POST /api/v1/games/5e8917c22d07e23a8ca0c993/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:58:2658 info: Successfully delete image kahoot/games/yykebouj4y4mdluqr4w9
+2020-04-04 16:26:58:2658 info: ::1 - - [04/Apr/2020:23:26:58 +0000] "POST /api/v1/games/5e8917c22d07e23a8ca0c993/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:58:2658 info: Successfully delete image kahoot/games/qq0z3xvfku4j4mebdk4j
+2020-04-04 16:26:59:2659 info: ::1 - - [04/Apr/2020:23:26:59 +0000] "POST /api/v1/games/5e8917c22d07e23a8ca0c993/questions HTTP/1.1" 422 65 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:26:59:2659 info: ::1 - - [04/Apr/2020:23:26:59 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:00:270 info: Successfully delete image kahoot/questions/wfi63q06no0zsrybccf9
+2020-04-04 16:27:31:2731 info: ::1 - - [04/Apr/2020:23:27:31 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:31:2731 info: ::1 - - [04/Apr/2020:23:27:31 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:31:2731 info: ::1 - - [04/Apr/2020:23:27:31 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:31:2731 info: ::1 - - [04/Apr/2020:23:27:31 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:32:2732 info: ::1 - - [04/Apr/2020:23:27:32 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:32:2732 info: ::1 - - [04/Apr/2020:23:27:32 +0000] "PUT /api/v1/games/5e8917e42d07e23a8ca0c99d HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:32:2732 info: ::1 - - [04/Apr/2020:23:27:32 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:33:2733 info: ::1 - - [04/Apr/2020:23:27:33 +0000] "PUT /api/v1/games/5e8917e42d07e23a8ca0c99d HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:33:2733 info: ::1 - - [04/Apr/2020:23:27:33 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:34:2734 info: ::1 - - [04/Apr/2020:23:27:34 +0000] "DELETE /api/v1/games/5e8917e42d07e23a8ca0c99d HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:34:2734 info: ::1 - - [04/Apr/2020:23:27:34 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:34:2734 info: ::1 - - [04/Apr/2020:23:27:34 +0000] "POST /api/v1/games/5e8917e62d07e23a8ca0c99e/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:34:2734 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8917e62d07e23a8ca0c99e/questions - POST - ::1
+2020-04-04 16:27:34:2734 info: ::1 - - [04/Apr/2020:23:27:34 +0000] "POST /api/v1/games/5e8917e62d07e23a8ca0c99e/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:34:2734 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8917e62d07e23a8ca0c99e/questions - POST - ::1
+2020-04-04 16:27:34:2734 info: ::1 - - [04/Apr/2020:23:27:34 +0000] "POST /api/v1/games/5e8917e62d07e23a8ca0c99e/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:34:2734 info: ::1 - - [04/Apr/2020:23:27:34 +0000] "POST /api/v1/games/5e8917e62d07e23a8ca0c99e/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:34:2734 info: Successfully delete image kahoot/games/mqqnrvmkxihd2fnbmprt
+2020-04-04 16:27:34:2734 info: ::1 - - [04/Apr/2020:23:27:34 +0000] "POST /api/v1/games/5e8917e62d07e23a8ca0c99e/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:34:2734 info: Successfully delete image kahoot/games/y0mzydp4y15sxslqblos
+2020-04-04 16:27:35:2735 info: ::1 - - [04/Apr/2020:23:27:35 +0000] "POST /api/v1/games/5e8917e62d07e23a8ca0c99e/questions HTTP/1.1" 422 65 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:35:2735 info: ::1 - - [04/Apr/2020:23:27:35 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:27:35:2735 info: Successfully delete image kahoot/questions/jxmqgvwy7pnecgg7tk1m
+2020-04-04 16:30:41:3041 info: ::1 - - [04/Apr/2020:23:30:41 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:41:3041 info: ::1 - - [04/Apr/2020:23:30:41 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:41:3041 info: ::1 - - [04/Apr/2020:23:30:41 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:41:3041 info: ::1 - - [04/Apr/2020:23:30:41 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:42:3042 info: ::1 - - [04/Apr/2020:23:30:42 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:42:3042 info: ::1 - - [04/Apr/2020:23:30:42 +0000] "PUT /api/v1/games/5e8918a22d07e23a8ca0c9a8 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:42:3042 info: ::1 - - [04/Apr/2020:23:30:42 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:43:3043 info: ::1 - - [04/Apr/2020:23:30:43 +0000] "PUT /api/v1/games/5e8918a22d07e23a8ca0c9a8 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:43:3043 info: ::1 - - [04/Apr/2020:23:30:43 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:43:3043 info: ::1 - - [04/Apr/2020:23:30:43 +0000] "DELETE /api/v1/games/5e8918a22d07e23a8ca0c9a8 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:43:3043 info: ::1 - - [04/Apr/2020:23:30:43 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:43:3043 info: ::1 - - [04/Apr/2020:23:30:43 +0000] "POST /api/v1/games/5e8918a32d07e23a8ca0c9a9/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:43:3043 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8918a32d07e23a8ca0c9a9/questions - POST - ::1
+2020-04-04 16:30:43:3043 info: ::1 - - [04/Apr/2020:23:30:43 +0000] "POST /api/v1/games/5e8918a32d07e23a8ca0c9a9/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:44:3044 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8918a32d07e23a8ca0c9a9/questions - POST - ::1
+2020-04-04 16:30:44:3044 info: ::1 - - [04/Apr/2020:23:30:44 +0000] "POST /api/v1/games/5e8918a32d07e23a8ca0c9a9/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:44:3044 info: ::1 - - [04/Apr/2020:23:30:44 +0000] "POST /api/v1/games/5e8918a32d07e23a8ca0c9a9/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:44:3044 info: ::1 - - [04/Apr/2020:23:30:44 +0000] "POST /api/v1/games/5e8918a32d07e23a8ca0c9a9/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:44:3044 info: Successfully delete image kahoot/games/wxa9xmowvgel0cmroxxr
+2020-04-04 16:30:44:3044 info: Successfully delete image kahoot/games/xsbshhckmlpmznsxul8v
+2020-04-04 16:30:44:3044 info: ::1 - - [04/Apr/2020:23:30:44 +0000] "POST /api/v1/games/5e8918a32d07e23a8ca0c9a9/questions HTTP/1.1" 422 65 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:44:3044 info: ::1 - - [04/Apr/2020:23:30:44 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:30:45:3045 info: Successfully delete image kahoot/questions/yj0ymol2eqbarwxfh6uz
+2020-04-04 16:31:19:3119 info: ::1 - - [04/Apr/2020:23:31:19 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:20:3120 info: ::1 - - [04/Apr/2020:23:31:20 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:20:3120 info: ::1 - - [04/Apr/2020:23:31:20 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:20:3120 info: ::1 - - [04/Apr/2020:23:31:20 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:20:3120 info: ::1 - - [04/Apr/2020:23:31:20 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:21:3121 info: ::1 - - [04/Apr/2020:23:31:21 +0000] "PUT /api/v1/games/5e8918c82d07e23a8ca0c9b3 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:21:3121 info: ::1 - - [04/Apr/2020:23:31:21 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:21:3121 info: ::1 - - [04/Apr/2020:23:31:21 +0000] "PUT /api/v1/games/5e8918c82d07e23a8ca0c9b3 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:21:3121 info: ::1 - - [04/Apr/2020:23:31:21 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:21:3121 info: ::1 - - [04/Apr/2020:23:31:21 +0000] "DELETE /api/v1/games/5e8918c82d07e23a8ca0c9b3 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:22:3122 info: ::1 - - [04/Apr/2020:23:31:22 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:22:3122 info: ::1 - - [04/Apr/2020:23:31:22 +0000] "POST /api/v1/games/5e8918ca2d07e23a8ca0c9b4/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:22:3122 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8918ca2d07e23a8ca0c9b4/questions - POST - ::1
+2020-04-04 16:31:22:3122 info: ::1 - - [04/Apr/2020:23:31:22 +0000] "POST /api/v1/games/5e8918ca2d07e23a8ca0c9b4/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:22:3122 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e8918ca2d07e23a8ca0c9b4/questions - POST - ::1
+2020-04-04 16:31:22:3122 info: ::1 - - [04/Apr/2020:23:31:22 +0000] "POST /api/v1/games/5e8918ca2d07e23a8ca0c9b4/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:22:3122 info: Successfully delete image kahoot/games/xsfeaco4kkfnj9nznvok
+2020-04-04 16:31:22:3122 info: ::1 - - [04/Apr/2020:23:31:22 +0000] "POST /api/v1/games/5e8918ca2d07e23a8ca0c9b4/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:22:3122 info: Successfully delete image kahoot/games/zelgo3ikfqvtjszbnkmr
+2020-04-04 16:31:22:3122 info: ::1 - - [04/Apr/2020:23:31:22 +0000] "POST /api/v1/games/5e8918ca2d07e23a8ca0c9b4/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:23:3123 info: ::1 - - [04/Apr/2020:23:31:23 +0000] "POST /api/v1/games/5e8918ca2d07e23a8ca0c9b4/questions HTTP/1.1" 422 65 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:23:3123 info: ::1 - - [04/Apr/2020:23:31:23 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:31:23:3123 info: Successfully delete image kahoot/questions/yz3vtuouv8eaowwjllfz
+2020-04-04 16:41:36:4136 info: ::1 - - [04/Apr/2020:23:41:36 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:36:4136 info: ::1 - - [04/Apr/2020:23:41:36 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:36:4136 info: ::1 - - [04/Apr/2020:23:41:36 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:36:4136 info: ::1 - - [04/Apr/2020:23:41:36 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:37:4137 info: ::1 - - [04/Apr/2020:23:41:37 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:37:4137 info: ::1 - - [04/Apr/2020:23:41:37 +0000] "PUT /api/v1/games/5e891b312d07e23a8ca0c9be HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:37:4137 info: ::1 - - [04/Apr/2020:23:41:37 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:38:4138 info: ::1 - - [04/Apr/2020:23:41:38 +0000] "PUT /api/v1/games/5e891b312d07e23a8ca0c9be HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:38:4138 info: ::1 - - [04/Apr/2020:23:41:38 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:38:4138 info: ::1 - - [04/Apr/2020:23:41:38 +0000] "DELETE /api/v1/games/5e891b312d07e23a8ca0c9be HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:38:4138 info: ::1 - - [04/Apr/2020:23:41:38 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:38:4138 info: ::1 - - [04/Apr/2020:23:41:38 +0000] "POST /api/v1/games/5e891b322d07e23a8ca0c9bf/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:38:4138 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e891b322d07e23a8ca0c9bf/questions - POST - ::1
+2020-04-04 16:41:38:4138 info: ::1 - - [04/Apr/2020:23:41:38 +0000] "POST /api/v1/games/5e891b322d07e23a8ca0c9bf/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:38:4138 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e891b322d07e23a8ca0c9bf/questions - POST - ::1
+2020-04-04 16:41:38:4138 info: ::1 - - [04/Apr/2020:23:41:38 +0000] "POST /api/v1/games/5e891b322d07e23a8ca0c9bf/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:38:4138 info: Successfully delete image kahoot/games/apktye8cckyppudrxncx
+2020-04-04 16:41:38:4138 info: ::1 - - [04/Apr/2020:23:41:38 +0000] "POST /api/v1/games/5e891b322d07e23a8ca0c9bf/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:38:4138 info: ::1 - - [04/Apr/2020:23:41:38 +0000] "POST /api/v1/games/5e891b322d07e23a8ca0c9bf/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:38:4138 info: Successfully delete image kahoot/games/ynnofxhveg7cgjn4jeb1
+2020-04-04 16:41:39:4139 info: ::1 - - [04/Apr/2020:23:41:39 +0000] "POST /api/v1/games/5e891b322d07e23a8ca0c9bf/questions HTTP/1.1" 422 240 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:39:4139 info: ::1 - - [04/Apr/2020:23:41:39 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:41:39:4139 info: Successfully delete image kahoot/questions/npoz2ygldh9pbkrsr9hh
+2020-04-04 16:45:12:4512 info: ::1 - - [04/Apr/2020:23:45:12 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:13:4513 info: ::1 - - [04/Apr/2020:23:45:13 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:13:4513 info: ::1 - - [04/Apr/2020:23:45:13 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:13:4513 info: ::1 - - [04/Apr/2020:23:45:13 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:14:4514 info: ::1 - - [04/Apr/2020:23:45:14 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:14:4514 info: ::1 - - [04/Apr/2020:23:45:14 +0000] "PUT /api/v1/games/5e891c0a2d07e23a8ca0c9c9 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:14:4514 info: ::1 - - [04/Apr/2020:23:45:14 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:14:4514 info: ::1 - - [04/Apr/2020:23:45:14 +0000] "PUT /api/v1/games/5e891c0a2d07e23a8ca0c9c9 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:15:4515 info: ::1 - - [04/Apr/2020:23:45:15 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:15:4515 info: ::1 - - [04/Apr/2020:23:45:15 +0000] "DELETE /api/v1/games/5e891c0a2d07e23a8ca0c9c9 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:15:4515 info: ::1 - - [04/Apr/2020:23:45:15 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:15:4515 info: ::1 - - [04/Apr/2020:23:45:15 +0000] "POST /api/v1/games/5e891c0b2d07e23a8ca0c9ca/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:15:4515 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e891c0b2d07e23a8ca0c9ca/questions - POST - ::1
+2020-04-04 16:45:15:4515 info: ::1 - - [04/Apr/2020:23:45:15 +0000] "POST /api/v1/games/5e891c0b2d07e23a8ca0c9ca/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:15:4515 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e891c0b2d07e23a8ca0c9ca/questions - POST - ::1
+2020-04-04 16:45:15:4515 info: ::1 - - [04/Apr/2020:23:45:15 +0000] "POST /api/v1/games/5e891c0b2d07e23a8ca0c9ca/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:15:4515 info: Successfully delete image kahoot/games/opjwnmxcpb037bulqpww
+2020-04-04 16:45:15:4515 info: ::1 - - [04/Apr/2020:23:45:15 +0000] "POST /api/v1/games/5e891c0b2d07e23a8ca0c9ca/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:15:4515 info: ::1 - - [04/Apr/2020:23:45:15 +0000] "POST /api/v1/games/5e891c0b2d07e23a8ca0c9ca/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:15:4515 info: Successfully delete image kahoot/games/gl8cxcom3chbwnpcqjer
+2020-04-04 16:45:16:4516 info: ::1 - - [04/Apr/2020:23:45:16 +0000] "POST /api/v1/games/5e891c0b2d07e23a8ca0c9ca/questions HTTP/1.1" 422 240 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:16:4516 info: ::1 - - [04/Apr/2020:23:45:16 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:16:4516 info: Successfully delete image kahoot/questions/uwtmpv8ui9fyv4gzf72h
+2020-04-04 16:45:49:4549 info: ::1 - - [04/Apr/2020:23:45:49 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 51 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:49:4549 info: ::1 - - [04/Apr/2020:23:45:49 +0000] "POST /api/v1/auth/signin HTTP/1.1" 200 530 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:49:4549 info: ::1 - - [04/Apr/2020:23:45:49 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:49:4549 info: ::1 - - [04/Apr/2020:23:45:49 +0000] "POST /api/v1/games HTTP/1.1" 422 68 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:50:4550 info: ::1 - - [04/Apr/2020:23:45:50 +0000] "POST /api/v1/games HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:50:4550 info: ::1 - - [04/Apr/2020:23:45:50 +0000] "PUT /api/v1/games/5e891c2e2d07e23a8ca0c9d4 HTTP/1.1" 400 42 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:50:4550 info: ::1 - - [04/Apr/2020:23:45:50 +0000] "PUT /api/v1/games/somerandomid HTTP/1.1" 422 39 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:51:4551 info: ::1 - - [04/Apr/2020:23:45:51 +0000] "PUT /api/v1/games/5e891c2e2d07e23a8ca0c9d4 HTTP/1.1" 200 428 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:51:4551 info: ::1 - - [04/Apr/2020:23:45:51 +0000] "DELETE /api/v1/games/5e7b6d451646201700f63b3a HTTP/1.1" 404 57 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:51:4551 info: ::1 - - [04/Apr/2020:23:45:51 +0000] "DELETE /api/v1/games/5e891c2e2d07e23a8ca0c9d4 HTTP/1.1" 200 64 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:51:4551 info: ::1 - - [04/Apr/2020:23:45:51 +0000] "POST /api/v1/games HTTP/1.1" 200 269 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:51:4551 info: ::1 - - [04/Apr/2020:23:45:51 +0000] "POST /api/v1/games/5e891c2f2d07e23a8ca0c9d5/questions HTTP/1.1" 422 206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:51:4551 error: 400 - {"message":"There should be at leat 1 correct answer","stack":{"beforeParse":"at checkAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:27:11)","callee":"checkAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":27,"column":11,"calleeShort":"checkAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e891c2f2d07e23a8ca0c9d5/questions - POST - ::1
+2020-04-04 16:45:51:4551 info: ::1 - - [04/Apr/2020:23:45:51 +0000] "POST /api/v1/games/5e891c2f2d07e23a8ca0c9d5/questions HTTP/1.1" 400 492 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:52:4552 error: 400 - {"message":"There is a duplicate postion in your answers array","stack":{"beforeParse":"at checkDuplicatePositionsInAnswers (F:\\Projects\\kahoot\\kahoot-api\\src\\services\\question.js:16:13)","callee":"checkDuplicatePositionsInAnswers","index":false,"native":false,"file":"F:/Projects/kahoot/kahoot-api/src/services/question.js","line":16,"column":13,"calleeShort":"checkDuplicatePositionsInAnswers","fileRelative":"src/services/question.js","fileShort":"src/services/question.js","fileName":"question.js","thirdParty":false},"status":400,"type":"ServerError"} - /api/v1/games/5e891c2f2d07e23a8ca0c9d5/questions - POST - ::1
+2020-04-04 16:45:52:4552 info: ::1 - - [04/Apr/2020:23:45:52 +0000] "POST /api/v1/games/5e891c2f2d07e23a8ca0c9d5/questions HTTP/1.1" 400 562 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:52:4552 info: ::1 - - [04/Apr/2020:23:45:52 +0000] "POST /api/v1/games/5e891c2f2d07e23a8ca0c9d5/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:52:4552 info: Successfully delete image kahoot/games/pxf1vtupdbeutvvjk36q
+2020-04-04 16:45:52:4552 info: ::1 - - [04/Apr/2020:23:45:52 +0000] "POST /api/v1/games/5e891c2f2d07e23a8ca0c9d5/questions HTTP/1.1" 200 1206 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:52:4552 info: Successfully delete image kahoot/games/swaspfiwebota17ljipf
+2020-04-04 16:45:52:4552 info: ::1 - - [04/Apr/2020:23:45:52 +0000] "POST /api/v1/games/5e891c2f2d07e23a8ca0c9d5/questions HTTP/1.1" 422 240 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:52:4552 info: ::1 - - [04/Apr/2020:23:45:52 +0000] "GET /api/v1/db/clear HTTP/1.1" 200 43 "-" "PostmanRuntime/7.24.0"
+2020-04-04 16:45:53:4553 info: Successfully delete image kahoot/questions/smpkb62dgyn5lefsrzkf
+2020-04-04 17:21:43:2143 info: Server started on port 4000
+2020-04-04 17:21:43:2143 info: Successfully connect to mongodb
+2020-04-04 18:22:45:2245 info: Server started on port 5000
+2020-04-04 18:22:45:2245 info: Successfully connect to mongodb
+2020-04-05 07:58:05:585 info: Server started on port 5000
+2020-04-05 07:58:05:585 info: Successfully connect to mongodb
+2020-04-05 07:58:17:5817 info: Server started on port 4000
+2020-04-05 07:58:17:5817 info: Successfully connect to mongodb
+2020-04-05 08:28:28:2828 info: Server started on port 4000
+2020-04-05 08:28:28:2828 info: Successfully connect to mongodb
+2020-04-05 08:28:57:2857 info: Server started on port 4000
+2020-04-05 08:28:57:2857 info: Successfully connect to mongodb
+2020-04-05 08:30:08:308 info: Server started on port 4000
+2020-04-05 08:30:08:308 info: Successfully connect to mongodb
+2020-04-05 08:30:16:3016 info: Server started on port 4000
+2020-04-05 08:30:16:3016 info: Successfully connect to mongodb
+2020-04-05 08:30:28:3028 info: Server started on port 5000
+2020-04-05 08:30:28:3028 info: Successfully connect to mongodb
+2020-04-05 08:34:06:346 info: Server started on port 5000
+2020-04-05 08:34:06:346 info: Successfully connect to mongodb
+2020-04-05 08:35:27:3527 info: Server started on port 5000
+2020-04-05 08:35:27:3527 info: Successfully connect to mongodb
+2020-04-05 08:35:58:3558 info: Server started on port 4000
+2020-04-05 08:35:58:3558 info: Successfully connect to mongodb
+2020-04-05 08:36:34:3634 info: Server started on port 4000
+2020-04-05 08:36:34:3634 info: Successfully connect to mongodb
+2020-04-05 08:36:40:3640 info: Server started on port 4000
+2020-04-05 08:36:40:3640 info: Successfully connect to mongodb
+2020-04-05 08:37:12:3712 info: Server started on port 4000
+2020-04-05 08:37:12:3712 info: Successfully connect to mongodb
+2020-04-05 08:37:21:3721 info: Server started on port 4000
+2020-04-05 08:37:21:3721 info: Successfully connect to mongodb
+2020-04-05 08:37:21:3721 info: Socket is off now
+2020-04-05 08:37:21:3721 info: Socket is off now
+2020-04-05 08:37:43:3743 info: Socket is off now
+2020-04-05 08:37:47:3747 info: Socket is off now
+2020-04-05 08:37:48:3748 info: Socket is off now
+2020-04-05 08:37:48:3748 info: Socket is off now
+2020-04-05 08:37:48:3748 info: Socket is off now
+2020-04-05 08:37:48:3748 info: Socket is off now
+2020-04-05 08:37:48:3748 info: Socket is off now
+2020-04-05 08:37:48:3748 info: Socket is off now
+2020-04-05 08:37:48:3748 info: Socket is off now
+2020-04-05 08:47:02:472 info: Socket is off now
+2020-04-05 08:47:04:474 info: Server started on port 4000
+2020-04-05 08:47:04:474 info: Successfully connect to mongodb
+2020-04-05 08:47:04:474 info: Socket is off now
+2020-04-05 08:47:22:4722 info: Server started on port 4000
+2020-04-05 08:47:22:4722 info: Successfully connect to mongodb
+2020-04-05 08:47:22:4722 info: Socket is off now
+2020-04-05 08:47:23:4723 info: Socket is off now
+2020-04-05 08:48:10:4810 info: Socket is off now
+2020-04-05 08:48:12:4812 info: Server started on port 4000
+2020-04-05 08:48:12:4812 info: Successfully connect to mongodb
+2020-04-05 08:48:30:4830 info: Server started on port 4000
+2020-04-05 08:48:30:4830 info: Successfully connect to mongodb
+2020-04-05 08:49:11:4911 info: Server started on port 4000
+2020-04-05 08:49:11:4911 info: Successfully connect to mongodb
+2020-04-05 08:49:31:4931 info: Server started on port 4000
+2020-04-05 08:49:31:4931 info: Successfully connect to mongodb
+2020-04-05 08:49:35:4935 info: Socket is off now
+2020-04-05 08:49:35:4935 info: Socket is off now
+2020-04-05 08:49:35:4935 info: Socket is off now
+2020-04-05 08:49:35:4935 info: Socket is off now
+2020-04-05 08:50:14:5014 info: Server started on port 4000
+2020-04-05 08:50:14:5014 info: Successfully connect to mongodb
+2020-04-05 08:50:20:5020 info: socket /hosts#4Lf39Fzp3DRggSkyAAAA has leave
+2020-04-05 09:02:30:230 info: Server started on port 4000
+2020-04-05 09:02:30:230 info: Successfully connect to mongodb
+2020-04-05 09:22:41:2241 info: Server started on port 4000
+2020-04-05 09:22:41:2241 info: Successfully connect to mongodb
+2020-04-05 09:23:08:238 info: Server started on port 4000
+2020-04-05 09:23:08:238 info: Successfully connect to mongodb
+2020-04-05 09:23:50:2350 info: Server started on port 4000
+2020-04-05 09:23:50:2350 info: Successfully connect to mongodb
+2020-04-05 09:25:07:257 info: Server started on port 4000
+2020-04-05 09:25:07:257 info: Successfully connect to mongodb
+2020-04-05 09:25:26:2526 info: Server started on port 4000
+2020-04-05 09:25:26:2526 info: Successfully connect to mongodb
+2020-04-05 09:27:10:2710 info: Server started on port 4000
+2020-04-05 09:27:10:2710 info: Successfully connect to mongodb
+2020-04-05 09:27:38:2738 info: Server started on port 4000
+2020-04-05 09:27:38:2738 info: Successfully connect to mongodb
+2020-04-05 09:34:36:3436 info: Server started on port 4000
+2020-04-05 09:34:36:3436 info: Successfully connect to mongodb
+2020-04-05 09:48:56:4856 info: Server started on port 4000
+2020-04-05 09:48:56:4856 info: Successfully connect to mongodb
+2020-04-05 09:49:22:4922 info: Server started on port 4000
+2020-04-05 09:49:22:4922 info: Successfully connect to mongodb
+2020-04-05 09:49:29:4929 info: Server started on port 4000
+2020-04-05 09:49:29:4929 info: Successfully connect to mongodb
+2020-04-05 09:51:03:513 info: Server started on port 4000
+2020-04-05 09:51:03:513 info: Successfully connect to mongodb
+2020-04-05 10:03:28:328 info: Server started on port 4000
+2020-04-05 10:03:28:328 info: Successfully connect to mongodb
+2020-04-05 14:54:15:5415 info: Server started on port 4000
+2020-04-05 14:54:15:5415 info: Successfully connect to mongodb
+2020-04-05 14:54:33:5433 info: Server started on port 4000
+2020-04-05 14:54:33:5433 info: Successfully connect to mongodb
+2020-04-05 15:26:23:2623 info: Server started on port 4000
+2020-04-05 15:26:23:2623 info: Successfully connect to mongodb
+2020-04-05 15:27:44:2744 info: Server started on port 4000
+2020-04-05 15:27:44:2744 info: Successfully connect to mongodb
+2020-04-05 15:28:56:2856 info: Server started on port 4000
+2020-04-05 15:28:56:2856 info: Successfully connect to mongodb
+2020-04-05 16:10:36:1036 info: Server started on port 4000
+2020-04-05 16:10:36:1036 info: Successfully connect to mongodb
+2020-04-05 16:10:46:1046 info: Server started on port 4000
+2020-04-05 16:10:46:1046 info: Successfully connect to mongodb
+2020-04-05 16:10:58:1058 info: Server started on port 4000
+2020-04-05 16:10:58:1058 info: Successfully connect to mongodb
+2020-04-05 16:20:13:2013 info: Server started on port 4000
+2020-04-05 16:20:13:2013 info: Successfully connect to mongodb
+2020-04-05 16:51:49:5149 info: Server started on port 4000
+2020-04-05 16:51:50:5150 info: Successfully connect to mongodb
+2020-04-05 16:51:53:5153 info: Server started on port 4000
+2020-04-05 16:51:53:5153 info: Successfully connect to mongodb

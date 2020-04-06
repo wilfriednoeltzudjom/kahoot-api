@@ -2,7 +2,7 @@ const multer = require('multer');
 const DataUri = require('datauri');
 const path = require('path');
 
-const cloudinary = require('../helpers/cloudinary');
+const { cloudinary } = require('../helpers/cloudinary');
 
 const storage = multer.memoryStorage();
 const multerHander = multer({ storage }).single('image');

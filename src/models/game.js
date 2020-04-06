@@ -12,7 +12,7 @@ const gameSchema = new Schema({
   },
   uuid: {
     type: String,
-    default: uuid.v1()
+    default: () => uuid.v1()
   },
   title: {
     type: String,
@@ -60,8 +60,7 @@ const Game = mongoose.models.Game || mongoose.model('Game', gameSchema);
 const GameFactory = {
   generate({ skipTitle = false }) {
     const game = {
-      description: faker.lorem.words(20),
-      pin: faker.random.alphaNumeric(8)
+      description: faker.lorem.words(20)
     };
 
     if (!skipTitle) game.title = faker.random.words(20);

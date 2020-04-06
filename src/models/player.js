@@ -12,7 +12,7 @@ const playerAnswerSchema = new Schema({
   },
   uuid: {
     type: String,
-    default: uuid.v1()
+    default: () => uuid.v1()
   },
   responseTime: {
     type: Number,
@@ -41,9 +41,13 @@ const playerSchema = new Schema({
   },
   uuid: {
     type: String,
-    default: uuid.v1()
+    default: () => uuid.v1()
   },
   username: {
+    type: String,
+    required: true
+  },
+  sessionId: {
     type: String,
     required: true
   },

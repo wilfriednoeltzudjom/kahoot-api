@@ -1,9 +1,13 @@
-const express = require('express');
+const app = require('express')();
+const server = require('http').Server(app);
+const io = require('socket.io')(server);
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const path = require('path');
+
+const GameHandler = require('./utils/game-handler');
 
 // Initialize environment
 dotenv.config({ path: path.join(__dirname, '/config', 'default.env') });
@@ -44,9 +48,7 @@ mongoose
   })
   .catch(err => logger.error(`Unable to connect to mongoDB : ${err.message}`));
 
-// Initalize app
-const app = express();
-
+// Logging middleware
 app.use(loggingHandler);
 
 // Setup common middlewares
@@ -67,9 +69,35 @@ app.use(errorHandler);
 
 // Start server
 const { PORT } = process.env;
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   if (NODE_ENV !== 'production') console.clear();
   logger.info(`Server started on port ${PORT}`);
+});
+
+// Socket handler
+const hosts = io.of('/hosts');
+const players = io.of('/players');
+
+const gameHandler = new GameHandler();
+
+hosts.on('connection', socket => {
+  socket.on('game-play', async ({ gamePin }) => {});
+
+  socket.on('game-start', () => {});
+
+  socket.on('question-next', () => {});
+
+  socket.on('game-end', () => {});
+
+  socket.on('disconnect', () => {
+    logger.info(`socket ${socket.id} has leave`);
+  });
+});
+
+players.on('connection', socket => {
+  socket.on('player-join', () => {});
+
+  socket.on('player-answer', () => {});
 });
 
 module.exports = app;

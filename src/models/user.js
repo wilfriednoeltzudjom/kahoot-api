@@ -13,7 +13,7 @@ const userSchema = new Schema({
   },
   uuid: {
     type: String,
-    default: uuid.v1()
+    default: () => uuid.v1()
   },
   lastName: {
     type: String,
