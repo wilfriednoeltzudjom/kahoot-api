@@ -7,7 +7,9 @@
     "dev": "cross-env NODE_ENV=development nodemon src/server.js",
     "start": "node src/server.js",
     "test": "cross-env NODE_ENV=test mocha 'tests/**/*.test.js' --watch --require tests/init.js --require chai/register-expect",
-    "test:server": "cross-env NODE_ENV=test nodemon src/server.js"
+    "test:server": "cross-env NODE_ENV=test nodemon src/server.js",
+    "test:socket-host": "cross-env NODE_ENV=test nodemon tests/sockets/host.js",
+    "test:socket-player": "cross-env NODE_ENV=test node tests/sockets/player.js"
   },
   "author": "thetechshrine",
   "license": "MIT",
@@ -43,6 +45,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-validator": "^6.4.0",
+    "inquirer": "^7.1.0",
     "joi": "^14.3.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.4",

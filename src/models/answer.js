@@ -37,17 +37,18 @@ const Answer = mongoose.models.Answer || mongoose.model('Answer', answerSchema);
 
 // Factory
 const AnswerFactory = {
-  generate({ isCorrect = false }) {
+  generate({ isCorrect = false, position = 0 }) {
     return {
       title: faker.lorem.sentence(20),
-      isCorrect
+      isCorrect,
+      position
     };
   },
 
   generateMany({ size = 2 }) {
     const answers = [];
     for (let i = 0; i < size; i += 1) {
-      answers.push(this.generate({}));
+      answers.push(this.generate({ position: i + 1 }));
     }
     answers[0].isCorrect = true;
 
@@ -62,14 +63,18 @@ const AnswerFactory = {
   },
 
   async createMany({ size = 2, question }) {
-    const answers = this.generateMany({ size });
+    let answers = this.generateMany({ size });
 
-    return Answer.insertMany(
-      answers.map(answer => ({
-        ...answer,
-        question
-      }))
+    answers = answers.map(
+      answer =>
+        new Answer({
+          ...answer,
+          question
+        })
     );
+    await Answer.insertMany(answers);
+
+    return answers.map(answer => answer._id);
   }
 };
 

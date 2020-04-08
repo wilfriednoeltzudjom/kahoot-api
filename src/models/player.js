@@ -55,10 +55,6 @@ const playerSchema = new Schema({
     type: Number,
     default: 0
   },
-  position: {
-    type: Number,
-    default: 0
-  },
   game: {
     type: Schema.Types.ObjectId,
     ref: 'Game',
