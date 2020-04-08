@@ -76,11 +76,11 @@ async function playerAsnwer(socket, gamePin) {
   }
 }
 
-function disconnect(socket) {
-  setTimeout(() => {
-    socket.disconnect();
-  }, 3 * 1000);
-}
+// function disconnect(socket) {
+//   setTimeout(() => {
+//     socket.disconnect();
+//   }, 3 * 1000);
+// }
 
 function run(gamePin) {
   dbHandler

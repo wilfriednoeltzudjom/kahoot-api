@@ -9,12 +9,11 @@ const logger = require('../../src/helpers/logger');
 const dbHandler = require('../helpers/db-handler');
 
 let currentGame;
-let questions;
 
 async function initGame() {
   const user = await UserFactory.create();
   currentGame = await GameFactory.create({ user: user._id });
-  questions = await QuestionFactory.createMany({
+  await QuestionFactory.createMany({
     game: currentGame._id,
     size: 3
   });
@@ -37,11 +36,11 @@ function startGame(socket) {
   }, 1000);
 }
 
-function disconnect(socket) {
-  setTimeout(() => {
-    socket.disconnect();
-  }, 3 * 1000);
-}
+// function disconnect(socket) {
+//   setTimeout(() => {
+//     socket.disconnect();
+//   }, 3 * 1000);
+// }
 
 function run() {
   dbHandler
