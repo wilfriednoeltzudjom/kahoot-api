@@ -19,10 +19,10 @@ router.post('/signin', (req, res, next) => {
     'signin',
     { session: false },
     (error, user, _info) => {
-      if (error) throw error;
+      if (error) next(error);
 
       req.login(user, { session: false }, err => {
-        if (err) throw err;
+        if (err) next(error);
 
         const payload = {
           uuid: user.uuid
