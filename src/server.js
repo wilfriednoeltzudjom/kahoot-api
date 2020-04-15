@@ -27,6 +27,7 @@ require('./helpers/passport');
 const authRouter = require('./routes/auth');
 const gameRouter = require('./routes/games');
 const playerRouter = require('./routes/players');
+const userRouter = require('./routes/users');
 const dbRouter = require('./routes/db');
 
 // Middlewares
@@ -61,6 +62,7 @@ app.use(cors());
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/games', authHandler, gameRouter);
 app.use('/api/v1/players', authHandler, playerRouter);
+app.use('/api/v1/users', authHandler, userRouter);
 
 // Test routes only
 if (NODE_ENV === 'test') app.use('/api/v1/db', dbRouter);
