@@ -9,6 +9,6 @@ You can start this project with different modes (dev, test, socket:host, socket:
 ### Launch in development mode
 
 - Open your terminal and lauch `npm run dev`
-- Your http server and websocket server are now accessible respectively at [http](http://localhost:5000) and [websocket](ws://localhost:5000)
+- Your http server and websocket server are now accessible respectively at http://localhost:5000 and ws://localhost:5000
 
 > Make sure you have nodejs and mongodb both installed
