@@ -13,6 +13,10 @@ const checkId = () => [
 ];
 
 const createQuestion = () => [
+  body('uuid')
+    .isUUID()
+    .not()
+    .isEmpty(),
   body('title')
     .isString()
     .not()
@@ -37,12 +41,13 @@ const createQuestion = () => [
     .withMessage('You need to provide at least 2 answers'),
   body('answers.*.title')
     .isString()
-    .not()
-    .isEmpty(),
+    .optional(),
   body('answers.*.isCorrect')
     .isBoolean()
     .optional(),
-  body('answers.*.position').isInt(),
+  body('answers.*.position')
+    .isInt()
+    .optional(),
   checkParentIds()[0]
 ];
 

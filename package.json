@@ -9,7 +9,7 @@
     "test": "cross-env NODE_ENV=test mocha 'tests/**/*.test.js' --watch --require tests/init.js --require chai/register-expect",
     "test:server": "cross-env NODE_ENV=test nodemon src/server.js",
     "test:socket-host": "cross-env NODE_ENV=test nodemon tests/sockets/host.js",
-    "test:socket-player": "cross-env NODE_ENV=test node tests/sockets/player.js"
+    "test:socket-player": "cross-env NODE_ENV=development node tests/sockets/player.js"
   },
   "author": "thetechshrine",
   "license": "MIT",

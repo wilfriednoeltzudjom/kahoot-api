@@ -7,7 +7,11 @@ const validate = (req, res, next) => {
   if (errors.isEmpty()) return next();
 
   const extractedErrors = [];
-  errors.array().map(err => extractedErrors.push({ [err.param]: err.msg }));
+  errors
+    .array()
+    .map(err =>
+      extractedErrors.push({ [err.param]: `${err.msg} ${err.value}` })
+    );
 
   // If image was uploaded to cloudinary
   if (req.downloadId) deleteImage(req.downloadId);

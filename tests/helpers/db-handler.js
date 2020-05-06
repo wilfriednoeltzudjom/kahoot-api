@@ -7,7 +7,7 @@ dotenv.config({
   path: path.join(__dirname, '../', '../', '/src', '/config', 'default.env')
 });
 dotenv.config({
-  path: path.join(__dirname, '../', '../', '/src', '/config', 'test.env')
+  path: path.join(__dirname, '../', '../', '/src', '/config', 'development.env')
 });
 
 const { MONGODB_URI } = process.env;

@@ -7,44 +7,45 @@ const { AnswerFactory } = require('./answer');
 
 const { Schema } = mongoose;
 
-const questionSchema = new Schema({
-  createdAt: {
-    type: Date,
-    default: Date.now
-  },
-  uuid: {
-    type: String,
-    default: () => uuid.v1()
-  },
-  title: {
-    type: String,
-    required: true
-  },
-  image: String,
-  imageId: String,
-  points: {
-    type: Number,
-    required: true,
-    min: 0,
-    max: 2000
-  },
-  time: {
-    type: Number,
-    required: true,
-    min: 5
-  },
-  answers: [
-    {
+const questionSchema = new Schema(
+  {
+    uuid: {
+      type: String,
+      default: () => uuid.v1()
+    },
+    title: {
+      type: String,
+      required: true
+    },
+    image: String,
+    imageId: String,
+    points: {
+      type: Number,
+      required: true,
+      min: 0,
+      max: 2000
+    },
+    time: {
+      type: Number,
+      required: true,
+      min: 5
+    },
+    answers: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Answer'
+      }
+    ],
+    game: {
       type: Schema.Types.ObjectId,
-      ref: 'Answer'
+      ref: 'Game',
+      required: true
     }
-  ],
-  game: {
-    type: Schema.Types.ObjectId,
-    ref: 'Game',
-    required: true
+  },
+  {
+    timestamps: true
   }
-});
+);
 
 const Question =
   mongoose.models.Question || mongoose.model('Question', questionSchema);

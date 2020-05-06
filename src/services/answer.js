@@ -14,6 +14,12 @@ const checkExistingPosition = async (questionId, { position }) => {
     );
 };
 
+const checkPosition = ({ position }) => {
+  if (position && (position < 1 || position > 4)) {
+    throw new BadRequestError(`Answer position must be between 1 and 4`);
+  }
+};
+
 const createAnswer = async (questionId, params) => {
   await checkExistingPosition(questionId, params);
 
@@ -41,7 +47,7 @@ const getAnswer = async answerId => {
 const updateAnswer = async (answerId, params) => {
   const answer = await getAnswer(answerId);
 
-  if (params.position) await checkExistingPosition(answer.question, params);
+  checkPosition(params);
 
   Object.assign(answer, params);
   await answer.save();

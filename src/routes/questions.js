@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const questionService = require('../services/question');
 
@@ -67,7 +68,7 @@ router.delete(
       .deleteQuestion(req.params)
       .then(() =>
         res.json({
-          message: `Question ${req.params.questionId} successfully deleted`
+          message: `Question successfully deleted`
         })
       )
       .catch(error => next(error));

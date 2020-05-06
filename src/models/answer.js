@@ -5,33 +5,31 @@ const faker = require('../helpers/faker');
 
 const { Schema } = mongoose;
 
-const answerSchema = new Schema({
-  createdAt: {
-    type: Date,
-    default: Date.now
+const answerSchema = new Schema(
+  {
+    uuid: {
+      type: String,
+      default: () => uuid.v1()
+    },
+    title: String,
+    isCorrect: {
+      type: Boolean,
+      required: true
+    },
+    position: {
+      type: Number,
+      required: true
+    },
+    question: {
+      type: Schema.Types.ObjectId,
+      ref: 'Question',
+      required: true
+    }
   },
-  uuid: {
-    type: String,
-    default: () => uuid.v1()
-  },
-  title: {
-    type: String,
-    required: true
-  },
-  isCorrect: {
-    type: Boolean,
-    required: true
-  },
-  position: {
-    type: Number,
-    required: true
-  },
-  question: {
-    type: Schema.Types.ObjectId,
-    ref: 'Question',
-    required: true
+  {
+    timestamps: true
   }
-});
+);
 
 const Answer = mongoose.models.Answer || mongoose.model('Answer', answerSchema);
 

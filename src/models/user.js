@@ -6,33 +6,34 @@ const faker = require('../helpers/faker');
 
 const { Schema } = mongoose;
 
-const userSchema = new Schema({
-  createdAt: {
-    type: Date,
-    default: Date.now
+const userSchema = new Schema(
+  {
+    uuid: {
+      type: String,
+      default: () => uuid.v1()
+    },
+    lastName: {
+      type: String,
+      required: true
+    },
+    firstName: {
+      type: String,
+      required: true
+    },
+    username: {
+      type: String,
+      required: true,
+      minlength: 5
+    },
+    password: {
+      type: String,
+      required: true
+    }
   },
-  uuid: {
-    type: String,
-    default: () => uuid.v1()
-  },
-  lastName: {
-    type: String,
-    required: true
-  },
-  firstName: {
-    type: String,
-    required: true
-  },
-  username: {
-    type: String,
-    required: true,
-    minlength: 5
-  },
-  password: {
-    type: String,
-    required: true
+  {
+    timestamps: true
   }
-});
+);
 
 const User = mongoose.models.User || mongoose.model('User', userSchema);
 

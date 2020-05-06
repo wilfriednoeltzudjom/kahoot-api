@@ -10,7 +10,7 @@ const { Game } = require('../../src/models/game');
 const dbHandler = require('../helpers/db-handler');
 
 async function connect() {
-  return io.connect('http://localhost:4000/players', {
+  return io.connect('http://localhost:5000/players', {
     forceNew: true
   });
 }
@@ -22,6 +22,7 @@ function joinPlayer(socket, gamePin) {
 
 async function playerAsnwer(socket, gamePin) {
   try {
+    console.log(gamePin);
     const game = await Game.findOne({ pin: gamePin });
     const questions = await Question.find({ game: game._id }).populate(
       'answers'
@@ -76,11 +77,34 @@ async function playerAsnwer(socket, gamePin) {
   }
 }
 
-// function disconnect(socket) {
-//   setTimeout(() => {
-//     socket.disconnect();
-//   }, 3 * 1000);
-// }
+async function chooseAnswer(socket, gamePin, question) {
+  const { answers, time, points } = question;
+
+  const answersChoices = answers.map(answer => ({
+    name: `${answer.title} -> ${answer.isCorrect}`,
+    value: answer._id
+  }));
+
+  inquirer
+    .prompt([
+      {
+        type: 'list',
+        name: 'answerId',
+        message: 'Choose an answer: ',
+        choices: answersChoices
+      }
+    ])
+    .then(({ answerId }) => {
+      console.log(`time -> ${time}, points -> ${points}`);
+      const responseTime = time - 1;
+      socket.emit('player-answer', {
+        gamePin,
+        questionId: question._id,
+        answerId,
+        responseTime
+      });
+    });
+}
 
 function run(gamePin) {
   dbHandler
@@ -90,18 +114,19 @@ function run(gamePin) {
         .then(socket => {
           logger.info('init player socket');
 
-          socket.on('question-intro', ({ question }) => {
-            logger.info(
-              `receive question introduction for ${question._id} of time ${question.time}s`
-            );
+          socket.on('question-intro', ({ data }) => {
+            logger.info(`question intro for ${data.currentQuestion.title}`);
           });
 
-          socket.on('question-start', ({ question }) => {
-            logger.info(`starting question ${question._id}`);
+          socket.on('question-start', ({ data }) => {
+            const { currentQuestion } = data;
+            if (currentQuestion) {
+              chooseAnswer(socket, gamePin, currentQuestion);
+            }
           });
 
-          socket.on('question-end', ({ question }) => {
-            logger.info(`ending question ${question._id}`);
+          socket.on('question-end', ({ data }) => {
+            logger.info(`question end for ${data.currentQuestion.title}`);
           });
 
           socket.on('player-list', ({ players }) => {
@@ -110,12 +135,9 @@ function run(gamePin) {
 
           joinPlayer(socket, gamePin);
 
-          setTimeout(async () => {
-            await playerAsnwer(socket, gamePin);
-          }, 500);
-
-          // disconnect
-          // disconnect();
+          // setTimeout(async () => {
+          //   await playerAsnwer(socket, gamePin);
+          // }, 500);
         })
         .catch(error => logger.error(error.message));
     })

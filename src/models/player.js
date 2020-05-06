@@ -5,34 +5,35 @@ const faker = require('../helpers/faker');
 
 const { Schema } = mongoose;
 
-const playerAnswerSchema = new Schema({
-  createdAt: {
-    type: Date,
-    default: Date.now
+const playerAnswerSchema = new Schema(
+  {
+    uuid: {
+      type: String,
+      default: () => uuid.v1()
+    },
+    responseTime: {
+      type: Number,
+      required: true
+    },
+    points: {
+      type: Number,
+      required: true
+    },
+    question: {
+      type: Schema.Types.ObjectId,
+      ref: 'Question',
+      required: true
+    },
+    answer: {
+      type: Schema.Types.ObjectId,
+      ref: 'Answer',
+      required: true
+    }
   },
-  uuid: {
-    type: String,
-    default: () => uuid.v1()
-  },
-  responseTime: {
-    type: Number,
-    required: true
-  },
-  points: {
-    type: Number,
-    required: true
-  },
-  question: {
-    type: Schema.Types.ObjectId,
-    ref: 'Question',
-    required: true
-  },
-  answer: {
-    type: Schema.Types.ObjectId,
-    ref: 'Answer',
-    required: true
+  {
+    timestamps: true
   }
-});
+);
 
 const playerSchema = new Schema({
   joinedAt: {
@@ -55,9 +56,9 @@ const playerSchema = new Schema({
     type: Number,
     default: 0
   },
-  game: {
+  gameSession: {
     type: Schema.Types.ObjectId,
-    ref: 'Game',
+    ref: 'GameSession',
     required: true
   },
   playerAnswers: [playerAnswerSchema]

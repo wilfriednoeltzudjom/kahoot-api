@@ -1,6 +1,11 @@
 const { Player } = require('../models/player');
 const { Game } = require('../models/game');
 const { Question } = require('../models/question');
+const { GameSession } = require('../models/game-session');
+
+const { gameSessionStatuses } = require('./enums');
+
+const logger = require('../helpers/logger');
 
 class GameHandler {
   constructor() {
@@ -9,54 +14,62 @@ class GameHandler {
     this.currentQuestionsMap = new Map();
     this.timersMap = new Map();
     this.gamePinsMap = new Map();
+    this.gameSessionsMap = new Map();
   }
 
   async playGame(gamePin, socketId) {
     const game = await Game.findOne({ pin: gamePin });
-    const questions = await Question.find({ game: game._id }).populate(
-      'answers'
-    );
+    const questions = await Question.find({ game: game._id }).populate({
+      path: 'answers',
+      sort: { position: 1 }
+    });
+    const gameSession = new GameSession({ game: game._id });
+    await gameSession.save();
+    console.log(gameSession);
+
     this.gamesMap.set(gamePin, game);
     this.questionsMap.set(gamePin, questions);
     this.currentQuestionsMap.set(gamePin, 0);
     this.gamePinsMap.set(socketId, gamePin);
+    this.gameSessionsMap.set(gamePin, gameSession);
   }
 
-  startGame(gamePin) {
-    const game = this.gamesMap.get(gamePin);
-    game.status = 'started';
-    this.gamesMap.set(gamePin, game);
+  async startGame(gamePin) {
+    const gameSession = this.gameSessionsMap.get(gamePin);
+    gameSession.status = gameSessionStatuses.RUNNING;
+    this.gameSessionsMap.set(gamePin, gameSession);
+    await gameSession.save();
 
-    return game;
+    return this.gamesMap.get(gamePin);
   }
 
   nextQuestion(gamePin) {
-    let nextQuestionIndex = -1;
-
-    const currentQuestion = this.currentQuestionsMap.get(gamePin);
+    const currentQuestionIndex = this.currentQuestionsMap.get(gamePin);
     const questions = this.questionsMap.get(gamePin);
-    if (currentQuestion < questions.length - 1) {
-      nextQuestionIndex = currentQuestion + 1;
-      this.currentQuestionsMap.set(gamePin, nextQuestionIndex);
-    }
 
-    const nextQuestion =
-      nextQuestionIndex !== -1 ? questions[nextQuestionIndex] : null;
+    if (currentQuestionIndex >= questions.length) return {};
 
-    return nextQuestion;
+    const currentQuestion = questions[currentQuestionIndex];
+    this.currentQuestionsMap.set(gamePin, currentQuestionIndex + 1);
+
+    return {
+      currentQuestion,
+      currentIndex: currentQuestionIndex + 1,
+      totalCount: questions.length
+    };
   }
 
   async joinPlayer(gamePin, { username, sessionId }) {
-    const result = { success: false, message: '' };
+    const result = { success: false, message: '', player: {} };
 
-    const game = this.gamesMap.get(gamePin);
-    if (!game) {
+    const gameSession = this.gameSessionsMap.get(gamePin);
+    if (!gameSession) {
       result.message = 'This game is currently closed';
       return result;
     }
 
     const existingPlayerWithUsername = await Player.findOne({
-      game: game._id,
+      gameSession: gameSession._id,
       username
     });
     if (existingPlayerWithUsername) {
@@ -64,23 +77,34 @@ class GameHandler {
       return result;
     }
 
-    const player = new Player({ username, sessionId, game: game._id });
+    const player = new Player({
+      username,
+      sessionId,
+      gameSession: gameSession._id
+    });
     await player.save();
+    console.log(player);
 
     // update local game object
-    game.players.push(player._id);
-    this.gamesMap.set(gamePin, game);
+    gameSession.players.push(player._id);
+    this.gameSessionsMap.set(gamePin, gameSession);
 
     result.success = true;
+    result.player = player;
     return result;
   }
 
   async hasAllPlayersAnswered(gamePin, questionId) {
-    const game = this.gamesMap.get(gamePin);
-    const playersCount = game.players.length;
+    const gameSession = this.gameSessionsMap.get(gamePin);
+    const playersCount = gameSession.players.length;
 
     const playersWhoAnsweredCount = await Player.countDocuments({
-      answers: { question: questionId }
+      gameSession: gameSession._id,
+      playerAnswers: {
+        $elemMatch: {
+          question: questionId
+        }
+      }
     });
 
     return playersCount === playersWhoAnsweredCount;
@@ -117,32 +141,55 @@ class GameHandler {
     player.playerAnswers.push(playerAnswer);
     await player.save();
 
-    return { question: currentQuestion, player: player };
+    const updatedPlayer = await Player.findById(player._id).populate([
+      { path: 'playerAnswers.answer' },
+      { path: 'playerAnswers.question' }
+    ]);
+
+    return {
+      question: currentQuestion,
+      currentIndex: this.currentQuestionsMap.get(gamePin),
+      totalCount: questions.length,
+      player: updatedPlayer
+    };
   }
 
   async endGame(gamePin, socketId) {
-    const game = this.gamesMap.get(gamePin);
-    game.status = 'ended';
-    await game.save();
+    const gameSession = this.gameSessionsMap.get(gamePin);
+    if (gameSession) {
+      gameSession.status = gameSessionStatuses.ENDED;
+      await gameSession.save();
 
-    this.gamesMap.delete(gamePin);
-    this.questionsMap.delete(gamePin);
-    this.currentQuestionsMap.delete(gamePin);
-    this.gamePinsMap.delete(socketId);
+      this.gamesMap.delete(gamePin);
+      this.questionsMap.delete(gamePin);
+      this.currentQuestionsMap.delete(gamePin);
+      this.gamePinsMap.delete(socketId);
+      this.gameSessionsMap.delete(gamePin);
+    }
   }
 
   async playerList(gamePin) {
-    const game = this.gamesMap.get(gamePin);
-    const players = await Player.find({ game: game._id }).populate([
-      { path: 'answers.answer' },
-      { path: 'answers.question' }
-    ]);
+    const gameSession = this.gameSessionsMap.get(gamePin);
+    const players = gameSession
+      ? await Player.find({ gameSession: gameSession._id }).populate([
+          { path: 'playerAnswers.answer' },
+          { path: 'playerAnswers.question' }
+        ])
+      : [];
 
-    return players;
+    return players.length > 0
+      ? players.sort((a, b) => a.totalScore - b.totalScore).reverse()
+      : players;
   }
 
   async getPlayer(sessionId) {
-    return Player.findOne({ sessionId }).populate('game');
+    return Player.findOne({ sessionId }).populate({
+      path: 'gameSession',
+      populate: {
+        path: 'game',
+        select: 'pin'
+      }
+    });
   }
 
   addTimer(questionId, timer) {
@@ -151,7 +198,10 @@ class GameHandler {
 
   clearTimer(questionId) {
     const timer = this.timersMap.get(questionId);
-    if (timer) clearTimeout(timer);
+    if (timer) {
+      clearTimeout(timer);
+      logger.info(`timer cleared for questionId ${questionId}`);
+    }
     this.timersMap.delete(questionId);
   }
 

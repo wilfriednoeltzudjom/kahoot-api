@@ -1,8 +1,11 @@
+const { ObjectId } = require('mongoose').Types;
 const { Game } = require('../models/game');
 
 const questionService = require('./question');
 
 const { deleteImage } = require('../helpers/cloudinary');
+
+const { ResourceNotFoundError } = require('../utils/errors');
 
 const populateParams = [
   {
@@ -45,7 +48,19 @@ const createGame = async (user, params, { cover, coverId } = {}) => {
 const getGames = async userId =>
   Game.find({ user: userId }).populate(populateParams);
 
-const getGame = async gameId => Game.findById(gameId).populate(populateParams);
+const getGame = async gameId => {
+  const query = {};
+  if (ObjectId.isValid(gameId)) {
+    query._id = gameId;
+  } else {
+    query.uuid = gameId;
+  }
+
+  const game = await Game.findOne(query).populate(populateParams);
+  if (!game) throw ResourceNotFoundError(`Game ${gameId} not found`);
+
+  return game;
+};
 
 const updateGame = async (gameId, params, { cover, coverId } = {}) => {
   const game = await getGame(gameId);

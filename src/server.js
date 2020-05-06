@@ -29,6 +29,7 @@ const gameRouter = require('./routes/games');
 const playerRouter = require('./routes/players');
 const userRouter = require('./routes/users');
 const dbRouter = require('./routes/db');
+const publicRouter = require('./routes/public');
 
 // Middlewares
 const loggingHandler = require('./middlewares/logging-handler');
@@ -63,6 +64,7 @@ app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/games', authHandler, gameRouter);
 app.use('/api/v1/players', authHandler, playerRouter);
 app.use('/api/v1/users', authHandler, userRouter);
+app.use('/api/v1/public', publicRouter);
 
 // Test routes only
 if (NODE_ENV === 'test') app.use('/api/v1/db', dbRouter);
@@ -88,28 +90,6 @@ function notifyAll(gamePin, message) {
   players.to(gamePin).emit('notification', { message });
 }
 
-function sendNextQuestion(gamePin, nextQuestion, timeout = 0) {
-  // send question intro after
-  setTimeout(() => {
-    hosts.to(gamePin).emit('question-intro', { question: nextQuestion });
-    players.to(gamePin).emit('question-intro', { question: nextQuestion });
-
-    // start question after 4s
-    setTimeout(() => {
-      hosts.to(gamePin).emit('question-start', { question: nextQuestion });
-      players.to(gamePin).emit('question-start', { question: nextQuestion });
-
-      // end question after time is up
-      const { time } = nextQuestion;
-      const timer = setTimeout(() => {
-        hosts.to(gamePin).emit('question-end', { question: nextQuestion });
-        players.to(gamePin).emit('question-end', { question: nextQuestion });
-      }, time * 1000);
-      gameHandler.addTimer(nextQuestion._id, timer);
-    }, 4 * 1000);
-  }, timeout);
-}
-
 async function sendPlayerList(gamePin) {
   const playerList = await gameHandler.playerList(gamePin);
 
@@ -121,9 +101,34 @@ async function sendPlayerList(gamePin) {
   }
 }
 
+function sendNextQuestion(gamePin, data, timeout = 0) {
+  // send question intro after
+  setTimeout(() => {
+    hosts.to(gamePin).emit('question-intro', { data });
+    players.to(gamePin).emit('question-intro', { data });
+
+    // start question after 4s
+    setTimeout(() => {
+      hosts.to(gamePin).emit('question-start', { data });
+      players.to(gamePin).emit('question-start', { data });
+
+      // end question after time is up
+      const { time } = data.currentQuestion;
+      const timer = setTimeout(async () => {
+        await sendPlayerList(gamePin);
+
+        hosts.to(gamePin).emit('question-end', { data });
+        players.to(gamePin).emit('question-end', { data });
+      }, (time + 1) * 1000);
+      gameHandler.addTimer(data.currentQuestion._id.toString(), timer);
+    }, 4 * 1000);
+  }, timeout);
+}
+
 function sendGameEnd(gamePin) {
   hosts.to(gamePin).emit('game-end', { pin: gamePin });
   players.to(gamePin).emit('game-end', { pin: gamePin });
+  logger.info(`game ${gamePin} ended`);
 }
 
 function logStack(error) {
@@ -143,21 +148,21 @@ hosts.on('connection', socket => {
     }
   });
 
-  socket.on('game-start', ({ gamePin }) => {
-    const game = gameHandler.startGame(gamePin);
+  socket.on('game-start', async ({ gamePin }) => {
+    const game = await gameHandler.startGame(gamePin);
     socket.emit('game-start', { game });
 
     // send question intro
-    const nextQuestion = gameHandler.nextQuestion(gamePin);
-    sendNextQuestion(gamePin, nextQuestion, 4 * 1000);
+    const data = gameHandler.nextQuestion(gamePin);
+    sendNextQuestion(gamePin, data, 4 * 1000);
   });
 
   socket.on('question-next', async ({ gamePin }) => {
-    const nextQuestion = gameHandler.nextQuestion(gamePin);
-    if (!nextQuestion) {
+    const data = gameHandler.nextQuestion(gamePin);
+    if (!data.currentQuestion) {
       try {
         await sendPlayerList(gamePin);
-        sendGameEnd();
+        sendGameEnd(gamePin);
         await gameHandler.endGame(gamePin, socket.id);
       } catch (error) {
         logger.error(
@@ -168,13 +173,13 @@ hosts.on('connection', socket => {
       return;
     }
 
-    sendNextQuestion(gamePin, nextQuestion);
+    sendNextQuestion(gamePin, data);
   });
 
   socket.on('game-end', async ({ gamePin }) => {
     try {
       await sendPlayerList(gamePin);
-      sendGameEnd();
+      sendGameEnd(gamePin);
       await gameHandler.endGame(gamePin, socket.id);
     } catch (error) {
       logger.error(
@@ -188,9 +193,11 @@ hosts.on('connection', socket => {
     try {
       const gamePin = gameHandler.getGamePin(socket.id);
 
-      await sendPlayerList(gamePin);
-      sendGameEnd();
-      await gameHandler.endGame(gamePin, socket.id);
+      if (gamePin) {
+        await sendPlayerList(gamePin);
+        sendGameEnd(gamePin);
+        await gameHandler.endGame(gamePin, socket.id);
+      }
 
       logger.info(`host ${socket.id} has left`);
     } catch (error) {
@@ -218,6 +225,7 @@ players.on('connection', socket => {
       logger.info(`socket ${socket.id} has join game ${gamePin}`);
 
       setTimeout(() => {
+        socket.emit('player', { player: result.player });
         sendPlayerList(gamePin);
       }, 50);
     } catch (error) {
@@ -230,20 +238,23 @@ players.on('connection', socket => {
     'player-answer',
     async ({ gamePin, questionId, answerId, responseTime }) => {
       try {
-        const { question, player } = await gameHandler.playerAnswer(
-          gamePin,
-          socket.id,
-          {
-            questionId,
-            answerId,
-            responseTime
-          }
-        );
+        const {
+          question,
+          currentIndex,
+          totalCount,
+          player
+        } = await gameHandler.playerAnswer(gamePin, socket.id, {
+          questionId,
+          answerId,
+          responseTime
+        });
 
         logger.info(`player ${player.username} answered at ${question._id}`);
 
         setTimeout(async () => {
           await sendPlayerList(gamePin);
+          // update player
+          socket.emit('player', { player });
 
           const hasAllPlayersAnswered = await gameHandler.hasAllPlayersAnswered(
             gamePin,
@@ -251,13 +262,22 @@ players.on('connection', socket => {
           );
           if (hasAllPlayersAnswered) {
             // clearing timer
+            logger.info(`clearing timer for question id ${questionId}`);
             gameHandler.clearTimer(questionId);
 
             // send question end
             setTimeout(() => {
-              hosts.to(gamePin).emit('question-end', { question });
-              players.to(gamePin).emit('question-end', { question });
+              hosts.to(gamePin).emit('question-end', {
+                data: { currentQuestion: question, currentIndex, totalCount }
+              });
+              players.to(gamePin).emit('question-end', {
+                data: { currentQuestion: question, currentIndex, totalCount }
+              });
             }, 50);
+          } else {
+            socket.emit('question-lobby', {
+              data: { currentQuestion: question, currentIndex, totalCount }
+            });
           }
         }, 50);
       } catch (error) {
@@ -271,7 +291,14 @@ players.on('connection', socket => {
     logger.info(`player ${socket.id} has left`);
     try {
       const player = await gameHandler.getPlayer(socket.id);
-      notifyAll(player.game.pin, `player ${player.username} has left the game`);
+      if (player) {
+        notifyAll(
+          player.gameSession.game.pin,
+          `player ${player.username} has left the game`
+        );
+      } else {
+        logger.error(`player not found for socket id ${socket.id}`);
+      }
     } catch (error) {
       logger.error(`unable to disconnect player -> ${error.message}`);
       logStack(error);

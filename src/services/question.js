@@ -6,6 +6,8 @@ const { deleteImage } = require('../helpers/cloudinary');
 
 const { BadRequestError } = require('../utils/errors');
 
+const answerService = require('./answer');
+
 const checkDuplicatePositionsInAnswers = (answers = [], index) => {
   if (index < answers.length - 1) {
     const currentPosition = answers[index].position;
@@ -22,9 +24,10 @@ const checkDuplicatePositionsInAnswers = (answers = [], index) => {
 };
 
 const checkAnswers = (answers = []) => {
+  console.log(JSON.stringify(answers));
   const correctAnswer = !!answers.find(answer => answer.isCorrect);
   if (!correctAnswer)
-    throw new BadRequestError('There should be at leat 1 correct answer');
+    throw new BadRequestError('There should be at least 1 correct answer');
 
   checkDuplicatePositionsInAnswers(answers, 0);
 };
@@ -35,7 +38,9 @@ const getQuestion = async questionId => {
 };
 
 const createQuestion = async (gameId, params, { image, imageId } = {}) => {
-  const { answers, ...details } = params;
+  const { answers, ...details } = Object.assign(params, {
+    answers: params.answers.map(answer => JSON.parse(answer))
+  });
 
   checkAnswers(answers);
 
@@ -72,16 +77,32 @@ const createQuestion = async (gameId, params, { image, imageId } = {}) => {
 const getQuestions = gameId => Question.find({ game: gameId });
 
 const updateQuestion = async (questionId, params, { image, imageId } = {}) => {
-  const question = await getQuestion(questionId);
+  const question = await Question.findById(questionId);
 
-  Object.assign(question, params);
+  const { answers, ...updates } = Object.assign(params, {
+    answers: params.answers.map(answer => JSON.parse(answer))
+  });
+
+  // update answers
+  const updateTasks = answers.map(answer => {
+    const { _id, ...answerUpdates } = answer;
+    return answerService.updateAnswer(_id, answerUpdates);
+  });
+  await Promise.all(updateTasks);
+
+  Object.assign(question, updates);
   if (image) {
     if (question.imageId) await deleteImage(question.imageId);
     Object.assign(question, { image, imageId });
   }
+
+  if (params.image === '') {
+    if (params.imageId) await deleteImage(params.imageId);
+  }
+
   await question.save();
 
-  return question;
+  return getQuestion(questionId);
 };
 
 const deleteQuestion = async ({ gameId, questionId }) => {

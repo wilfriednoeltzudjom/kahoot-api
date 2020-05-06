@@ -5,54 +5,44 @@ const faker = require('../helpers/faker');
 
 const { Schema } = mongoose;
 
-const gameSchema = new Schema({
-  createdAt: {
-    type: Date,
-    default: Date.now
-  },
-  uuid: {
-    type: String,
-    default: () => uuid.v1()
-  },
-  title: {
-    type: String,
-    required: true
-  },
-  description: String,
-  pin: {
-    type: String,
-    required: true,
-    unique: true
-  },
-  cover: {
-    type: String
-  },
-  coverId: {
-    type: String
-  },
-  status: {
-    type: String,
-    enum: ['pending', 'running', 'ended'],
-    default: 'pending'
-  },
-  players: [
-    {
+const gameSchema = new Schema(
+  {
+    uuid: {
+      type: String,
+      default: () => uuid.v1()
+    },
+    title: {
+      type: String,
+      required: true
+    },
+    description: String,
+    pin: {
+      type: String,
+      required: true,
+      unique: true
+    },
+    cover: {
+      type: String
+    },
+    coverId: {
+      type: String
+    },
+    questions: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Question'
+      }
+    ],
+    user: {
       type: Schema.Types.ObjectId,
-      ref: 'Player'
+      ref: 'User',
+      required: true
     }
-  ],
-  questions: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'Question'
-    }
-  ],
-  user: {
-    type: Schema.Types.ObjectId,
-    ref: 'User',
-    required: true
+  },
+  {
+    timestamps: true
   }
-});
+);
 
 const Game = mongoose.models.Game || mongoose.model('Game', gameSchema);
 

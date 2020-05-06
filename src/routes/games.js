@@ -8,12 +8,7 @@ const uploadHandler = require('../middlewares/upload-handler');
 const resourceHandler = require('../middlewares/resources-handler');
 const validationHandler = require('../middlewares/validation-handler');
 
-const {
-  createGame,
-  updateGame,
-  getGame,
-  deleteGame
-} = require('../validators/game');
+const { createGame, updateGame, deleteGame } = require('../validators/game');
 
 const router = express.Router();
 
@@ -40,18 +35,12 @@ router.get('/', (req, res, next) => {
     .catch(error => next(error));
 });
 
-router.get(
-  '/:gameId',
-  getGame(),
-  validationHandler,
-  resourceHandler,
-  (req, res, next) => {
-    gameService
-      .getGame(req.params.gameId)
-      .then(game => res.json(game))
-      .catch(error => next(error));
-  }
-);
+router.get('/:gameId', (req, res, next) => {
+  gameService
+    .getGame(req.params.gameId)
+    .then(game => res.json(game))
+    .catch(error => next(error));
+});
 
 router.put(
   '/:gameId',
@@ -87,7 +76,7 @@ router.delete(
       .deleteGame(req.params.gameId)
       .then(() =>
         res.json({
-          message: `Game ${req.params.gameId} successfully deleted`
+          message: `Game successfully deleted`
         })
       )
       .catch(error => next(error));
