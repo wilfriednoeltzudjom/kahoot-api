@@ -30,7 +30,7 @@
     "eslint-plugin-react-hooks": "^2.5.0",
     "faker": "^4.1.0",
     "fakingoose": "^1.3.3",
-    "mocha": "^7.1.0",
+    "mocha": "^10.2.0",
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
     "sinon-chai": "^3.5.0"
